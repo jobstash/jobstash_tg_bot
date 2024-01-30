@@ -1,21 +1,18 @@
-import 'dart:io';
+import 'package:dotenv/dotenv.dart';
 
 class Config {
   Config._();
 
-  static String get botName => env('BOT_NAME');
+  static DotEnv? _env;
 
-  static String get botToken => env('BOT_TOKEN');
 
-  static String get openAiApiKey => env('OPEN_AI_API_KEY');
-}
+  static String get botName => _env!['BOT_NAME']!;
 
-T env<T>(String key) {
-  final value = Platform.environment[key];
-  if (value == null) {
-    throw 'Missing $key environment variable';
-  } else {
-    print('$key: ${value.substring(0, 5)}');
-    return value as T;
+  static String get botToken => _env!['BOT_TOKEN']!;
+
+  static bool get isDevEnv => _env!['BOT_NAME'] == 'JobStashDevBot';
+
+  static void init() {
+    _env = DotEnv(includePlatformEnvironment: true)..load();
   }
 }

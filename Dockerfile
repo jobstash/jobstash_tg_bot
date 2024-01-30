@@ -6,9 +6,10 @@ WORKDIR /packages/database
 COPY ./packages/database ./packages/
 RUN dart pub get
 
-WORKDIR /packages/ai_assistant
-COPY ./packages/ai_assistant ./packages
+WORKDIR /packages/jobstash_api
+COPY ./packages/jobstash_api ./packages
 RUN dart pub get
+RUN dart pub run build_runner build --delete-conflicting-outputs
 
 # Set the working directory for app and copy its contents
 WORKDIR /app

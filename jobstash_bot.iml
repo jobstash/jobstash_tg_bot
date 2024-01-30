@@ -18,6 +18,9 @@
       <excludeFolder url="file://$MODULE_DIR$/packages/ai_assistant/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/packages/ai_assistant/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/packages/ai_assistant/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/jobstash_api/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/jobstash_api/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/jobstash_api/build" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />

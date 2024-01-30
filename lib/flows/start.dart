@@ -1,5 +1,6 @@
 import 'package:chatterbox/chatterbox.dart';
 import 'package:database/database.dart';
+import 'package:jobstash_bot/flows/filters_setup_flow.dart';
 
 class StartFlow extends CommandFlow {
   StartFlow(this.userDao);
@@ -22,6 +23,16 @@ class _StartFlowInitialStep extends FlowStep {
 
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
-    return ReactionResponse(text: 'Hello ${messageContext.username}');
+    return ReactionResponse(
+      text:
+          'Hi this is JobStash.xyz bot. I will help you find a job. If you want unfiltered feed please follow (official jobstash channel)[https://t.me/jobstash].\n For filtered feed pls setup your filters',
+      markdown: true,
+      buttons: [
+        InlineButton(
+          title: 'Setup filters',
+          nextStepUri: (FiltersFlowInitialStep).toStepUri(),
+        ),
+      ],
+    );
   }
 }

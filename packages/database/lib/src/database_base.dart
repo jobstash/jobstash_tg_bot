@@ -6,11 +6,9 @@ class Database {
 
   static Future<void> initialize() async {
     if (!Firestore.initialized) {
-      Firestore.initialize('jobstash_bot', useApplicationDefaultAuth: true);
+      Firestore.initialize('jobstash-bot', useApplicationDefaultAuth: true);
     }
   }
-
-  // static TokenDao createTokenDao() => TokenDao(Firestore.instance);
 
   static UserDao createUserDao() => UserDao(Firestore.instance);
 

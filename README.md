@@ -165,3 +165,51 @@ Notice `bot` prefix, before bot token.
 
 
 Update to trigger deployment
+
+## Bootstraping
+1. Upload your code to github
+
+2. Create a new Google Cloud project
+```shell
+gcloud projects create project_name
+```
+
+2. Select current project
+   ```shell
+    gcloud config set project project_id
+   ```
+
+3. Setup Secret Manager for  Cloud Build service
+    - Setup Secret Manager API
+    ```shell
+      gcloud services enable secretmanager.googleapis.com
+    ```
+   - Grant secretmanager.secrets.create permission:
+    ```shell
+      gcloud projects add-iam-policy-binding jobstash-bot --member="serviceAccount:service-618164590307@gcp-sa-cloudbuild.iam.gserviceaccount.com" --role="roles/secretmanager.secretCreator"
+    ```
+
+
+
+3. Setup continuous deployment from source repository using Cloud Build
+```shell
+gcloud builds connections create github --region=your_region_of_choice 
+gcloud builds connections create github https://github.com/Defuera/jobstash_bot.git --region=europe-west4
+
+
+gcloud run regions list //to 
+```
+
+4. Download service account key to access firestore from local machine and place it into .keys/scf-service-account-key.json
+```shell
+ gcloud iam service-accounts keys create scf-service-account-key.json --iam-account=YOUR_SERVICE_ACCOUNT_EMAIL
+```
+Add an environment variable `GOOGLE_APPLICATION_CREDENTIALS=.keys/scf-service-account-key.json`
+
+6. Add Firestore database to your project
+```shell
+firebase init
+```
+And then follow steps
+? Please select an option: Add Firebase to an existing Google Cloud Platform project
+? Select the Google Cloud Platform project you would like to add Firebase: jobstash-bot (jobstash-bot)
