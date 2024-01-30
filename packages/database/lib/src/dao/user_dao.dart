@@ -23,6 +23,22 @@ class UserDao {
       await _userDoc(userId).addItemToSet(filterId, option);
     }
   }
+
+  Future<dynamic> getFilterValue(int userId, String filterKey) {
+    return _userDoc(userId).getFieldSafe(filterKey);
+  }
+
+  Future<void> setFilterValue(int userId, String filterKey, dynamic value) {
+    return _userDoc(userId).update({
+      filterKey: value,
+    });
+  }
+
+  Future<void> stopListings(int userId) {
+    return _userDoc(userId).update({
+      'stop_listings': true,
+    });
+  }
 }
 
 extension UserDaoExt on UserDao {

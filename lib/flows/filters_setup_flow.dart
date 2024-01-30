@@ -1,7 +1,12 @@
 import 'package:chatterbox/chatterbox.dart';
-import 'package:database/database.dart';
 import 'package:jobstash_api/jobstash_api.dart';
 import 'package:jobstash_bot/services/filters_repository.dart';
+
+part 'internal/extensions.dart';
+
+part 'internal/multi_select_filter.dart';
+
+part 'internal/range_filter.dart';
 
 /// Applicable filters
 /// - location
@@ -11,9 +16,8 @@ import 'package:jobstash_bot/services/filters_repository.dart';
 /// - head count
 /// - tags
 class FiltersFlow extends CommandFlow {
-  FiltersFlow(this._userDao, this._filtersRepository);
+  FiltersFlow(this._filtersRepository);
 
-  final UserDao _userDao;
   final FiltersRepository _filtersRepository;
 
   @override
@@ -21,17 +25,18 @@ class FiltersFlow extends CommandFlow {
 
   @override
   List<StepFactory> get steps => [
-        () => FiltersFlowInitialStep(_userDao, _filtersRepository),
-        () => _FilterDetailedStep(_userDao, _filtersRepository),
-        () => _MultiSelectFilterDisplayStep(_userDao, _filtersRepository),
-        () => _MultiSelectFilterToggleStep(_userDao, _filtersRepository),
+        () => FiltersFlowInitialStep(_filtersRepository),
+        () => _FilterDetailedStep(_filtersRepository),
+        () => _MultiSelectFilterDisplayStep(_filtersRepository),
+        () => _MultiSelectFilterUpdateStep(_filtersRepository),
+        () => _RangeFilterDisplayStep(_filtersRepository),
+        () => _RangeFilterUpdateStep(_filtersRepository),
       ];
 }
 
 class FiltersFlowInitialStep extends FlowStep {
-  FiltersFlowInitialStep(this._userDao, this._filtersRepository);
+  FiltersFlowInitialStep(this._filtersRepository);
 
-  final UserDao _userDao;
   final FiltersRepository _filtersRepository;
 
   @override
@@ -39,8 +44,7 @@ class FiltersFlowInitialStep extends FlowStep {
     final filters = await _filtersRepository.getRelevantFilters();
 
     return ReactionResponse(
-      text:
-          'Hi this is JobStash.xyz bot. I will help you find a job. If you want unfiltered feed please follow (official jobstash channel)[https://t.me/jobstash].\n For filtered feed pls setup your filters',
+      text: 'Please select filter you want to adjust.',
       markdown: true,
       buttons: filters.entries
           .map(
@@ -55,133 +59,38 @@ class FiltersFlowInitialStep extends FlowStep {
 }
 
 class _FilterDetailedStep extends FlowStep {
-  _FilterDetailedStep(this._userDao, this._filtersRepository);
+  _FilterDetailedStep(this._filtersRepository);
 
-  final UserDao _userDao;
   final FiltersRepository _filtersRepository;
 
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
-    final filterKey = args?.first;
-    if (filterKey == null) {
+    final filterId = args?.first;
+    if (filterId == null) {
       return ReactionNone();
     }
 
     final filters = await _filtersRepository.getRelevantFilters();
 
-    final Filter? filter = filters[filterKey];
+    final Filter? filter = filters[filterId];
     if (filter == null) {
-      return ReactionResponse(text: 'Something went wrong.\n\nFilter $filterKey not found');
+      return ReactionResponse(text: 'Something went wrong.\n\nFilter $filterId not found');
     }
 
     print('filter: $filter');
 
     switch (filter.kind) {
       case FilterKind.multiSelect:
-        return ReactionRedirect(stepUri: (_MultiSelectFilterDisplayStep).toStepUri([filterKey]));
+        return ReactionRedirect(stepUri: (_MultiSelectFilterDisplayStep).toStepUri([filterId]));
+      case FilterKind.range:
+        return ReactionRedirect(stepUri: (_RangeFilterDisplayStep).toStepUri([filterId]));
+      // case FilterKind.singleSelect:
+      //   return ReactionRedirect(stepUri: (_AdjustSingleSelectFilterStep).toStepUri([filterId]));
+      // case FilterKind.multiSelectWithSearch:
+      //   return ReactionRedirect(stepUri: (_AdjustMultiSelectWithSearchFilterStep).toStepUri([filterId]));
+
       default:
         return ReactionNone();
-      // case FilterKind.range:
-      //   return ReactionRedirect(stepUri: (_AdjustRangeFilterStep).toStepUri([filterKey]));
-      // case FilterKind.singleSelect:
-      //   return ReactionRedirect(stepUri: (_AdjustSingleSelectFilterStep).toStepUri([filterKey]));
-      // case FilterKind.multiSelectWithSearch:
-      //   return ReactionRedirect(stepUri: (_AdjustMultiSelectWithSearchFilterStep).toStepUri([filterKey]));
     }
-  }
-}
-
-class _MultiSelectFilterDisplayStep extends FlowStep {
-  _MultiSelectFilterDisplayStep(this._userDao, this._filtersRepository);
-
-  final UserDao _userDao;
-  final FiltersRepository _filtersRepository;
-
-  @override
-  Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
-    final filterKey = args?.first;
-    final secondArg = args?.elementAtOrNull(1);
-    final editMessageId = secondArg != null ? int.tryParse(secondArg) : messageContext.editMessageId;
-
-    if (filterKey == null) {
-      return ReactionNone();
-    }
-
-    final filters = await _filtersRepository.getRelevantFilters();
-
-    final Filter? filter = filters[filterKey];
-    if (filter == null) {
-      return ReactionResponse(text: 'Something went wrong.\n\nFilter $filterKey not found');
-    }
-
-    final selectedOptions = await _filtersRepository.getUserFilterOptions(messageContext.userId, filterKey);
-
-    return ReactionResponse(
-      text: filter.label,
-      editMessageId: editMessageId,
-      buttons: filter.options
-              ?.map((option) {
-                final isSelected = selectedOptions?.contains(option.toString()) == true;
-                return InlineButton(
-                  title: '${option.toString()} ${isSelected ? '✅' : ''}',
-                  nextStepUri: (_MultiSelectFilterToggleStep).toStepUri([filterKey, option]),
-                );
-              })
-              .toList()
-              .withBackButton((_FilterDetailedStep).toStepUri([filterKey])) ??
-          [],
-    );
-  }
-}
-
-class _MultiSelectFilterToggleStep extends FlowStep {
-  _MultiSelectFilterToggleStep(this._userDao, this._filtersRepository);
-
-  final UserDao _userDao;
-  final FiltersRepository _filtersRepository;
-
-  @override
-  Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
-    final filterId = args?.firstOrNull;
-    final option = args?.lastOrNull;
-    if (filterId == null || option == null) {
-      return ReactionNone();
-    }
-
-    await _filtersRepository.toggleUserFilterOption(messageContext.userId, filterId, option);
-
-    return ReactionRedirect(stepUri: (_MultiSelectFilterDisplayStep).toStepUri([filterId]));
-  }
-}
-
-extension on FiltersRepository {
-  Future<Reaction> withFilters(
-    String? filterKey,
-    Future<Reaction> Function(Filter filter, Map<String, Filter>) action,
-  ) async {
-    if (filterKey == null) {
-      return ReactionResponse(text: 'Something went wrong.\n\nFilter $filterKey not found');
-    }
-
-    final filters = await getRelevantFilters();
-
-    final Filter? filter = filters[filterKey];
-    if (filter == null) {
-      return ReactionResponse(text: 'Something went wrong.\n\nFilter for $filterKey not found');
-    }
-
-    return action(filter, filters);
-  }
-}
-
-extension on List<InlineButton> {
-  List<InlineButton> withBackButton(String stepUri) {
-    return [
-      ...this,
-      InlineButton(
-        title: 'Back',
-        nextStepUri: stepUri,
-      ),
-    ];
   }
 }

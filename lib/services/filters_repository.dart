@@ -43,11 +43,28 @@ class FiltersRepository {
     return _userDao.getFilterOptions(userId, filterKey);
   }
 
+  Future<void> setUserFilterValue(int userId, String filterKey, dynamic value) {
+    return _userDao.setFilterValue(userId, filterKey, value);
+  }
+
+  Future<List<String>?> getUserFilterValue(int userId, String filterKey) async {
+    final filterValue = await _userDao.getFilterValue(userId, filterKey);
+    if (filterValue == null) {
+      return null;
+    }
+    final rangeString = filterValue.toString().split(', ');
+    final first = rangeString.firstOrNull?.toString();
+    final last = rangeString.lastOrNull?.toString();
+    return first == null || last == null ? null : [first, last];
+  }
+
   Future<void> toggleUserFilterOption(int userId, String filterId, dynamic option) {
     return _userDao.toggleFilterOption(userId, filterId, option);
   }
 
-
+  Future<void> stopListings(int userId) {
+    return _userDao.stopListings(userId);
+  }
 }
 
 class _InMemoryCache {

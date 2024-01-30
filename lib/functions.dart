@@ -7,6 +7,7 @@ import 'package:jobstash_api/jobstash_api.dart';
 import 'package:jobstash_bot/config.dart';
 import 'package:jobstash_bot/flows/filters_setup_flow.dart';
 import 'package:jobstash_bot/flows/start.dart';
+import 'package:jobstash_bot/flows/stop.dart';
 import 'package:jobstash_bot/services/filters_repository.dart';
 import 'package:jobstash_bot/store/firebase_dialog_store.dart';
 import 'package:jobstash_bot/utils/logger.dart';
@@ -29,11 +30,12 @@ Future<Response> function(Request request) async {
     final dialogStore = FirebaseDialogStore(dialogDao);
 
     final api = JobStashApi();
-    final filtersRepository = FiltersRepository(api, userDao);
+    final repository = FiltersRepository(api, userDao);
 
     final flows = <Flow>[
       StartFlow(userDao),
-      FiltersFlow(userDao, filtersRepository),
+      FiltersFlow(repository),
+      StopFlow(repository),
     ];
 
     Chatterbox(botToken: Config.botToken, flows: flows, store: dialogStore).invokeFromWebhook(body);
