@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ai_assistant/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ai_assistant/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ai_assistant/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/database/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/database/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/database/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/database/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/database/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/database/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ai_assistant/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ai_assistant/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/ai_assistant/build" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>
