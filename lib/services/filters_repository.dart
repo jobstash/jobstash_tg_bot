@@ -1,3 +1,4 @@
+import 'package:database/database.dart';
 import 'package:jobstash_api/jobstash_api.dart';
 
 /// Applicable filters
@@ -17,9 +18,10 @@ final _relevantFiltersIds = [
 ];
 
 class FiltersRepository {
-  FiltersRepository(this._api) : _cache = _InMemoryCache();
+  FiltersRepository(this._api, this._userDao) : _cache = _InMemoryCache();
 
   final JobStashApi _api;
+  final UserDao _userDao;
 
   final _InMemoryCache _cache;
 
@@ -36,6 +38,16 @@ class FiltersRepository {
     _cache.setFilters(relevantFiltersMap);
     return relevantFiltersMap;
   }
+
+  Future<List<dynamic>?> getUserFilterOptions(int userId, String filterKey) async {
+    return _userDao.getFilterOptions(userId, filterKey);
+  }
+
+  Future<void> toggleUserFilterOption(int userId, String filterId, dynamic option) {
+    return _userDao.toggleFilterOption(userId, filterId, option);
+  }
+
+
 }
 
 class _InMemoryCache {

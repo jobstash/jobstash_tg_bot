@@ -29,11 +29,11 @@ Future<Response> function(Request request) async {
     final dialogStore = FirebaseDialogStore(dialogDao);
 
     final api = JobStashApi();
-    final filtersRepository = FiltersRepository(api);
+    final filtersRepository = FiltersRepository(api, userDao);
 
     final flows = <Flow>[
       StartFlow(userDao),
-      FiltersFlow(api, userDao, filtersRepository),
+      FiltersFlow(userDao, filtersRepository),
     ];
 
     Chatterbox(botToken: Config.botToken, flows: flows, store: dialogStore).invokeFromWebhook(body);
