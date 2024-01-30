@@ -22,7 +22,7 @@ class _StopFlowInitialStep extends FlowStep {
   final FiltersRepository _repository;
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
-    await _repository.stopListings(messageContext.userId);
+    await _repository.setFeedStopped(messageContext.userId, true);
 
     return ReactionResponse(
       text:

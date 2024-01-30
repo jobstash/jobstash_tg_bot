@@ -6,8 +6,8 @@ import 'package:functions_framework/functions_framework.dart';
 import 'package:jobstash_api/jobstash_api.dart';
 import 'package:jobstash_bot/config.dart';
 import 'package:jobstash_bot/flows/filters_setup_flow.dart';
-import 'package:jobstash_bot/flows/start.dart';
-import 'package:jobstash_bot/flows/stop.dart';
+import 'package:jobstash_bot/flows/start_flow.dart';
+import 'package:jobstash_bot/flows/stop_flow.dart';
 import 'package:jobstash_bot/services/filters_repository.dart';
 import 'package:jobstash_bot/store/firebase_dialog_store.dart';
 import 'package:jobstash_bot/utils/logger.dart';
@@ -33,7 +33,7 @@ Future<Response> function(Request request) async {
     final repository = FiltersRepository(api, userDao);
 
     final flows = <Flow>[
-      StartFlow(userDao),
+      StartFlow(repository),
       FiltersFlow(repository),
       StopFlow(repository),
     ];

@@ -34,10 +34,17 @@ class UserDao {
     });
   }
 
-  Future<void> stopListings(int userId) {
-    return _userDoc(userId).update({
-      'stop_listings': true,
-    });
+  Future<void> setFeedStopped(int userId, bool value) {
+    return _userDoc(userId).update({'feed_stopped': value});
+  }
+
+  Future<bool> isUserExists(int userId) {
+    return _userDoc(userId).exists;
+  }
+
+  Future<bool> isFeedStopped(int userId) async {
+    final value = await _userDoc(userId).getFieldSafe<bool>('feed_stopped');
+    return value == true;
   }
 }
 

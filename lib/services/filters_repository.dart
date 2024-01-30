@@ -62,9 +62,18 @@ class FiltersRepository {
     return _userDao.toggleFilterOption(userId, filterId, option);
   }
 
-  Future<void> stopListings(int userId) {
-    return _userDao.stopListings(userId);
+  Future<void> setFeedStopped(int userId, bool value) {
+    return _userDao.setFeedStopped(userId, value);
   }
+
+  Future<bool> isUserExists(int userId) {
+    return _userDao.isUserExists(userId);
+  }
+
+  Future<bool> isFeedStopped(int userId) {
+    return _userDao.isFeedStopped(userId);
+  }
+
 }
 
 class _InMemoryCache {

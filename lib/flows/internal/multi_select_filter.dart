@@ -8,9 +8,9 @@ class _MultiSelectFilterDisplayStep extends FlowStep {
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
     final filterId = args?.first;
-    final secondArg = args?.elementAtOrNull(1);
-    final editMessageId = secondArg != null ? int.tryParse(secondArg) : messageContext.editMessageId;
+    final editMessageId = messageContext.editMessageId;
 
+    print('_MultiSelectFilterDisplayStep editMessageId: $editMessageId');
     if (filterId == null) {
       return ReactionNone();
     }
@@ -36,7 +36,7 @@ class _MultiSelectFilterDisplayStep extends FlowStep {
                 );
               })
               .toList()
-              .withBackButton((_FilterDetailedStep).toStepUri([filterId])) ??
+              .withBackButton((FiltersFlowInitialStep).toStepUri([filterId, editMessageId.toString()])) ??
           [],
     );
   }
