@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:ai_assistant/ai_assistant.dart';
 import 'package:chatterbox/chatterbox.dart';
 import 'package:database/database.dart';
 import 'package:functions_framework/functions_framework.dart';
@@ -17,35 +18,36 @@ import 'package:shelf/shelf.dart';
 @CloudFunction()
 Future<Response> function(Request request) async {
   try {
-    return _proxy(request);
+    // return _proxy(request);
 
-    // Config.init();
-    //
-    // logger.d('Request url ${request.url}');
-    //
-    // final body = await parseRequestBody(request);
-    // logger.d('Request body ${request.url}');
-    //
-    // await Database.initialize();
-    //
-    // final userDao = Database.createUserDao();
-    // final dialogDao = Database.createDialogDao();
-    // final dialogStore = FirebaseDialogStore(dialogDao);
-    //
-    // final api = JobStashApi();
-    // final repository = FiltersRepository(api, userDao);
-    //
-    // final flows = <Flow>[
-    //   StartFlow(repository),
-    //   FiltersFlow(repository),
-    //   StopFlow(repository),
-    // ];
-    //
-    // Chatterbox(botToken: Config.botToken, flows: flows, store: dialogStore).invokeFromWebhook(body);
-    // return Response.ok(
-    //   null,
-    //   headers: {'Content-Type': 'application/json'},
-    // );
+    Config.init();
+
+    logger.d('Request url ${request.url}');
+
+    final body = await parseRequestBody(request);
+    logger.d('Request body ${request.url}');
+
+    await Database.initialize();
+
+    final userDao = Database.createUserDao();
+    final dialogDao = Database.createDialogDao();
+    final firebaseStore = FirebaseDialogStore(dialogDao);
+
+    final api = JobStashApi();
+    final repository = FiltersRepository(api, userDao);
+    final aiAssistant = AiAssistant(Config.openAiApiKey, firebaseStore);
+
+    final flows = <Flow>[
+      StartFlow(repository),
+      FiltersFlow(repository, aiAssistant),
+      StopFlow(repository),
+    ];
+
+    Chatterbox(botToken: Config.botToken, flows: flows, store: firebaseStore).invokeFromWebhook(body);
+    return Response.ok(
+      null,
+      headers: {'Content-Type': 'application/json'},
+    );
   } catch (error, st) {
     logger.e('Failed to process request', error: error, stackTrace: st);
     return Response.internalServerError(body: {'error': error.toString()});

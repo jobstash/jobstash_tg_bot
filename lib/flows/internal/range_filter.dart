@@ -13,7 +13,7 @@ class _RangeFilterDisplayStep extends FlowStep {
 
       return ReactionResponse(
         editMessageId: messageContext.editMessageId,
-        text: """Please input new ${filter.label} or type ~~Back~~ to go back.
+        text: """Please input ${filter.label} range or type *Back* to go back.
 Input format: <start> <end>
 ${range == null ? '' : '\nCurrent value: ${range.firstOrNull} - ${range.lastOrNull}'}
 """,

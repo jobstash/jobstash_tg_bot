@@ -23,4 +23,15 @@ class DialogDao {
       });
 
   Future<void> clearPending(int userId) => collection.document('$userId').delete();
+
+  Future<String?> getAssistantThreadId(String userId) =>
+      collection.document(userId).getFieldSafe('assistant_thread_id');
+
+  Future<void> clearAssistantThreadId(String userId) => collection.document(userId).update({
+        'assistant_thread_id': null,
+      });
+
+  Future<void> setAssistantThreadId(String userId, String threadId) => collection.document(userId).update({
+        'assistant_thread_id': threadId,
+      });
 }

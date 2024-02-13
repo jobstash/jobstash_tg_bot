@@ -20,6 +20,8 @@ dependencies:
     path: ./packages/jobstash_api
   database:
     path: ./packages/database
+  ai_assistant:
+    path: ./packages/ai_assistant
 
   # Telegram
   chatterbox: ^1.3.0
