@@ -2,9 +2,11 @@ import 'package:ai_assistant/ai_assistant.dart';
 import 'package:chatterbox/chatterbox.dart';
 import 'package:collection/collection.dart';
 import 'package:jobstash_api/jobstash_api.dart';
-import 'package:jobstash_bot/services/filters_repository.dart';
-import 'package:jobstash_bot/utils/args_utils.dart';
-import 'package:jobstash_bot/utils/logger.dart';
+import 'package:jobstash_bot/chatbot/services/filters_repository.dart';
+import 'package:jobstash_bot/chatbot/utils/args_utils.dart';
+import 'package:jobstash_bot/chatbot/utils/logger.dart';
+import 'package:chatterbox/chatterbox.dart';
+import 'package:jobstash_bot/chatbot/services/filters_repository.dart';
 
 part 'internal/extensions.dart';
 

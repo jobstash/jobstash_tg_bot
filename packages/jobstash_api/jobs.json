@@ -1,0 +1,273 @@
+{
+  "page": 1,
+  "count": 2,
+  "total": 28,
+  "data": [
+    {
+      "id": "52d4ac91-a87e-4eb1-9f0f-09e7e7826054",
+      "url": "https://moonpay.wd1.myworkdayjobs.com/en-US/GTI/job/USA---Hybrid/Social-Media-Marketing-Manager_JR100097",
+      "title": "Social Media Marketing Manager",
+      "summary": "MoonPay is looking for a Social Media Marketing Manager to develop and implement comprehensive social media strategies, coordinate with cross-functional teams, and oversee Go-To-Market social campaigns.",
+      "description": "You will be responsible for conducting research on competitors, industry trends, and market dynamics to inform marketing strategies. You will market across various business needs and report into the Communications Director.",
+      "requirements": [
+        "5+ years of proven experience as a social media strategist or similar role",
+        "In-depth knowledge of social media platforms, trends, and analytics",
+        "Ability to analyze data, conduct competitor analysis and derive actionable insights",
+        "Strong leadership and team building skills",
+        "Excellent communication and interpersonal skills",
+        "Prior experience in the web3 or fintech industry is a plus"
+      ],
+      "responsibilities": [
+        "Develop and implement comprehensive social media strategies aligned with MoonPay's overall business objectives.",
+        "Stay informed about industry trends and social media best practices.",
+        "Collaborate effectively with cross-functional teams to integrate social media strategies with broader marketing initiatives.",
+        "Coordinate with content creators, designers, and other stakeholders for cohesive social media campaigns.",
+        "Lead the planning and execution of Go-To-Market social campaigns for new products and strategic partnerships.",
+        "Implement and utilize analytics tools to track the performance of social media campaigns.",
+        "Analyze metrics and key performance indicators to assess strategy effectiveness.",
+        "Train and guide the performance of the project manager, social media contractor, and video content agency.",
+        "Develop and maintain a consistent brand voice and identity across all social media channels."
+      ],
+      "shortUUID": "F1r833",
+      "minimumSalary": null,
+      "maximumSalary": null,
+      "salary": null,
+      "seniority": "4",
+      "benefits": [
+        "Equity package",
+        "Unlimited holidays",
+        "Paid parental leave",
+        "Annual training budget",
+        "Home office setup allowance",
+        "Monthly budget to spend on our products"
+      ],
+      "culture": null,
+      "location": "USA - Hybrid",
+      "salaryCurrency": null,
+      "paysInCrypto": null,
+      "featured": false,
+      "featureStartDate": null,
+      "featureEndDate": null,
+      "offersTokenAllocation": null,
+      "timestamp": 1707832800401,
+      "tags": [
+        {
+          "id": "5cdf41f6-c2fe-474a-a576-62299b88d654",
+          "name": "digital engagement",
+          "normalizedName": "digital engagement"
+        },
+        {
+          "id": "fe1d70a8-7b53-4040-b180-b1a51834bc32",
+          "name": "Brand Identity",
+          "normalizedName": "brand identity"
+        },
+        {
+          "id": "b59d6230-a2f8-4fae-881b-ee53c5366daa",
+          "name": "Social Media Strategy",
+          "normalizedName": "social media strategy"
+        },
+        {
+          "id": "193fa2fa-1dff-4a25-bc42-19fd252671e1",
+          "name": "Team Leadership",
+          "normalizedName": "team leadership"
+        },
+        {
+          "id": "8242aba7-80b7-4e4c-b3f6-2b5bb42d85d6",
+          "name": "fintech",
+          "normalizedName": "fintech"
+        },
+        {
+          "id": "950d6c29-0004-4aac-903e-3c743b70a67f",
+          "name": "Campaign Management",
+          "normalizedName": "campaign management"
+        },
+        {
+          "id": "501f849f-9acd-4206-a711-ea27ae0c14fd",
+          "name": "Analytics",
+          "normalizedName": "analytics"
+        },
+        {
+          "id": "5c6bef98-2589-41f6-b77f-7e461848ec27",
+          "name": "Web3",
+          "normalizedName": "web3"
+        },
+        {
+          "id": "30fadf4e-1910-4bb4-8063-948a0be3d56b",
+          "name": "Cross-functional Collaboration",
+          "normalizedName": "cross_hyphen_functional collaboration"
+        },
+        {
+          "id": "8ae32e10-a305-489c-b24b-97b03ac8d3c1",
+          "name": "Communication",
+          "normalizedName": "communication"
+        }
+      ],
+      "commitment": "FULL_TIME",
+      "locationType": "HYBRID",
+      "classification": "MARKETING",
+      "organization": {
+        "summary": "MoonPay is a platform that allows users to buy, sell, and swap cryptocurrencies.",
+        "reviews": [],
+        "createdTimestamp": 1707064767322,
+        "website": "https://www.moonpay.com",
+        "investors": [
+          {
+            "id": "0ed166d8-b263-4b77-ad49-d249db7977cc",
+            "name": "Coatue"
+          },
+          {
+            "id": "e6486d81-c404-4f5f-a219-f01ab986ddf2",
+            "name": "Tiger Global Management"
+          },
+          {
+            "id": "e7dad117-bf5f-4b48-b73a-06b3199d9ea3",
+            "name": "Blossom Capital"
+          },
+          {
+            "id": "4a66b375-fa46-467b-81ea-3596d909f461",
+            "name": "Paradigm"
+          },
+          {
+            "id": "b91cb483-5a46-4606-a38d-37973f5c79d4",
+            "name": "NEA"
+          },
+          {
+            "id": "7dfd95b3-eaee-4ca3-9242-8f8a986f53b9",
+            "name": "Thrive"
+          }
+        ],
+        "alias": null,
+        "location": "Distributed",
+        "docs": "https://dev.moonpay.com",
+        "community": [],
+        "telegram": null,
+        "discord": null,
+        "orgId": "1119",
+        "id": "8dfe93af-7b2e-47e4-86ab-c5eb44979ccd",
+        "projects": [],
+        "twitter": "moonpay",
+        "description": "MoonPay is a platform that allows users to buy, sell, and swap cryptocurrencies. It is available on hundreds of apps and websites, making it easy for users to buy crypto or NFTs. MoonPay is also ISO 27001 certified, which is a global standard to manage information security.",
+        "name": "MoonPay",
+        "fundingRounds": [
+          {
+            "id": "82f09a8d-d86f-4c02-9f7b-831884de18de",
+            "updatedTimestamp": 1707782414422,
+            "createdTimestamp": 1707181358828,
+            "roundName": "Series A",
+            "sourceLink": "https://www.coindesk.com/business/2021/11/22/payments-infrastructure-firm-moonpay-raises-555m-at-a-34b-valuation/",
+            "raisedAmount": 555,
+            "date": 1637539200
+          }
+        ],
+        "github": "moonpay",
+        "aggregateRating": 0,
+        "aggregateRatings": {
+          "benefits": 0,
+          "careerGrowth": 0,
+          "diversityInclusion": 0,
+          "management": 0,
+          "onboarding": 0,
+          "product": 0,
+          "compensation": 0,
+          "workLifeBalance": 0
+        },
+        "reviewCount": 0,
+        "logoUrl": null,
+        "headcountEstimate": null,
+        "updatedTimestamp": null
+      }
+    },
+    {
+      "id": "b5994429-5d55-4949-8af3-02a4d638ce8a",
+      "url": "https://jobs.ebayinc.com/us/en/c/trust-safety-fraud-jobs",
+      "title": "Sneaker Authenticator",
+      "summary": "eBay is looking for a Sneaker Authenticator to ensure the authenticity of sneakers",
+      "description": "You will be responsible for verifying the authenticity of sneakers and providing excellent customer service to our users.",
+      "requirements": [
+        "Knowledge of sneaker brands",
+        "Attention to detail",
+        "Customer service experience"
+      ],
+      "responsibilities": [
+        "Verify authenticity of sneakers",
+        "Provide customer service",
+        "Maintain accurate records"
+      ],
+      "shortUUID": "tCpj93",
+      "minimumSalary": null,
+      "maximumSalary": null,
+      "salary": null,
+      "seniority": "2",
+      "benefits": [
+        "Health insurance",
+        "Retirement plan",
+        "Employee discounts"
+      ],
+      "culture": null,
+      "location": "Hoppegarten, Germany",
+      "salaryCurrency": null,
+      "paysInCrypto": null,
+      "featured": false,
+      "featureStartDate": null,
+      "featureEndDate": null,
+      "offersTokenAllocation": null,
+      "timestamp": 1707832800401,
+      "tags": [
+        {
+          "id": "9e4f2af1-2dd7-49ba-8d97-dafc56c8ea0c",
+          "name": "Sneaker authentication",
+          "normalizedName": "sneaker authentication"
+        },
+        {
+          "id": "01832ac1-d99f-47c0-b234-f9cc2a3d30be",
+          "name": "Record Keeping",
+          "normalizedName": "record keeping"
+        },
+        {
+          "id": "615a2f2b-0579-42ee-95bb-c96047b6461d",
+          "name": "customer service",
+          "normalizedName": "customer service"
+        }
+      ],
+      "commitment": "FULL_TIME",
+      "locationType": "ONSITE",
+      "classification": "OTHER",
+      "organization": {
+        "summary": "Discover, sell and collect NFTs",
+        "reviews": [],
+        "createdTimestamp": 1707103184188,
+        "website": "https://knownorigin.io/",
+        "investors": [],
+        "alias": null,
+        "location": "Distributed",
+        "docs": "https://docs.knownorigin.io",
+        "community": [],
+        "telegram": null,
+        "discord": null,
+        "orgId": "2172",
+        "id": "26fd06ba-a836-4e98-98c9-8e0cb9529ff7",
+        "projects": [],
+        "twitter": "knownorigin_io",
+        "description": "KnownOrigin is a digital art marketplace that allows users to discover, sell, and collect NFTs. The platform provides a user-friendly interface and a variety of features that make it easy for users to buy and sell NFTs.",
+        "name": "knownorigin",
+        "fundingRounds": [],
+        "github": "knownorigin",
+        "aggregateRating": 0,
+        "aggregateRatings": {
+          "benefits": 0,
+          "careerGrowth": 0,
+          "diversityInclusion": 0,
+          "management": 0,
+          "onboarding": 0,
+          "product": 0,
+          "compensation": 0,
+          "workLifeBalance": 0
+        },
+        "reviewCount": 0,
+        "logoUrl": null,
+        "headcountEstimate": null,
+        "updatedTimestamp": null
+      }
+    }
+  ]
+}

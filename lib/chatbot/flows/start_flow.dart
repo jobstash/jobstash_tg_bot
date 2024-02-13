@@ -1,6 +1,6 @@
 import 'package:chatterbox/chatterbox.dart';
-import 'package:jobstash_bot/flows/filters_setup_flow.dart';
-import 'package:jobstash_bot/services/filters_repository.dart';
+import 'package:jobstash_bot/chatbot/flows/filters_setup_flow.dart';
+import 'package:jobstash_bot/chatbot/services/filters_repository.dart';
 
 class StartFlow extends CommandFlow {
   StartFlow(this._repository);
