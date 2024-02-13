@@ -62,9 +62,9 @@ Future<Map<String, dynamic>> parseRequestBody(Request request) async {
 
 Future<Response> _proxy(Request request) async {
   try {
-    HttpClient client = HttpClient();
-    HttpClientRequest clientRequest = await client.openUrl(
-        request.method, Uri.parse('https://0e00-169-150-196-154.ngrok-free.app${request.url.path}'));
+    final client = HttpClient();
+    final clientRequest = await client.openUrl(
+        request.method, Uri.parse('https://0e00-169-150-196-154.ngrok-free.app/${request.url.path}'));
 
     // Copy headers from the original request to the proxy request.
     request.headers.forEach((name, values) {
