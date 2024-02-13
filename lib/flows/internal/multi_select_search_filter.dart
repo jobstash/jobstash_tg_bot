@@ -55,7 +55,7 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
           ReactionResponse(text: 'Your tags are set to: $tags\n\n We could not recognize: $unrecognizedInput'),
         if (removeTags) ReactionResponse(text: 'Tags removed'),
         ReactionRedirect(
-          stepUri: (_FilterDetailedStep).toStepUri([filterId]),
+          stepUri: (FiltersFlowInitialStep).toStepUri([filterId]),
         ),
       ]);
     } catch (e, stacktrace) {

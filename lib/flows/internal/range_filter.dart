@@ -41,24 +41,11 @@ class _RangeFilterUpdateStep extends FlowStep {
 
     await _filtersRepository.setUserFilterValue(messageContext.userId, filterId, rangeParts);
 
-    return ReactionRedirect(
-      stepUri: (_FilterDetailedStep).toStepUri([filterId]),
-    );
-
-    // final rangeParts = range.split('-');
-    // if (rangeParts.length != 2) {
-    //   return ReactionResponse(text: 'Invalid range');
-    // }
-    //
-    // final rangeStart = rangeParts.firstOrNull;
-    // final rangeEnd = rangeParts.lastOrNull;
-    //
-    // if (rangeStart == null || rangeEnd == null) {
-    //   return ReactionResponse(text: 'Invalid range');
-    // }
-    //
-    // await _filtersRepository.setUserFilterValue(messageContext.userId, filterId, rangeStart, rangeEnd);
-    //
-    // return ReactionRedirect(stepUri: (_FilterDetailedStep).toStepUri([filterId]));
+    return ReactionComposed(responses: [
+      ReactionResponse(text: 'Range updated: ${rangeParts.firstOrNull} - ${rangeParts.lastOrNull}'),
+      ReactionRedirect(
+        stepUri: (FiltersFlowInitialStep).toStepUri([filterId]),
+      ),
+    ]);
   }
 }

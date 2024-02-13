@@ -96,7 +96,11 @@ class _FilterDetailedStep extends FlowStep {
       case FilterKind.range:
         return ReactionRedirect(stepUri: (_RangeFilterDisplayStep).toStepUri([filterId]));
       case FilterKind.multiSelectWithSearch:
-        return ReactionRedirect(stepUri: (_MultiSelectSearchDisplayStep).toStepUri([filterId]));
+        if ((filter.options?.length ?? 0) > 20) {
+          return ReactionRedirect(stepUri: (_MultiSelectSearchDisplayStep).toStepUri([filterId]));
+        } else {
+          return ReactionRedirect(stepUri: (_MultiSelectFilterDisplayStep).toStepUri([filterId]));
+        }
       // case FilterKind.singleSelect:
       //   return ReactionRedirect(stepUri: (_AdjustSingleSelectFilterStep).toStepUri([filterId]));
       //   return ReactionRedirect(stepUri: (_AdjustMultiSelectWithSearchFilterStep).toStepUri([filterId]));
