@@ -27,11 +27,14 @@ class AiAssistant {
     return _parseResponse(
       response,
       (data) => (
-        data['recognized_tags'] as List<String>,
-        data['unrecognized_input'] as List<String>,
+        _parseList(data, 'recognized_tags'),
+        _parseList(data, 'unrecognized_input'),
       ),
     );
   }
+
+  List<String> _parseList(Map<String, dynamic> data, String key) =>
+      (data[key] as List<dynamic>).map((e) => e.toString()).toList();
 }
 
 T _parseResponse<T>(String? response, T Function(Map<String, dynamic>) parser) {

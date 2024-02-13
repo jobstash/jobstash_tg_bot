@@ -8,7 +8,7 @@ class FirebaseDialogStore implements PendingMessagesStore, ThreadStore {
   final DialogDao dao;
 
   @override
-  Future<void> clearPending(int userId) => dao.clearPending(userId);
+  Future<void> clearPending(int userId) => dao.clearPendingDialogUri(userId);
 
   @override
   Future<String?> retrievePending(int userId) => dao.retrievePending(userId);

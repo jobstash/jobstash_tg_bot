@@ -50,14 +50,15 @@ class AssistantApi {
   }
 
   Future<String> _getThreadId(String userId) async {
-    final threadId = await threadStore.getThreadId(userId);
-    if (threadId != null) {
-      return threadId;
-    }
-
-    final thread = await _client.createThread();
-    await threadStore.setThreadId(userId, thread.id);
-    return thread.id;
+    return "thread_TaVhB0sRGElt3bWhDrgWaII5";
+    // final threadId = await threadStore.getThreadId(userId);
+    // if (threadId != null) {
+    //   return threadId;
+    // }
+    //
+    // final thread = await _client.createThread();
+    // await threadStore.setThreadId(userId, thread.id);
+    // return thread.id;
   }
 
   Future<void> _awaitRunStatusCompleted(String threadId, String runId) async {

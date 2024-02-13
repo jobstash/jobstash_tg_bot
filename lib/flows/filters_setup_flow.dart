@@ -4,6 +4,7 @@ import 'package:collection/collection.dart';
 import 'package:jobstash_api/jobstash_api.dart';
 import 'package:jobstash_bot/services/filters_repository.dart';
 import 'package:jobstash_bot/utils/args_utils.dart';
+import 'package:jobstash_bot/utils/logger.dart';
 
 part 'internal/extensions.dart';
 
@@ -37,8 +38,8 @@ class FiltersFlow extends CommandFlow {
         () => _MultiSelectFilterUpdateStep(_filtersRepository),
         () => _RangeFilterDisplayStep(_filtersRepository),
         () => _RangeFilterUpdateStep(_filtersRepository),
-        () => _MultiSelectSearchDisplayStep(_aiAssistant, _filtersRepository),
-        () => _MultiSelectSearchUpdateStep(_filtersRepository),
+        () => _MultiSelectSearchDisplayStep(),
+        () => _MultiSelectSearchUpdateStep(_aiAssistant, _filtersRepository),
       ];
 }
 
