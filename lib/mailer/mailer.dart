@@ -37,7 +37,7 @@ class Mailer {
     }
   }
 
-  Future<List<String>> _getInterestedUsers(UserDao userDao, Job job) async {
+  Future<List<String>> _getInterestedUsers(UserFiltersDao userDao, Job job) async {
     final users = await userDao.getUsersFor(
       tags: job.tags?.map((e) => e.normalizedName).toList(),
       location: job.location,

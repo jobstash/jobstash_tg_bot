@@ -33,16 +33,18 @@ class _RangeFilterUpdateStep extends FlowStep {
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
     final filterId = args?.firstOrNull;
     final rangeParts = messageContext.text?.split(' ');
-    if (filterId == null || rangeParts == null || rangeParts.length != 2) {
+    final rangeInt = rangeParts?.map((e) => int.tryParse(e)).toList();
+
+    if (filterId == null || rangeInt == null || rangeInt.length != 2 || rangeInt.contains(null)) {
       return ReactionResponse(
         text: 'Invalid range. Range format: <start> <end>',
       );
     }
 
-    await _filtersRepository.setUserFilterValue(messageContext.userId, filterId, rangeParts);
+    await _filtersRepository.setUserFilterValue(messageContext.userId, filterId, rangeInt);
 
     return ReactionComposed(responses: [
-      ReactionResponse(text: 'Range updated: ${rangeParts.firstOrNull} - ${rangeParts.lastOrNull}'),
+      ReactionResponse(text: 'Range updated: ${rangeInt.firstOrNull} - ${rangeInt.lastOrNull}'),
       ReactionRedirect(
         stepUri: (FiltersFlowInitialStep).toStepUri([filterId]),
       ),

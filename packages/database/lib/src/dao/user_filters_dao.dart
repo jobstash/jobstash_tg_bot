@@ -1,11 +1,12 @@
+import 'package:database/src/model/user_filters_dto.dart';
 import 'package:database/src/utils/document_extensions.dart';
 import 'package:firedart/firedart.dart';
 
 const _collectionName = "filters";
 const _feedStoppedKey = 'feed_stopped';
 
-class UserDao {
-  UserDao(this._firestore);
+class UserFiltersDao {
+  UserFiltersDao(this._firestore);
 
   final Firestore _firestore;
 
@@ -13,6 +14,11 @@ class UserDao {
 
   Future<List<dynamic>?> getFilterOptions(int userId, String filterKey) {
     return _userDoc(userId).getFieldSafe(filterKey);
+  }
+
+  Future<UserFiltersDto?> getFilters(int userId) async {
+    final doc = await _userDoc(userId).getSafe();
+    return doc?.map;
   }
 
   Future<void> toggleFilterOption(int userId, String filterId, dynamic option) async {
@@ -74,6 +80,6 @@ class UserDao {
   }
 }
 
-extension UserDaoExt on UserDao {
+extension UserDaoExt on UserFiltersDao {
   DocumentReference _userDoc(int userId) => collection.document(userId.toString());
 }

@@ -40,6 +40,7 @@ class FiltersFlow extends CommandFlow {
         () => _RangeFilterUpdateStep(_filtersRepository),
         () => _MultiSelectSearchDisplayStep(),
         () => _MultiSelectSearchUpdateStep(_aiAssistant, _filtersRepository),
+        () => _OnNewFiltersAppliedStep(),
       ];
 }
 
@@ -53,19 +54,47 @@ class FiltersFlowInitialStep extends FlowStep {
     final filters = await _filtersRepository.getRelevantFilters();
     final editMessageId = int.tryParse(args.secondOrNull ?? '');
 
+    // final userFilters = await _filtersRepository.getFilters(messageContext.userId);
+
     return ReactionResponse(
       text: 'Please select filter you want to adjust.',
       markdown: true,
       editMessageId: editMessageId,
-      buttons: filters.entries
-          .map(
-            (e) => InlineButton(
-              title: e.value.label,
-              nextStepUri: (_FilterDetailedStep).toStepUri([e.key]),
-            ),
-          )
-          .toList(),
+      buttons: [
+        ...filters.entries.map(
+          (filter) {
+            final isFilterSet = false; //todo userFilters?.containsKey(filter.key) == true;
+            return InlineButton(
+              title: '${filter.value.label} ${isFilterSet ? _getEmojiByFilter(filter.value.paramKey) : ''}',
+              nextStepUri: (_FilterDetailedStep).toStepUri([filter.key]),
+            );
+          },
+        ),
+        InlineButton(
+          title: '🚀 Done 🚀',
+          nextStepUri: (_OnNewFiltersAppliedStep).toStepUri(),
+        ),
+      ],
     );
+  }
+
+  String _getEmojiByFilter(String? filter) {
+    switch (filter) {
+      case 'location':
+        return '📍';
+      case 'salary':
+        return '💰';
+      case 'seniority':
+        return '👴';
+      case 'commitment':
+        return '🤝';
+      case 'head_count':
+        return '👥';
+      case 'tags':
+        return '🏷️';
+      default:
+        return '';
+    }
   }
 }
 
@@ -108,5 +137,15 @@ class _FilterDetailedStep extends FlowStep {
       default:
         return ReactionNone();
     }
+  }
+}
+
+class _OnNewFiltersAppliedStep extends FlowStep {
+  @override
+  Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
+    return ReactionResponse(
+      text: 'Filters applied!\n You will now start receiving job offers based on your preferences.',
+      editMessageId: messageContext.editMessageId,
+    );
   }
 }
