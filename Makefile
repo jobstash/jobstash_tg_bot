@@ -25,11 +25,14 @@ run:
 gen_all:
 	dart run build_runner build --delete-conflicting-outputs
 	cd packages/jobstash_api && dart run build_runner build --delete-conflicting-outputs
+	cd packages/database && dart run build_runner build --delete-conflicting-outputs
 
 get_all:
 	dart pub get
 	cd packages/database && dart pub get
 	cd packages/jobstash_api && dart pub get
+	cd packages/ai_assistant && dart pub get
+	cd packages/telegram_api && dart pub get
 
 build_all:
 	make get_all

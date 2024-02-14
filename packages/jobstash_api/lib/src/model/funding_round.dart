@@ -8,7 +8,7 @@ class FundingRound with _$FundingRound {
   factory FundingRound({
     String? id,
     String? round,
-    String? date,
+    int? date,
     String? currency,
     int? amount,
     String? sourceUrl,

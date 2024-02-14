@@ -17,7 +17,7 @@ if [[ $NGROK_URL == http* ]]; then
   # Update the Telegram webhook
   RESPONSE=$(curl --location --request POST "https://api.telegram.org/bot$BOT_TOKEN/setWebhook" \
     --header 'Content-Type: application/json' \
-    --data '{"url": "'"$NGROK_URL"'"}')
+    --data '{"url": "'"$NGROK_URL/update"'"}')
 
   # Output the response
   echo "Webhook updated with new ngrok URL: $NGROK_URL"

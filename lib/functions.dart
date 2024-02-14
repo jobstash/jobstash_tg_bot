@@ -1,6 +1,6 @@
 import 'package:functions_framework/functions_framework.dart';
 import 'package:jobstash_bot/chatbot/chatbot.dart';
-import 'package:jobstash_bot/chatbot/utils/logger.dart';
+import 'package:jobstash_bot/common/utils/logger.dart';
 import 'package:jobstash_bot/mailer/mailer.dart';
 import 'package:shelf/shelf.dart';
 

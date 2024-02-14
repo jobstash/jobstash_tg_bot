@@ -155,8 +155,10 @@
 
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:jobstash_api/src/model/organization.dart';
+import 'package:jobstash_api/src/model/tag.dart';
 
 part 'job.freezed.dart';
+
 part 'job.g.dart';
 
 @freezed
@@ -184,7 +186,7 @@ class Job with _$Job {
     int? featureEndDate,
     bool? offersTokenAllocation,
     int? timestamp,
-    List<String>? tags,
+    List<Tag>? tags,
     String? commitment,
     String? locationType,
     String? classification,
@@ -193,4 +195,3 @@ class Job with _$Job {
 
   factory Job.fromJson(Map<String, dynamic> json) => _$JobFromJson(json);
 }
-

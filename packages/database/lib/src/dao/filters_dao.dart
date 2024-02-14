@@ -1,7 +1,8 @@
 import 'package:database/src/utils/document_extensions.dart';
 import 'package:firedart/firedart.dart';
 
-const _collectionName = "users";
+const _collectionName = "filters";
+const _feedStoppedKey = 'feed_stopped';
 
 class UserDao {
   UserDao(this._firestore);
@@ -35,7 +36,7 @@ class UserDao {
   }
 
   Future<void> setFeedStopped(int userId, bool value) {
-    return _userDoc(userId).update({'feed_stopped': value});
+    return _userDoc(userId).update({_feedStoppedKey: value});
   }
 
   Future<bool> isUserExists(int userId) {
@@ -43,8 +44,33 @@ class UserDao {
   }
 
   Future<bool> isFeedStopped(int userId) async {
-    final value = await _userDoc(userId).getFieldSafe<bool>('feed_stopped');
+    final value = await _userDoc(userId).getFieldSafe<bool>(_feedStoppedKey);
     return value == true;
+  }
+
+  /// - location
+  /// - salary
+  /// - seniority
+  /// - commitment
+  /// - head count
+  /// - tags
+  Future<List<String>> getUsersFor({
+    String? location,
+    int? salary,
+    String? seniority,
+    String? commitment,
+    int? headCount,
+    List<String>? tags,
+  }) async {
+    final query = collection
+        .where('location', arrayContains: location)
+        // .where('salary', isGreaterThanOrEqualTo: salaryRange?.first, isLessThanOrEqualTo: salaryRange?.last) //todo
+        .where('seniority', arrayContains: seniority)
+        .where('commitment', arrayContains: commitment)
+        // .where('headcountEstimate', arrayContainsAny: headCount) //todo
+        .where('tags', arrayContainsAny: tags);
+    final docs = await query.get();
+    return docs.map((e) => e.id).toList();
   }
 }
 

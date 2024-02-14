@@ -5,13 +5,14 @@ import 'package:ai_assistant/ai_assistant.dart';
 import 'package:chatterbox/chatterbox.dart';
 import 'package:database/database.dart';
 import 'package:jobstash_api/jobstash_api.dart';
-import 'package:jobstash_bot/chatbot/config.dart';
+import 'package:jobstash_bot/common/config.dart';
 import 'package:jobstash_bot/chatbot/flows/filters_setup_flow.dart';
 import 'package:jobstash_bot/chatbot/flows/start_flow.dart';
 import 'package:jobstash_bot/chatbot/flows/stop_flow.dart';
 import 'package:jobstash_bot/chatbot/services/filters_repository.dart';
 import 'package:jobstash_bot/chatbot/store/firebase_dialog_store.dart';
-import 'package:jobstash_bot/chatbot/utils/logger.dart';
+import 'package:jobstash_bot/common/utils/logger.dart';
+import 'package:jobstash_bot/common/utils/parsing_utils.dart';
 import 'package:shelf/shelf.dart';
 
 class ChatBot {
@@ -50,14 +51,6 @@ class ChatBot {
       return Response.internalServerError(body: {'error': error.toString()});
     }
   }
-}
-
-Future<Map<String, dynamic>> parseRequestBody(Request request) async {
-  final bodyBytes = await request.read().toList();
-  final bodyString = utf8.decode(bodyBytes.expand((i) => i).toList());
-  final jsonObject = jsonDecode(bodyString) as Map<String, dynamic>;
-
-  return jsonObject;
 }
 
 Future<Response> _proxy(Request request) async {

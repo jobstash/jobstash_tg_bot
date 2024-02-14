@@ -22,9 +22,11 @@ dependencies:
     path: ./packages/database
   ai_assistant:
     path: ./packages/ai_assistant
+  telegram_api:
+    path: ./packages/telegram_api
 
   # Telegram
-  chatterbox: ^1.3.0
+  chatterbox: ^1.5.0
 
   # utils
   logger: ^2.0.2+1
