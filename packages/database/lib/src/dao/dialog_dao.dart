@@ -13,7 +13,7 @@ class DialogDao {
   Future<String?> retrievePending(int userId) async {
     final stepId = await collection.document('$userId').getFieldSafe('pending_step_url');
     if (stepId != null) {
-      collection.document('$userId').delete();
+      await clearPendingDialogUri(userId);
     }
     return stepId;
   }
@@ -22,5 +22,16 @@ class DialogDao {
         'pending_step_url': stepUrl,
       });
 
-  Future<void> clearPending(int userId) => collection.document('$userId').delete();
+  Future<void> clearPendingDialogUri(int userId) => collection.document('$userId').delete();
+
+  Future<String?> getAssistantThreadId(String userId) =>
+      collection.document(userId).getFieldSafe('assistant_thread_id');
+
+  Future<void> clearAssistantThreadId(String userId) => collection.document(userId).update({
+        'assistant_thread_id': null,
+      });
+
+  Future<void> setAssistantThreadId(String userId, String threadId) => collection.document(userId).update({
+        'assistant_thread_id': threadId,
+      });
 }

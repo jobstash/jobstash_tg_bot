@@ -1,0 +1,15 @@
+name: telegram_api
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.0.5
+
+dependencies:
+  # APIs
+  televerse: ^1.13.1
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0

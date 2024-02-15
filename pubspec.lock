@@ -5,18 +5,25 @@ packages:
     dependency: transitive
     description:
       name: _fe_analyzer_shared
-      sha256: "36a321c3d2cbe01cbcb3540a87b8843846e0206df3e691fa7b23e19e78de6d49"
+      sha256: ae92f5d747aee634b87f89d9946000c2de774be1d6ac3e58268224348cd0101a
       url: "https://pub.dev"
     source: hosted
-    version: "65.0.0"
+    version: "61.0.0"
+  ai_assistant:
+    dependency: "direct main"
+    description:
+      path: "packages/ai_assistant"
+      relative: true
+    source: path
+    version: "1.0.0"
   analyzer:
     dependency: transitive
     description:
       name: analyzer
-      sha256: dfe03b90ec022450e22513b5e5ca1f01c0c01de9c3fba2f7fd233cb57a6b9a07
+      sha256: ea3d8652bda62982addfd92fdc2d0214e5f82e43325104990d4f4c4a2a313562
       url: "https://pub.dev"
     source: hosted
-    version: "6.3.0"
+    version: "5.13.0"
   archive:
     dependency: transitive
     description:
@@ -113,14 +120,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "8.6.3"
+  cancellation_token:
+    dependency: transitive
+    description:
+      name: cancellation_token
+      sha256: ad95acf9d4b2f3563e25dc937f63587e46a70ce534e910b65d10e115490f1027
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.1"
+  cancellation_token_http:
+    dependency: transitive
+    description:
+      name: cancellation_token_http
+      sha256: "37ad2a20dba02aeb1f0a4d845e7a57eebacdb709e1186e0491e7cd81c559c4ff"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   chatterbox:
     dependency: "direct main"
     description:
       name: chatterbox
-      sha256: c202ec7ae3bb77f95f061a3c85b9c0abdb02a85d316822f4eb9092de34b59b25
+      sha256: c4f917d3310e5e0188f71b70c8162aea658adc2715d4c009ee8f2fff5bac1a57
       url: "https://pub.dev"
     source: hosted
-    version: "1.3.0"
+    version: "1.5.0"
   checked_yaml:
     dependency: transitive
     description:
@@ -181,10 +204,10 @@ packages:
     dependency: transitive
     description:
       name: dart_style
-      sha256: abd7625e16f51f554ea244d090292945ec4d4be7bfbaf2ec8cccea568919d334
+      sha256: "1efa911ca7086affd35f463ca2fc1799584fb6aa89883cf0af8e3664d6a02d55"
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.3"
+    version: "2.3.2"
   database:
     dependency: "direct main"
     description:
@@ -208,6 +231,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.0"
+  envied:
+    dependency: transitive
+    description:
+      name: envied
+      sha256: "60d3f5606c7b35bc6ef493e650d916b34351d8af2e58b7ac45881ba59dfcf039"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.0+3"
+  envied_generator:
+    dependency: transitive
+    description:
+      name: envied_generator
+      sha256: dfdbe5dc52863e54c036a4c4042afbdf1bd528cb4c1e638ecba26228ba72e9e5
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.0+3"
   file:
     dependency: transitive
     description:
@@ -423,6 +462,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
+  openai_api:
+    dependency: transitive
+    description:
+      name: openai_api
+      sha256: "33dcda2c36c3e6d641edba999f9379958e5f67b90892af3799d4deddc8321a88"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.6"
   package_config:
     dependency: transitive
     description:
@@ -599,14 +646,21 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  telegram_api:
+    dependency: "direct main"
+    description:
+      path: "packages/telegram_api"
+      relative: true
+    source: path
+    version: "1.0.0"
   televerse:
     dependency: transitive
     description:
       name: televerse
-      sha256: "4c0c7d3a0a33b2f777f9bd86d5518bb6f0a1e3cc8de68cd7f677ca2e74700d6e"
+      sha256: "582fd58f04fb4d2d9bd24f42179d898aa067e54ad73f374cbf40d5add328b266"
       url: "https://pub.dev"
     source: hosted
-    version: "1.12.7"
+    version: "1.13.1"
   term_glyph:
     dependency: transitive
     description:
