@@ -19,13 +19,22 @@ class Mailer {
       final userDao = Database.createUserDao();
 
       //parse job
-      final body = await parseRequestBody(request);
-      final response = JobsResponse.fromJson(body);
+      final body = await parseRequestBody<List<dynamic>>(request);
+      final posts = body.map((e) => Post.fromJson(e)).toList().sublist(0, 3);
 
       print('incoming message $body');
-      await Future.wait(response.data.map((job) async {
-        final users = await _getInterestedUsers(userDao, job);
-        await _sendMail(telegramApi, users, job);
+      await Future.wait(posts.map((post) async {
+        final users = await userDao.getUsersFor(
+          location: post.job.location,
+          minimumSalary: post.job.minimumSalary,
+          maximumSalary: post.job.maximumSalary,
+          seniority: post.job.seniority,
+          // commitment: post.job.commitment, //todo
+          minimumHeadCount: post.organization.properties.headcountEstimate?.low,
+          maximumHeadCount: post.organization.properties.headcountEstimate?.high,
+          tags: post.job.tags?.map((e) => e.name).toList(),
+        );
+        await _sendMail(telegramApi, users, post);
       }));
 
       return Response.ok(
@@ -38,22 +47,10 @@ class Mailer {
     }
   }
 
-  Future<List<String>> _getInterestedUsers(UserFiltersDao userDao, Job job) async {
-    final users = await userDao.getUsersFor(
-      tags: job.tags?.map((e) => e.normalizedName).toList(),
-      location: job.location,
-      salary: job.salary,
-      seniority: job.seniority,
-      commitment: job.commitment,
-      headCount: job.organization?.headcountEstimate,
-    );
-    return users;
-  }
-
-  Future<void> _sendMail(TelegramBotApi telegramApi, List<String> userIds, Job job) async {
+  Future<void> _sendMail(TelegramBotApi telegramApi, List<String> userIds, Post post) async {
     for (final userId in userIds) {
       try {
-        telegramApi.sendHtmlMessage(int.parse(userId), MessageFormatter.createMessage(job));
+        telegramApi.sendHtmlMessage(int.parse(userId), MessageFormatter.createMessage(post));
       } catch (error, st) {
         logger.e('Failed to send mail to user $userId', error: error, stackTrace: st);
       }
