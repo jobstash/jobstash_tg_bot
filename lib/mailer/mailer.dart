@@ -10,8 +10,6 @@ import 'package:telegram_api/shared_api.dart';
 class Mailer {
   Future<Response> process(Request request) async {
     try {
-      Config.init();
-
       final telegramApi = TelegramBotApi(Config.botToken);
 
       await Database.initialize();

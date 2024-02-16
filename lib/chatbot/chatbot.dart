@@ -19,7 +19,6 @@ import 'package:telegram_api/shared_api.dart';
 class ChatBot {
   Future<Response> process(Request request) async {
     try {
-      Config.init();
 
       logger.d('Request url ${request.url}');
 
@@ -34,11 +33,11 @@ class ChatBot {
 
       final api = JobStashApi();
       final repository = FiltersRepository(api, userDao);
-      // final aiAssistant = AiAssistant(Config.openAiApiKey, firebaseStore);
+      final aiAssistant = AiAssistant(Config.openAiApiKey, firebaseStore);
 
       final flows = <Flow>[
         StartFlow(repository),
-        FiltersFlow(repository, null),
+        FiltersFlow(repository, aiAssistant),
         StopFlow(repository),
       ];
 

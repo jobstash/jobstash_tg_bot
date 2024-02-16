@@ -25,7 +25,7 @@ _Example: Kotlin, Java, Python_
 class _MultiSelectSearchUpdateStep extends FlowStep {
   _MultiSelectSearchUpdateStep(this._aiAssistant, this._filtersRepository);
 
-  final AiAssistant? _aiAssistant;
+  final AiAssistant _aiAssistant;
   final FiltersRepository _filtersRepository;
 
   @override
@@ -42,9 +42,9 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
     }
 
     try {
-      // final result = await _aiAssistant.parseTags(messageContext.userId.toString(), userInput);
-      final tags = userInput;
-      final unrecognizedInput =[];
+      final result = await _aiAssistant.parseTags(messageContext.userId.toString(), userInput);
+      final tags = result?.$1;
+      final unrecognizedInput = result?.$2;
 
       await _filtersRepository.setUserFilterValue(messageContext.userId, filterId, tags);
 
