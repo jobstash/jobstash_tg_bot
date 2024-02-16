@@ -34,11 +34,11 @@ class ChatBot {
 
       final api = JobStashApi();
       final repository = FiltersRepository(api, userDao);
-      final aiAssistant = AiAssistant(Config.openAiApiKey, firebaseStore);
+      // final aiAssistant = AiAssistant(Config.openAiApiKey, firebaseStore);
 
       final flows = <Flow>[
         StartFlow(repository),
-        FiltersFlow(repository, aiAssistant),
+        FiltersFlow(repository, null),
         StopFlow(repository),
       ];
 

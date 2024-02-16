@@ -13,7 +13,7 @@ class Config {
 
   static bool get isDevEnv => env('BOT_NAME') == 'JobStashDevBot';
 
-  static String get openAiApiKey => env('OPEN_AI_API_KEY');
+  // static String get openAiApiKey => env('OPEN_AI_API_KEY');
 
   static void init() {
     _env = DotEnv(includePlatformEnvironment: true)..load();

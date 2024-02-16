@@ -24,7 +24,7 @@ part 'internal/range_filter.dart';
 class FiltersFlow extends CommandFlow {
   FiltersFlow(this._filtersRepository, this._aiAssistant);
 
-  final AiAssistant _aiAssistant;
+  final AiAssistant? _aiAssistant;
   final FiltersRepository _filtersRepository;
 
   @override
