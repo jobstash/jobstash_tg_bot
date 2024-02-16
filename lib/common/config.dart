@@ -5,6 +5,8 @@ class Config {
 
   static DotEnv? _env;
 
+  static final int errorChannelId = -1001956242482;
+
   static String get botName => env('BOT_NAME');
 
   static String get botToken => env('BOT_TOKEN');

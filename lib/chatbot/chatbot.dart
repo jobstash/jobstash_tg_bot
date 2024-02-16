@@ -5,15 +5,16 @@ import 'package:ai_assistant/ai_assistant.dart';
 import 'package:chatterbox/chatterbox.dart';
 import 'package:database/database.dart';
 import 'package:jobstash_api/jobstash_api.dart';
-import 'package:jobstash_bot/common/config.dart';
 import 'package:jobstash_bot/chatbot/flows/filters_setup_flow.dart';
 import 'package:jobstash_bot/chatbot/flows/start_flow.dart';
 import 'package:jobstash_bot/chatbot/flows/stop_flow.dart';
 import 'package:jobstash_bot/chatbot/services/filters_repository.dart';
 import 'package:jobstash_bot/chatbot/store/firebase_dialog_store.dart';
+import 'package:jobstash_bot/common/config.dart';
 import 'package:jobstash_bot/common/utils/logger.dart';
 import 'package:jobstash_bot/common/utils/parsing_utils.dart';
 import 'package:shelf/shelf.dart';
+import 'package:telegram_api/shared_api.dart';
 
 class ChatBot {
   Future<Response> process(Request request) async {
@@ -48,6 +49,10 @@ class ChatBot {
       );
     } catch (error, st) {
       logger.e('Failed to process request', error: error, stackTrace: st);
+      await TelegramBotApi(Config.botToken).sendMessage(
+        Config.errorChannelId,
+        'Failed to process mailer request: \n$error\n${st.toString().substring(0, 300)}',
+      );
       return Response.internalServerError(body: {'error': error.toString()});
     }
   }
