@@ -6,7 +6,7 @@ class Database {
 
   static Future<void> initialize() async {
     if (!Firestore.initialized) {
-      Firestore.initialize('jobstash-bot', useApplicationDefaultAuth: true);
+      Firestore.initialize('jobstash', useApplicationDefaultAuth: true);
     }
   }
 
