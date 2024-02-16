@@ -41,10 +41,7 @@ class Mailer {
       );
     } catch (error, st) {
       logger.e('Failed to process mailer request', error: error, stackTrace: st);
-      await TelegramBotApi(Config.botToken).sendMessage(
-        Config.errorChannelId,
-        'Failed to process mailer request: \n$error\n${st.toString().substring(0, 300)}',
-      );
+      await logErrorToTelegramChannel(error, st);
       return Response.internalServerError(body: {'error': error.toString()});
     }
   }
