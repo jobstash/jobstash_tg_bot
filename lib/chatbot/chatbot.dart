@@ -45,7 +45,7 @@ class ChatBot {
       );
     } catch (error, st) {
       logger.e('Failed to process request', error: error, stackTrace: st);
-      await logErrorToTelegramChannel(error, st);
+      await logErrorToTelegramChannel('Failed process chatbot request ${request.url}', error, st);
       return Response.internalServerError(body: {'error': error.toString()});
     }
   }

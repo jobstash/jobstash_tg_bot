@@ -71,8 +71,8 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
           stepUri: (_OnNewFiltersAppliedStep).toStepUri([filterId]),
         ),
       ]);
-    } catch (e, stacktrace) {
-      logger.e('Failed submitting filters', error: e, stackTrace: stacktrace);
+    } catch (error, stacktrace) {
+      logErrorToTelegramChannel('Failed update MultiSelectSearchFilter', error, stacktrace);
       return ReactionResponse(
         text: 'Oops, something went wrong. Please try again.',
       );

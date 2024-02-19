@@ -50,8 +50,7 @@ class Mailer {
       }
 
       logger.d(reportParts.join('\n'));
-      logErrorToTelegramChannel(reportParts.join('\n'), null);
-
+      logToTelegramChannel(reportParts.join('\n'));
 
       return Response.ok(
         null,
@@ -59,7 +58,7 @@ class Mailer {
       );
     } catch (error, st) {
       logger.e('Failed to process mailer request', error: error, stackTrace: st);
-      await logErrorToTelegramChannel(error, st);
+      await logErrorToTelegramChannel('Failed to process mailer request', error, st);
       return Response.internalServerError(body: {'error': error.toString()});
     }
   }
@@ -70,6 +69,7 @@ class Mailer {
         telegramApi.sendHtmlMessage(int.parse(userId), MessageFormatter.createMessage(post));
       } catch (error, st) {
         logger.e('Failed to send mail to user $userId', error: error, stackTrace: st);
+        logErrorToTelegramChannel('Failed to send mail to user $userId', error, st);
       }
     }
   }
