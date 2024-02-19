@@ -4,7 +4,7 @@ import 'package:database/src/utils/document_extensions.dart';
 import 'package:firedart/firedart.dart';
 
 const _collectionName = "filters";
-const _feedStoppedKey = 'feed_stopped';
+// const _feedStoppedKey = 'feed_stopped';
 
 class UserFiltersDao {
   UserFiltersDao(this._firestore);
@@ -42,17 +42,12 @@ class UserFiltersDao {
     });
   }
 
-  Future<void> setFeedStopped(int userId, bool value) {
-    return _userDoc(userId).update({_feedStoppedKey: value});
+  Future<void> removeFilters(int userId, bool value) {
+    return _userDoc(userId).delete();
   }
 
   Future<bool> isUserExists(int userId) {
     return _userDoc(userId).exists;
-  }
-
-  Future<bool> isFeedStopped(int userId) async {
-    final value = await _userDoc(userId).getFieldSafe<bool>(_feedStoppedKey);
-    return value == true;
   }
 
   Future<List<String>> getUsersFor({

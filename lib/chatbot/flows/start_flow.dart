@@ -19,7 +19,7 @@ class StartFlow extends CommandFlow {
 }
 
 final _welcomeText =
-    'Hi this is JobStash.xyz bot. I will help you find a job. If you want unfiltered feed please follow (official jobstash channel)[https://t.me/jobstash].\n For filtered feed pls setup your filters';
+    'Get filtered jobstash.xyz postings. Set tags to get notified about new job offers.\nIf you are interested to get unfiltered jobs feed subscribe to (official jobstash channel)[https://t.me/jobstash]';
 
 class _StartFlowInitialStep extends FlowStep {
   _StartFlowInitialStep(this._repository);
@@ -29,17 +29,17 @@ class _StartFlowInitialStep extends FlowStep {
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
     final isExistingUser = await _repository.isUserExists(messageContext.userId);
-    if (!isExistingUser) {
-      return ReactionRedirect(stepUri: (_StartFlowWelcomeStep).toStepUri());
-    }
+    // if (!isExistingUser) {
+    return ReactionRedirect(stepUri: (_StartFlowWelcomeStep).toStepUri());
+    // }
 
-    final feedStopped = await _repository.isFeedStopped(messageContext.userId);
-    if (feedStopped) {
-      await _repository.setFeedStopped(messageContext.userId, false);
-      return ReactionResponse(text: 'Welcome back! Your feed is now active again.');
-    }
-
-    return ReactionResponse(text: 'To adjust your filters send /filter command.');
+    // final feedStopped = await _repository.isFeedStopped(messageContext.userId);
+    // if (feedStopped) {
+    //   await _repository.setFeedStopped(messageContext.userId, false);
+    //   return ReactionResponse(text: 'Welcome back! Your feed is now active again.');
+    // }
+    //
+    // return ReactionResponse(text: 'To adjust your filters send /filter command.');
   }
 }
 
@@ -55,8 +55,9 @@ class _StartFlowWelcomeStep extends FlowStep {
       markdown: true,
       buttons: [
         InlineButton(
-          title: 'Setup filters',
-          nextStepUri: (_OnSetupFiltersSelected).toStepUri(),
+          title: 'Setup tags',
+          // nextStepUri: (SetTagsFlowInitialStep).toStepUri(),
+          nextStepUri: (FilterDetailedStep).toStepUri(['tags']),
         ),
       ],
     );

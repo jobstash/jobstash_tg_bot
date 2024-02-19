@@ -3,8 +3,8 @@ import 'package:chatterbox/chatterbox.dart';
 import 'package:collection/collection.dart';
 import 'package:jobstash_api/jobstash_api.dart';
 import 'package:jobstash_bot/chatbot/services/filters_repository.dart';
-import 'package:jobstash_bot/chatbot/utils/args_utils.dart';
 import 'package:jobstash_bot/common/utils/logger.dart';
+import 'package:telegram_api/shared_api.dart';
 
 part 'internal/extensions.dart';
 
@@ -14,16 +14,11 @@ part 'internal/multi_select_search_filter.dart';
 
 part 'internal/range_filter.dart';
 
-/// Applicable filters
-/// - location
-/// - salary
-/// - seniority
-/// - commitment
-/// - head count
-/// - tags
+/// Allows user to adjust filters for job offers.
 class FiltersFlow extends CommandFlow {
-  FiltersFlow(this._filtersRepository, this._aiAssistant);
+  FiltersFlow(this._botApi, this._filtersRepository, this._aiAssistant);
 
+  final TelegramBotApi _botApi;
   final AiAssistant _aiAssistant;
   final FiltersRepository _filtersRepository;
 
@@ -33,13 +28,13 @@ class FiltersFlow extends CommandFlow {
   @override
   List<StepFactory> get steps => [
         () => FiltersFlowInitialStep(_filtersRepository),
-        () => _FilterDetailedStep(_filtersRepository),
+        () => FilterDetailedStep(_filtersRepository),
         () => _MultiSelectFilterDisplayStep(_filtersRepository),
         () => _MultiSelectFilterUpdateStep(_filtersRepository),
         () => _RangeFilterDisplayStep(_filtersRepository),
         () => _RangeFilterUpdateStep(_filtersRepository),
         () => _MultiSelectSearchDisplayStep(),
-        () => _MultiSelectSearchUpdateStep(_aiAssistant, _filtersRepository),
+        () => _MultiSelectSearchUpdateStep(_botApi, _aiAssistant, _filtersRepository),
         () => _OnNewFiltersAppliedStep(),
       ];
 }
@@ -51,31 +46,35 @@ class FiltersFlowInitialStep extends FlowStep {
 
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
-    final filters = await _filtersRepository.getRelevantFilters();
-    final editMessageId = int.tryParse(args.secondOrNull ?? '');
+    // final filters = await _filtersRepository.getRelevantFilters();
+    // final editMessageId = int.tryParse(args.secondOrNull ?? '');
 
     // final userFilters = await _filtersRepository.getFilters(messageContext.userId);
 
-    return ReactionResponse(
-      text: 'Please select filter you want to adjust.',
-      markdown: true,
-      editMessageId: editMessageId,
-      buttons: [
-        ...filters.entries.map(
-          (filter) {
-            final isFilterSet = false; //todo userFilters?.containsKey(filter.key) == true;
-            return InlineButton(
-              title: '${filter.value.label} ${isFilterSet ? _getEmojiByFilter(filter.value.paramKey) : ''}',
-              nextStepUri: (_FilterDetailedStep).toStepUri([filter.key]),
-            );
-          },
-        ),
-        InlineButton(
-          title: '🚀 Done 🚀',
-          nextStepUri: (_OnNewFiltersAppliedStep).toStepUri(),
-        ),
-      ],
+    return ReactionRedirect(
+      stepUri: (FilterDetailedStep).toStepUri(['tags']),
     );
+
+    // return ReactionResponse(
+    //   text: 'Please select filter you want to adjust.',
+    //   markdown: true,
+    //   editMessageId: editMessageId,
+    //   buttons: [
+    //     ...filters.entries.map(
+    //       (filter) {
+    //         final isFilterSet = false; //todo userFilters?.containsKey(filter.key) == true;
+    //         return InlineButton(
+    //           title: '${filter.value.label} ${isFilterSet ? _getEmojiByFilter(filter.value.paramKey) : ''}',
+    //           nextStepUri: (FilterDetailedStep).toStepUri([filter.key]),//
+    //         );
+    //       },
+    //     ),
+    //     InlineButton(
+    //       title: '🚀 Done 🚀',
+    //       nextStepUri: (_OnNewFiltersAppliedStep).toStepUri(),
+    //     ),
+    //   ],
+    // );
   }
 
   String _getEmojiByFilter(String? filter) {
@@ -98,8 +97,8 @@ class FiltersFlowInitialStep extends FlowStep {
   }
 }
 
-class _FilterDetailedStep extends FlowStep {
-  _FilterDetailedStep(this._filtersRepository);
+class FilterDetailedStep extends FlowStep {
+  FilterDetailedStep(this._filtersRepository);
 
   final FiltersRepository _filtersRepository;
 
@@ -116,8 +115,6 @@ class _FilterDetailedStep extends FlowStep {
     if (filter == null) {
       return ReactionResponse(text: 'Something went wrong.\n\nFilter $filterId not found');
     }
-
-    print('filter: $filter');
 
     switch (filter.kind) {
       case FilterKind.multiSelect:
@@ -144,8 +141,12 @@ class _OnNewFiltersAppliedStep extends FlowStep {
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
     return ReactionResponse(
-      text: 'Filters applied!\n You will now start receiving job offers based on your preferences.',
-      editMessageId: messageContext.editMessageId,
+text: """Filters applied! You will now start receiving job offers based on your tag preferences.
+
+If you want to stop this bot from sending you job offers, just type /stop.
+You can adjust your tag filters at any time by typing /filter.
+"""
+      // editMessageId: messageContext.editMessageId,
     );
   }
 }

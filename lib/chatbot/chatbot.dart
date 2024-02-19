@@ -11,6 +11,7 @@ import 'package:jobstash_bot/common/config.dart';
 import 'package:jobstash_bot/common/utils/logger.dart';
 import 'package:jobstash_bot/common/utils/parsing_utils.dart';
 import 'package:shelf/shelf.dart';
+import 'package:telegram_api/shared_api.dart';
 
 class ChatBot {
   Future<Response> process(Request request) async {
@@ -29,10 +30,11 @@ class ChatBot {
       final api = JobStashApi();
       final repository = FiltersRepository(api, userDao);
       final aiAssistant = AiAssistant(Config.openAiApiKey, firebaseStore);
+      final botApi = TelegramBotApi(Config.botToken);
 
       final flows = <Flow>[
         StartFlow(repository),
-        FiltersFlow(repository, aiAssistant),
+        FiltersFlow(botApi, repository, aiAssistant),
         StopFlow(repository),
       ];
 

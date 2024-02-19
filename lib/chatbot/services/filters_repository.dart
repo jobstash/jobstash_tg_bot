@@ -10,11 +10,11 @@ import 'package:jobstash_api/jobstash_api.dart';
 /// - head count
 /// - tags
 final _relevantFiltersIds = [
-  'locations',
-  'salary',
-  'seniority',
-  'commitments',
-  'headcountEstimate',
+  // 'locations',
+  // 'salary',
+  // 'seniority',
+  // 'commitments',
+  // 'headcountEstimate',
   'tags',
 ];
 
@@ -67,18 +67,13 @@ class FiltersRepository {
     return _userDao.toggleFilterOption(userId, filterId, option);
   }
 
-  Future<void> setFeedStopped(int userId, bool value) {
-    return _userDao.setFeedStopped(userId, value);
+  Future<void> removeFilters(int userId, bool value) {
+    return _userDao.removeFilters(userId, value);
   }
 
   Future<bool> isUserExists(int userId) {
     return _userDao.isUserExists(userId);
   }
-
-  Future<bool> isFeedStopped(int userId) {
-    return _userDao.isFeedStopped(userId);
-  }
-
 }
 
 class _InMemoryCache {

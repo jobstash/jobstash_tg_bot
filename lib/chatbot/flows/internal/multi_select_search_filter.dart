@@ -12,9 +12,10 @@ class _MultiSelectSearchDisplayStep extends FlowStep {
     }
 
     return ReactionResponse(
-      editMessageId: messageContext.editMessageId,
-      text: """Please type tags/ technologies you are interested in separated by comma or type *Back* to go back.
-_Example: Kotlin, Java, Python_ 
+      // editMessageId: messageContext.editMessageId,
+      text: """Type position, technology or any other tag you are interested in separated by comma. 
+      
+_For example: "typescript, nodejs, nft"_
 """,
       markdown: true,
       afterReplyUri: (_MultiSelectSearchUpdateStep).toStepUri([filterId]),
@@ -23,8 +24,9 @@ _Example: Kotlin, Java, Python_
 }
 
 class _MultiSelectSearchUpdateStep extends FlowStep {
-  _MultiSelectSearchUpdateStep(this._aiAssistant, this._filtersRepository);
+  _MultiSelectSearchUpdateStep(this._botApi, this._aiAssistant, this._filtersRepository);
 
+  final TelegramBotApi _botApi;
   final AiAssistant _aiAssistant;
   final FiltersRepository _filtersRepository;
 
@@ -34,6 +36,7 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
     final userInput = messageContext.text?.split(',');
 
     //todo if user input clear, then remove tags
+    _botApi.sendMessage(messageContext.chatId, 'Processing your tags...');
 
     if (userInput == null || filterId == null) {
       return ReactionResponse(
@@ -48,14 +51,24 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
 
       await _filtersRepository.setUserFilterValue(messageContext.userId, filterId, tags);
 
-      final removeTags = tags == null || tags.isEmpty;
+      // final removeTags = tags == null || tags.isEmpty;
+      final responseParts = <String>[];
+      if (tags != null && tags.isNotEmpty) {
+        responseParts.add('Your tags are set to: ${_taggify(tags)}');
+      }
+      if (unrecognizedInput != null && unrecognizedInput.isNotEmpty) {
+        responseParts.add('We could not recognize: ${_taggify(unrecognizedInput)}');
+      }
 
       return ReactionComposed(responses: [
-        if (!removeTags)
-          ReactionResponse(text: 'Your tags are set to: $tags\n\n We could not recognize: $unrecognizedInput'),
-        if (removeTags) ReactionResponse(text: 'Tags removed'),
+        // if (!removeTags)
+        ReactionResponse(
+          text: responseParts.join('\n'),
+          markdown: true,
+        ),
+        // if (removeTags) ReactionResponse(text: 'Tags removed'),
         ReactionRedirect(
-          stepUri: (FiltersFlowInitialStep).toStepUri([filterId]),
+          stepUri: (_OnNewFiltersAppliedStep).toStepUri([filterId]),
         ),
       ]);
     } catch (e, stacktrace) {
@@ -65,4 +78,6 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
       );
     }
   }
+
+  String _taggify(List<String> tags) => tags.map((e) => '`${e.trim()}`').join(', ');
 }
