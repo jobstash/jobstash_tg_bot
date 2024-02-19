@@ -4,9 +4,9 @@ import 'package:firedart/firedart.dart';
 class Database {
   const Database._();
 
-  static Future<void> initialize() async {
+  static Future<void> initialize(bool isDebug) async {
     if (!Firestore.initialized) {
-      Firestore.initialize('jobstash', useApplicationDefaultAuth: true);
+      Firestore.initialize(isDebug ? 'jobstash-bot' : 'jobstash', useApplicationDefaultAuth: true);
     }
   }
 

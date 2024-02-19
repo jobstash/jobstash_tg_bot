@@ -11,19 +11,16 @@ import 'package:jobstash_bot/common/config.dart';
 import 'package:jobstash_bot/common/utils/logger.dart';
 import 'package:jobstash_bot/common/utils/parsing_utils.dart';
 import 'package:shelf/shelf.dart';
-import 'package:telegram_api/shared_api.dart';
 
 class ChatBot {
   Future<Response> process(Request request) async {
     try {
       logger.d('Request url ${request.url}');
 
-      TelegramBotApi(Config.botToken).sendMessage(Config.errorChannelId, 'Request successfully received');
-
       final body = await parseRequestBody(request);
       logger.d('Request body ${request.url}');
 
-      await Database.initialize();
+      await Database.initialize(Config.isDevEnv);
 
       final userDao = Database.createUserDao();
       final dialogDao = Database.createDialogDao();

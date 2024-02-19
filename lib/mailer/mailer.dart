@@ -12,7 +12,7 @@ class Mailer {
     try {
       final telegramApi = TelegramBotApi(Config.botToken);
 
-      await Database.initialize();
+      await Database.initialize(Config.isDevEnv);
 
       final userDao = Database.createUserDao();
 
