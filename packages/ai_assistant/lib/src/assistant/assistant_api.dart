@@ -13,7 +13,6 @@ class AssistantApi {
   final String apiKey;
   final String assistantId;
 
-
   Future<ImageResponse> generateImage(String prompt, bool dalle3) async {
     final result = await _client.createImage(ImageRequest(
       prompt: prompt,
@@ -41,7 +40,6 @@ class AssistantApi {
     final lastMessageModel = response.data.firstOrNull;
     print('Assistant response ${response.toString()}');
 
-
     final lastMessageText = lastMessageModel?.content.lastOrNull?.text.value;
     if (lastMessageText == null) {
       return null;
@@ -50,15 +48,14 @@ class AssistantApi {
   }
 
   Future<String> _getThreadId(String userId) async {
-    return "thread_TaVhB0sRGElt3bWhDrgWaII5";
-    // final threadId = await threadStore.getThreadId(userId);
-    // if (threadId != null) {
-    //   return threadId;
-    // }
-    //
-    // final thread = await _client.createThread();
-    // await threadStore.setThreadId(userId, thread.id);
-    // return thread.id;
+    final threadId = await threadStore.getThreadId(userId);
+    if (threadId != null) {
+      return threadId;
+    }
+
+    final thread = await _client.createThread();
+    await threadStore.setThreadId(userId, thread.id);
+    return thread.id;
   }
 
   Future<void> _awaitRunStatusCompleted(String threadId, String runId) async {

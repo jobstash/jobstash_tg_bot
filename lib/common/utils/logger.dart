@@ -12,7 +12,7 @@ final logger = Logger(
 
 Future<void> logErrorToTelegramChannel(String message, Object error, StackTrace st) async {
   try {
-    final stacktrace = st.toString() ?? '';
+    final stacktrace = st.toString();
     final errorDescription = error;
     await TelegramBotApi(Config.botToken).sendMessage(
       Config.errorChannelId,
