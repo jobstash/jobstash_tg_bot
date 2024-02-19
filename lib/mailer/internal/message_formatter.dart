@@ -13,7 +13,6 @@ class MessageFormatter {
     messageParts.add(
         '<b><a href="https://jobstash.xyz/organizations/${organization.properties.id}/details">${organization.properties.name}</a></b> is hiring');
 
-
     if (summary == null) {
       throw ArgumentError('Summary is required');
     }
@@ -24,13 +23,13 @@ class MessageFormatter {
     }
 
     if (tags != null) {
-      messageParts.add('🤓 ${tags.map((tag) => tag.name).join(', ')}');
+      messageParts.add('🤓 ${tags.map((tag) => '<a href="https://jobstash.xyz/jobs?tags=${Uri.encodeComponent(tag.name)}">${tag.name}</a>').join(', ')}');
     }
 
     messageParts.add(
         'Like what you see? Want more? <a href="https://t.me/jobstash">Telegram</a> | <a href="https://t.me/jobstashxyz">Telegram Community</a> | <a href="https://x.com/jobstash_xyz">Twitter</a> | <a href="https://warpcast.com/~/channel/jobstash">Farcaster</a>');
 
-    String message = messageParts.join('\n\n');
+    final message = messageParts.join('\n\n');
 
     return message;
   }

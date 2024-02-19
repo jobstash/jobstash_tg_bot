@@ -20,7 +20,6 @@ class Mailer {
       final body = await parseRequestBody<List<dynamic>>(request);
       final posts = body.map((e) => Post.fromJson(e)).toList().sublist(0, 3);
 
-      print('incoming message $body');
       await Future.wait(posts.map((post) async {
         final users = await userDao.getUsersFor(
           location: post.job.location,

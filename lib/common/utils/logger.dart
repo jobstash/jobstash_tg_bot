@@ -11,9 +11,13 @@ final logger = Logger(
 );
 
 Future<void> logErrorToTelegramChannel(Object error, StackTrace st) async {
-  final stacktrace = st.toString();
-  await TelegramBotApi(Config.botToken).sendMessage(
-    Config.errorChannelId,
-    'Failed to process mailer request: \n$error\n${stacktrace.substring(0, min(stacktrace.length, 300))}',
-  );
+  try {
+    final stacktrace = st.toString();
+    await TelegramBotApi(Config.botToken).sendMessage(
+      Config.errorChannelId,
+      'Failed to process mailer request: \n$error\n${stacktrace.substring(0, min(stacktrace.length, 300))}',
+    );
+  } catch (error, st) {
+    logger.e('Failed to log error to telegram channel', error: error, stackTrace: st);
+  }
 }
