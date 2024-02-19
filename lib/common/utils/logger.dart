@@ -10,9 +10,9 @@ final logger = Logger(
   output: null, // Use the default LogOutput (-> send everything to console)
 );
 
-Future<void> logErrorToTelegramChannel(Object error, StackTrace st) async {
+Future<void> logErrorToTelegramChannel(Object error, StackTrace? st) async {
   try {
-    final stacktrace = st.toString();
+    final stacktrace = st?.toString() ?? '';
     await TelegramBotApi(Config.botToken).sendMessage(
       Config.errorChannelId,
       'Failed to process mailer request: \n$error\n${stacktrace.substring(0, min(stacktrace.length, 300))}',

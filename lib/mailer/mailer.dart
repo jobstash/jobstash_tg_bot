@@ -20,6 +20,9 @@ class Mailer {
       final body = await parseRequestBody<List<dynamic>>(request);
       final posts = body.map((e) => Post.fromJson(e)).toList().sublist(0, 3);
 
+      //store how many users are receiving how many job postings for logging and print to console
+      final userPostCount = <int, int>{};
+
       await Future.wait(posts.map((post) async {
         final users = await userDao.getUsersFor(
           location: post.job.location,
@@ -31,8 +34,24 @@ class Mailer {
           maximumHeadCount: post.organization.properties.headcountEstimate?.high,
           tags: post.job.tags?.map((e) => e.name).toList(),
         );
+        userPostCount[post.hashCode] = users.length;
         await _sendMail(telegramApi, users, post);
       }));
+
+      final reportParts = <String>[];
+      reportParts.add('Processed ${posts.length} posts');
+
+      if (userPostCount.values.fold(0, (prev, element) => prev + element) == 0) {
+        reportParts.add('No users to send mail to');
+      } else {
+        userPostCount.forEach((key, value) {
+          reportParts.add('Sent mail to $value users for post $key');
+        });
+      }
+
+      logger.d(reportParts.join('\n'));
+      logErrorToTelegramChannel(reportParts.join('\n'), null);
+
 
       return Response.ok(
         null,
