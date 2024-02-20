@@ -35,6 +35,7 @@ class FiltersFlow extends CommandFlow {
         () => _RangeFilterUpdateStep(_filtersRepository),
         () => _MultiSelectSearchDisplayStep(),
         () => _MultiSelectSearchUpdateStep(_botApi, _aiAssistant, _filtersRepository),
+        () => _MultiSelectTryAgainStep(),
         () => _OnNewFiltersAppliedStep(),
       ];
 }
@@ -141,12 +142,12 @@ class _OnNewFiltersAppliedStep extends FlowStep {
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
     return ReactionResponse(
-text: """Filters applied! You will now start receiving job offers based on your tag preferences.
+        text: """Filters applied! You will now start receiving job offers based on your tag preferences.
 
 If you want to stop this bot from sending you job offers, just type /stop.
 You can adjust your tag filters at any time by typing /filter.
 """
-      // editMessageId: messageContext.editMessageId,
-    );
+        // editMessageId: messageContext.editMessageId,
+        );
   }
 }

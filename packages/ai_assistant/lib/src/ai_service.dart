@@ -22,7 +22,7 @@ class AiAssistant {
       "user_input": tags,
     });
 
-    final response = await _assistantApi.addMessageToThread('all_users_thread_1', prompt);
+    final response = await _assistantApi.addMessageToThread('all_users_thread', prompt);
 
     return _parseResponse(
       response,

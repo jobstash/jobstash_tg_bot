@@ -60,6 +60,10 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
         responseParts.add('We could not recognize: ${_taggify(unrecognizedInput)}');
       }
 
+      if (responseParts.isEmpty) {
+        return ReactionRedirect(stepUri: (_MultiSelectTryAgainStep).toStepUri());
+      }
+
       return ReactionComposed(responses: [
         // if (!removeTags)
         ReactionResponse(
@@ -80,4 +84,19 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
   }
 
   String _taggify(List<String> tags) => tags.map((e) => '`${e.trim()}`').join(', ');
+}
+
+class _MultiSelectTryAgainStep extends FlowStep {
+  @override
+  Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
+
+    return ReactionComposed(responses: [
+      ReactionResponse(
+        text: "Could not recognize your tags. Please to spell in different a way or use different tags.",
+      ),
+      ReactionRedirect(
+        stepUri: (FilterDetailedStep).toStepUri(['tags']),
+      ),
+    ]);
+  }
 }
