@@ -21,4 +21,7 @@ class FirebaseDialogStore implements PendingMessagesStore, ThreadStore {
 
   @override
   Future<void> setThreadId(String userId, String threadId) => dao.setAssistantThreadId(userId, threadId);
+
+  @override
+  Future<void> removeThreadId(String userId) => dao.removeAssistantThreadId(userId);
 }

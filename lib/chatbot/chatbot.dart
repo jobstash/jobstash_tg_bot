@@ -2,6 +2,7 @@ import 'package:ai_assistant/ai_assistant.dart';
 import 'package:chatterbox/chatterbox.dart';
 import 'package:database/database.dart';
 import 'package:jobstash_api/jobstash_api.dart';
+import 'package:jobstash_bot/chatbot/flows/admin/drop_user_thread_flow.dart';
 import 'package:jobstash_bot/chatbot/flows/filters_setup_flow.dart';
 import 'package:jobstash_bot/chatbot/flows/start_flow.dart';
 import 'package:jobstash_bot/chatbot/flows/stop_flow.dart';
@@ -36,6 +37,7 @@ class ChatBot {
         StartFlow(repository),
         FiltersFlow(botApi, repository, aiAssistant),
         StopFlow(repository),
+        DropUsersThreadFlow(firebaseStore),
       ];
 
       Chatterbox(botToken: Config.botToken, flows: flows, store: firebaseStore).invokeFromWebhook(body);

@@ -34,4 +34,6 @@ class DialogDao {
   Future<void> setAssistantThreadId(String userId, String threadId) => collection.document(userId).update({
         'assistant_thread_id': threadId,
       });
+
+  Future<void> removeAssistantThreadId(String userId) => collection.document(userId).delete();
 }

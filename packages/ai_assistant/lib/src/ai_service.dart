@@ -6,6 +6,7 @@ import 'package:ai_assistant/src/assistant/thread_store.dart';
 typedef ImageGenerationResult = ({String aiPrompt, String postfix, String url});
 
 const _assistantId = 'asst_2YxUelu58aspj9Sk30bs4raW';
+const allUsersThreadName = 'all_users_thread';
 
 class AiAssistant {
   AiAssistant(String apiKey, ThreadStore store)
@@ -22,7 +23,7 @@ class AiAssistant {
       "user_input": tags,
     });
 
-    final response = await _assistantApi.addMessageToThread('all_users_thread', prompt);
+    final response = await _assistantApi.addMessageToThread(allUsersThreadName, prompt);
 
     return _parseResponse(
       response,
