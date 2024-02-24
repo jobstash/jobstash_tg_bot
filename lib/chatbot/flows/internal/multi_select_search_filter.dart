@@ -24,10 +24,10 @@ _For example: "typescript, nodejs, nft"_
 }
 
 class _MultiSelectSearchUpdateStep extends FlowStep {
-  _MultiSelectSearchUpdateStep(this._botApi, this._aiAssistant, this._filtersRepository);
+  _MultiSelectSearchUpdateStep(this._botApi, this._jobStashApi, this._filtersRepository);
 
   final TelegramBotApi _botApi;
-  final AiAssistant _aiAssistant;
+  final JobStashApi _jobStashApi;
   final FiltersRepository _filtersRepository;
 
   @override
@@ -45,9 +45,15 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
     }
 
     try {
-      final result = await _aiAssistant.parseTags(messageContext.userId.toString(), userInput);
-      final tags = result?.$1;
-      final unrecognizedInput = result?.$2;
+      final result = await _jobStashApi.matchTags(userInput);
+      final data = result.data;
+
+      if (!result.success || data == null) {
+        return ReactionResponse(text: result.message ?? 'Oops, something went wrong. Please try again.');
+      }
+
+      final tags = data.recognizedTags;
+      final unrecognizedInput = data.unrecognizedTags;
 
       await _filtersRepository.setUserFilterValue(messageContext.userId, filterId, tags);
 
@@ -89,7 +95,6 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
 class _MultiSelectTryAgainStep extends FlowStep {
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
-
     return ReactionComposed(responses: [
       ReactionResponse(
         text: "Could not recognize your tags. Please to spell in different a way or use different tags.",

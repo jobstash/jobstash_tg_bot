@@ -1,4 +1,3 @@
-import 'package:ai_assistant/ai_assistant.dart';
 import 'package:chatterbox/chatterbox.dart';
 import 'package:collection/collection.dart';
 import 'package:jobstash_api/jobstash_api.dart';
@@ -16,10 +15,10 @@ part 'internal/range_filter.dart';
 
 /// Allows user to adjust filters for job offers.
 class FiltersFlow extends CommandFlow {
-  FiltersFlow(this._botApi, this._filtersRepository, this._aiAssistant);
+  FiltersFlow(this._botApi, this._filtersRepository, this._jobStashApi);
 
   final TelegramBotApi _botApi;
-  final AiAssistant _aiAssistant;
+  final JobStashApi _jobStashApi;
   final FiltersRepository _filtersRepository;
 
   @override
@@ -34,7 +33,7 @@ class FiltersFlow extends CommandFlow {
         () => _RangeFilterDisplayStep(_filtersRepository),
         () => _RangeFilterUpdateStep(_filtersRepository),
         () => _MultiSelectSearchDisplayStep(),
-        () => _MultiSelectSearchUpdateStep(_botApi, _aiAssistant, _filtersRepository),
+        () => _MultiSelectSearchUpdateStep(_botApi, _jobStashApi, _filtersRepository),
         () => _MultiSelectTryAgainStep(),
         () => _OnNewFiltersAppliedStep(),
       ];

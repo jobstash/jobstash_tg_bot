@@ -35,7 +35,7 @@ class ChatBot {
 
       final flows = <Flow>[
         StartFlow(repository),
-        FiltersFlow(botApi, repository, aiAssistant),
+        FiltersFlow(botApi, repository, api),
         StopFlow(repository),
         DropUsersThreadFlow(firebaseStore),
       ];
