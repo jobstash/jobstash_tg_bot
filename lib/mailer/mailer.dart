@@ -18,7 +18,7 @@ class Mailer {
 
       //parse job
       final body = await parseRequestBody<List<dynamic>>(request);
-      final posts = body.map((e) => Post.fromJson(e)).toList().sublist(0, 3);
+      final posts = body.map((e) => Post.fromJson(e)).toList();
 
       //store how many users are receiving how many job postings for logging and print to console
       final userPostCount = <int, int>{};
