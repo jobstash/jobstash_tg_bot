@@ -25,7 +25,7 @@ Future<void> logErrorToTelegramChannel(String message, Object error, StackTrace 
 
 Future<void> logToTelegramChannel(String message) async {
   try {
-    await TelegramBotApi(Config.botToken).sendMessage(Config.errorChannelId, 'message');
+    await TelegramBotApi(Config.botToken).sendMessage(Config.errorChannelId, message);
   } catch (error, st) {
     logger.e('Failed to log error to telegram channel', error: error, stackTrace: st);
   }
