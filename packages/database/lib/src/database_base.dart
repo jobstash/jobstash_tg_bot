@@ -10,7 +10,7 @@ class Database {
     }
   }
 
-  static UserFiltersDao createUserDao() => UserFiltersDao(Firestore.instance);
+  static UserFiltersDao createFiltersDao() => UserFiltersDao(Firestore.instance);
 
   static DialogDao createDialogDao() => DialogDao(Firestore.instance);
 }

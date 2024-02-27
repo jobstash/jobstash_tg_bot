@@ -4,6 +4,7 @@ import 'package:jobstash_bot/common/config.dart';
 import 'package:jobstash_bot/common/utils/logger.dart';
 import 'package:jobstash_bot/common/utils/parsing_utils.dart';
 import 'package:jobstash_bot/mailer/internal/message_formatter.dart';
+import 'package:jobstash_bot/mailer/internal/reporter.dart';
 import 'package:shelf/shelf.dart';
 import 'package:telegram_api/shared_api.dart';
 
@@ -14,17 +15,20 @@ class Mailer {
 
       await Database.initialize(Config.isDevEnv);
 
-      final userDao = Database.createUserDao();
+      final filtersDao = Database.createFiltersDao();
 
       //parse job
       final body = await parseRequestBody<List<dynamic>>(request);
-      final posts = body.map((e) => Post.fromJson(e)).toList();
+      final posts = body.map((e) => Post.fromJson(e)).toList().sublist(0, 20);
+
+      final reporter = Reporter();
 
       //store how many users are receiving how many job postings for logging and print to console
-      final userPostCount = <int, int>{};
+      // final userIdToPostCountMap = <String, int>{};
+      // final postIdToUsersCountMap = <int, int>{};
 
       await Future.wait(posts.map((post) async {
-        final users = await userDao.getUsersFor(
+        final userIds = await filtersDao.getUsersFor(
           location: post.job.location,
           minimumSalary: post.job.minimumSalary,
           maximumSalary: post.job.maximumSalary,
@@ -34,23 +38,14 @@ class Mailer {
           maximumHeadCount: post.organization.properties.headcountEstimate?.high,
           tags: post.job.tags?.map((e) => e.name).toList(),
         );
-        userPostCount[post.hashCode] = users.length;
-        await _sendMail(telegramApi, users, post);
+        // postIdToUsersCountMap[post.hashCode] = userIds.length;
+        await _sendMail(telegramApi, userIds, post);
+        reporter.aggregate(post, userIds);
+
+        // await Reporter().report(posts, postIdToUsersCountMap, userIds);
       }));
 
-      final reportParts = <String>[];
-      reportParts.add('Processed ${posts.length} posts');
-
-      if (userPostCount.values.fold(0, (prev, element) => prev + element) == 0) {
-        reportParts.add('No users to send mail to');
-      } else {
-        userPostCount.forEach((key, value) {
-          reportParts.add('Sent mail to $value users for post $key');
-        });
-      }
-
-      logger.d(reportParts.join('\n'));
-      logToTelegramChannel(reportParts.join('\n'));
+      await reporter.report(posts.length);
 
       return Response.ok(
         null,

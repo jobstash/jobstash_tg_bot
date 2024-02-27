@@ -8,10 +8,17 @@ class MessageFormatter {
     final summary = job.summary;
     final tags = job.tags;
     final organization = post.organization;
-    final List<String> messageParts = [];
 
+    final List<String> messageParts = [];
+    final locationName = job.locationType?.name;
     messageParts.add(
-        '<b><a href="https://jobstash.xyz/organizations/${organization.properties.id}/details">${organization.properties.name}</a></b> is hiring');
+        '<b><a href="https://jobstash.xyz/organizations/${organization.properties.orgId}/details">'
+            '${organization.properties.name}</a></b> is hiring ${job.locationType != null
+            && locationName != null ? locationName == 'REMOTE' ? "a remote"
+            : locationName == 'HYBRID' ? "a hybrid"
+            : "an onsite" : "a"} <b><a href="https://jobstash.xyz/jobs/${job.shortUUID}/details">${job.title}</a></b> '
+            '${job.locationType != null && locationName != null && (locationName == 'HYBRID'
+            || locationName == 'ONSITE') ? "in ${job.location}" : ""}');
 
     if (summary == null) {
       throw ArgumentError('Summary is required');
@@ -23,7 +30,8 @@ class MessageFormatter {
     }
 
     if (tags != null) {
-      messageParts.add('🤓 ${tags.map((tag) => '<a href="https://jobstash.xyz/jobs?tags=${Uri.encodeComponent(tag.name)}">${tag.name}</a>').join(', ')}');
+      messageParts.add(
+          '🤓 ${tags.map((tag) => '<a href="https://jobstash.xyz/jobs?tags=${Uri.encodeComponent(tag.name)}">${tag.name}</a>').join(', ')}');
     }
 
     messageParts.add(

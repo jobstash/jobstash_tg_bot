@@ -24,7 +24,7 @@ class ChatBot {
 
       await Database.initialize(Config.isDevEnv);
 
-      final userDao = Database.createUserDao();
+      final userDao = Database.createFiltersDao();
       final dialogDao = Database.createDialogDao();
       final firebaseStore = FirebaseDialogStore(dialogDao);
 
