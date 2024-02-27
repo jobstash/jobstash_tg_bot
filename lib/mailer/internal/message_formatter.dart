@@ -31,7 +31,7 @@ class MessageFormatter {
 
     if (tags != null) {
       messageParts.add(
-          '🤓 ${tags.map((tag) => '<a href="https://jobstash.xyz/jobs?tags=${Uri.encodeComponent(tag.name)}">${tag.name}</a>').join(', ')}');
+          '🤓 ${tags.map((tag) => '<a href="https://jobstash.xyz/jobs?tags=${Uri.encodeComponent(tag.normalizedName)}">${tag.name}</a>').join(', ')}');
     }
 
     messageParts.add(

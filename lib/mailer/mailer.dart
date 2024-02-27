@@ -19,7 +19,7 @@ class Mailer {
 
       //parse job
       final body = await parseRequestBody<List<dynamic>>(request);
-      final posts = body.map((e) => Post.fromJson(e)).toList().sublist(0, 20);
+      final posts = body.map((e) => Post.fromJson(e)).toList();
 
       final reporter = Reporter();
 
@@ -67,11 +67,5 @@ class Mailer {
         logErrorToTelegramChannel('Failed to send mail to user $userId', error, st);
       }
     }
-  }
-}
-
-extension TagToLink on Tag {
-  String toLink() {
-    return '[$this](https://jobstash.xyz/jobs?tags=${name.replaceAll(' ', '%20')})';
   }
 }
