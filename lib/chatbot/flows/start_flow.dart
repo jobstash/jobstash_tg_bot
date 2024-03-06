@@ -19,7 +19,7 @@ class StartFlow extends CommandFlow {
 }
 
 final _welcomeText =
-    'Get filtered jobstash.xyz postings. Set tags to get notified about new job offers.\nIf you are interested to get unfiltered jobs feed subscribe to (official jobstash channel)[https://t.me/jobstash]';
+    'Get filtered jobstash.xyz postings. Set tags to get notified about new job offers.\nIf you are interested to get unfiltered jobs feed subscribe to [official jobstash channel](https://t.me/jobstash)';
 
 class _StartFlowInitialStep extends FlowStep {
   _StartFlowInitialStep(this._repository);

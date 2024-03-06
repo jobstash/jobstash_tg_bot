@@ -1,0 +1,3071 @@
+{
+  "success": true,
+  "message": "Retrieved all tags",
+  "data": [
+    {
+      "name": "OP-stack",
+      "id": "d72e8c69-f9e8-4a74-a057-c0e7511b77ee",
+      "normalizedName": "op_hyphen_stack"
+    },
+    {
+      "name": "Hackathons",
+      "id": "00acf3aa-2355-4531-a714-d85197f4bb5d",
+      "normalizedName": "hackathons"
+    },
+    {
+      "name": "Open Source",
+      "id": "ddbcce18-2539-458b-872f-3893ea875cb6",
+      "normalizedName": "open source"
+    },
+    {
+      "name": "Blockchain",
+      "id": "4265c2b8-b8ef-4305-a370-95681c3deaff",
+      "normalizedName": "blockchain"
+    },
+    {
+      "name": "Marketing",
+      "id": "1b9ddc25-b3f7-4277-83b1-7d56485afd22",
+      "normalizedName": "marketing"
+    },
+    {
+      "name": "GUI",
+      "id": "0738d7e7-403a-4227-9f30-76ee44531cbd",
+      "normalizedName": "gui"
+    },
+    {
+      "name": "Communication",
+      "id": "8ae32e10-a305-489c-b24b-97b03ac8d3c1",
+      "normalizedName": "communication"
+    },
+    {
+      "name": "JavaScript",
+      "id": "4c6660ac-50a4-4902-aa5d-67ba56af6c53",
+      "normalizedName": "javascript"
+    },
+    {
+      "name": "L2",
+      "id": "38d1374f-0a2a-4a8a-b454-136f68cc3a5b",
+      "normalizedName": "l2"
+    },
+    {
+      "name": "TypeScript",
+      "id": "7297bf84-c550-4c51-b911-323b036706b5",
+      "normalizedName": "typescript"
+    },
+    {
+      "name": "React",
+      "id": "39687878-b77c-4262-adf3-bfe5afc0a4ef",
+      "normalizedName": "react"
+    },
+    {
+      "name": "Rust",
+      "id": "2915cd1f-f27e-489e-b9f7-0a6261015ebc",
+      "normalizedName": "rust"
+    },
+    {
+      "name": "Java",
+      "id": "1c60f469-d96b-4976-8a44-54d41f2cb2e2",
+      "normalizedName": "java"
+    },
+    {
+      "name": "backend",
+      "id": "cca09cae-012a-4e7f-aab3-4556e7a1d7f8",
+      "normalizedName": "backend"
+    },
+    {
+      "name": "tailwindCSS",
+      "id": "107156e0-03d8-40f8-bde6-dede55b144c6",
+      "normalizedName": "tailwindcss"
+    },
+    {
+      "name": "relationship-building",
+      "id": "191553b9-63aa-4485-b401-ab4daced18e8",
+      "normalizedName": "relationship_hyphen_building"
+    },
+    {
+      "name": "Web 3",
+      "id": "2acd78f8-2da4-44b6-b23f-e9094191d33f",
+      "normalizedName": "web 3"
+    },
+    {
+      "name": "Gradle",
+      "id": "d4227cae-4d60-4342-8458-2324d017c004",
+      "normalizedName": "gradle"
+    },
+    {
+      "name": "CI/CD",
+      "id": "eef5b42f-b898-4c1b-95fe-7cbf77384e51",
+      "normalizedName": "ci/cd"
+    },
+    {
+      "name": "Frontend Development",
+      "id": "850da260-4d35-4059-ae35-f43a78750f45",
+      "normalizedName": "frontend development"
+    },
+    {
+      "name": "NextJS",
+      "id": "ba3d0eb1-0620-4036-8617-0945179b7c22",
+      "normalizedName": "nextjs"
+    },
+    {
+      "name": "Problem Solving",
+      "id": "4b6146e6-b268-4649-b105-df0202ba02ef",
+      "normalizedName": "problem solving"
+    },
+    {
+      "name": "competitive analysis",
+      "id": "b4498201-3710-4203-944b-9a94a1da087e",
+      "normalizedName": "competitive analysis"
+    },
+    {
+      "name": "C#",
+      "id": "34b6afa3-ba0e-4098-8ef8-06db1fb78e70",
+      "normalizedName": "c_hash_"
+    },
+    {
+      "name": "NodeJS",
+      "id": "76ac4a41-9de2-4603-b88c-0c99f151f451",
+      "normalizedName": "nodejs"
+    },
+    {
+      "name": "Talent Acquisition",
+      "id": "9502c108-646e-4cb2-a58e-feafa6637953",
+      "normalizedName": "talent acquisition"
+    },
+    {
+      "name": "Decentralized Systems",
+      "id": "13885da1-5323-4a97-b465-a5599cf51bcd",
+      "normalizedName": "decentralized systems"
+    },
+    {
+      "name": "Node",
+      "id": "e52250a9-2788-4e27-b3b6-a4359d9a8d53",
+      "normalizedName": "node"
+    },
+    {
+      "name": "technical content",
+      "id": "a199b008-914b-4211-a8b0-7e42b335d2ad",
+      "normalizedName": "technical content"
+    },
+    {
+      "name": "web design",
+      "id": "be09de93-37cf-4f0f-bf00-844186ddaaba",
+      "normalizedName": "web design"
+    },
+    {
+      "name": "go-to-market strategies",
+      "id": "7b71af25-7f58-4782-b485-5cef4f2a6e07",
+      "normalizedName": "go_hyphen_to_hyphen_market strategies"
+    },
+    {
+      "name": "algorithmic trading",
+      "id": "034e8c56-60b1-45ef-8d30-4d5e7605bbae",
+      "normalizedName": "algorithmic trading"
+    },
+    {
+      "name": "Shell",
+      "id": "58270bbe-3df8-42c0-b418-8f5f1409afc8",
+      "normalizedName": "shell"
+    },
+    {
+      "name": "CSS",
+      "id": "28503639-febb-4490-a623-cc2307768be9",
+      "normalizedName": "css"
+    },
+    {
+      "name": "Time management",
+      "id": "fde5c3ac-6d0c-41ab-a81e-d9d1169cc70c",
+      "normalizedName": "time management"
+    },
+    {
+      "name": "full-stack",
+      "id": "02f7fcef-3bbb-4655-a8bf-9fc2382290d7",
+      "normalizedName": "full_hyphen_stack"
+    },
+    {
+      "name": "goal-oriented",
+      "id": "0339f3b6-dd96-4581-9d6c-81cba2e1096f",
+      "normalizedName": "goal_hyphen_oriented"
+    },
+    {
+      "name": "zero-knowledge proofs",
+      "id": "c8d599ed-9de7-4d55-9a37-74e7203d2310",
+      "normalizedName": "zero_hyphen_knowledge proofs"
+    },
+    {
+      "name": "C",
+      "id": "6e7df5cd-591c-4ea2-978a-e40fb46cbdb9",
+      "normalizedName": "c"
+    },
+    {
+      "name": "unit testing",
+      "id": "aa270c68-2c74-4acc-b72a-47bbe54b67cb",
+      "normalizedName": "unit testing"
+    },
+    {
+      "name": "Front-end Development",
+      "id": "f2063a3a-a553-40f1-a8db-4002d524af9f",
+      "normalizedName": "front_hyphen_end development"
+    },
+    {
+      "name": "wallets",
+      "id": "5cbd6b6e-379c-46b2-8064-319de7d0714d",
+      "normalizedName": "wallets"
+    },
+    {
+      "name": "Cosmos Ecosystem",
+      "id": "6b2a635a-80dc-4b19-bac3-9f22f99c9b52",
+      "normalizedName": "cosmos ecosystem"
+    },
+    {
+      "name": "customer satisfaction",
+      "id": "5330b773-96e5-4c95-bcfa-552f8344e9ab",
+      "normalizedName": "customer satisfaction"
+    },
+    {
+      "name": "wagmi",
+      "id": "4de40480-1f5d-45cc-bc3d-5560273873a2",
+      "normalizedName": "wagmi"
+    },
+    {
+      "name": "Sales Process",
+      "id": "59ce9ff0-dab3-4f1d-860b-da56e9ef264d",
+      "normalizedName": "sales process"
+    },
+    {
+      "name": "dApp",
+      "id": "79d6b77a-b827-42ee-8bd5-193d24348d13",
+      "normalizedName": "dapp"
+    },
+    {
+      "name": "Industry events",
+      "id": "0b34f5e9-5090-43b6-9cea-cdc5361679a5",
+      "normalizedName": "industry events"
+    },
+    {
+      "name": "Cosmwasm",
+      "id": "6e77017c-f64a-4f36-b014-f73d962b421a",
+      "normalizedName": "cosmwasm"
+    },
+    {
+      "name": "Viem",
+      "id": "876193a4-876d-4cfb-a8b2-4e0075d11b18",
+      "normalizedName": "viem"
+    },
+    {
+      "name": "Ocaml",
+      "id": "8f3540a7-e101-4b7b-9b0d-f9d438460013",
+      "normalizedName": "ocaml"
+    },
+    {
+      "name": "Trend Analysis",
+      "id": "b6cc84a2-4cb0-41cb-b20b-6578714b2c45",
+      "normalizedName": "trend analysis"
+    },
+    {
+      "name": "container orchestration",
+      "id": "7ce51379-8bab-4edb-ae9c-4bb8d0cb4674",
+      "normalizedName": "container orchestration"
+    },
+    {
+      "name": "HTML",
+      "id": "a4e5b278-c387-4d34-9e11-5eff5ec0c849",
+      "normalizedName": "html"
+    },
+    {
+      "name": "Sourcing",
+      "id": "6865286a-e764-4fff-b98a-4f23d2811668",
+      "normalizedName": "sourcing"
+    },
+    {
+      "name": "User Engagement",
+      "id": "3a286d3a-8f34-4469-a926-bb0c24078307",
+      "normalizedName": "user engagement"
+    },
+    {
+      "name": "DAO",
+      "id": "1d9297fe-55b0-4a47-862f-a08da6f919f3",
+      "normalizedName": "dao"
+    },
+    {
+      "name": "Partnership Management",
+      "id": "efb89ee7-7229-48dc-b6cf-ff27879f250f",
+      "normalizedName": "partnership management"
+    },
+    {
+      "name": "Developer Advocacy",
+      "id": "6560ac82-f58e-43b4-a81f-ad44c327aa19",
+      "normalizedName": "developer advocacy"
+    },
+    {
+      "name": "Competitor Analysis",
+      "id": "22ea568b-4672-414e-ab3b-7cd8dbe7c0aa",
+      "normalizedName": "competitor analysis"
+    },
+    {
+      "name": "Partnership Development",
+      "id": "7dcce860-2a49-4a03-a8a6-8d233226744e",
+      "normalizedName": "partnership development"
+    },
+    {
+      "name": "Arbitrum",
+      "id": "dae48148-d90a-44a3-bdec-23b4d9eaef5c",
+      "normalizedName": "arbitrum"
+    },
+    {
+      "name": "Spark",
+      "id": "41beb24d-b58d-45df-803d-6cd3c12d8e55",
+      "normalizedName": "spark"
+    },
+    {
+      "name": "Software Testing",
+      "id": "65dac35a-7200-4f38-83c8-ce218d78b215",
+      "normalizedName": "software testing"
+    },
+    {
+      "name": "Accounts Receivable",
+      "id": "cbf6a13d-e4da-42af-9947-89a9344ce8bf",
+      "normalizedName": "accounts receivable"
+    },
+    {
+      "name": "Bookkeeping",
+      "id": "50974a7d-1b6f-4338-b891-d9f28259fcae",
+      "normalizedName": "bookkeeping"
+    },
+    {
+      "name": "Shell scripting",
+      "id": "f4175c39-e95a-4846-beb7-2dbdb8ae1c82",
+      "normalizedName": "shell scripting"
+    },
+    {
+      "name": "initiative",
+      "id": "e2b590e7-35d5-4a7e-84e7-5a22a3c22e98",
+      "normalizedName": "initiative"
+    },
+    {
+      "name": "Tendermint",
+      "id": "58e9ebaa-c0f8-4e11-a0d4-48a015b77bac",
+      "normalizedName": "tendermint"
+    },
+    {
+      "name": "Crypto-native",
+      "id": "4d2f6fb2-6fbc-41ae-ba7c-43e5c8776c36",
+      "normalizedName": "crypto_hyphen_native"
+    },
+    {
+      "name": "Test Plans",
+      "id": "9f81db4a-bf69-4630-a39f-04a234092369",
+      "normalizedName": "test plans"
+    },
+    {
+      "name": "ML",
+      "id": "27c55ea3-5e60-4916-a6a5-2d8f90ae83d9",
+      "normalizedName": "ml"
+    },
+    {
+      "name": "Stakeholder Communication",
+      "id": "782d1fcb-bdbd-4543-a71c-b3b9b6badd42",
+      "normalizedName": "stakeholder communication"
+    },
+    {
+      "name": "Empathy",
+      "id": "b08745d1-7324-4e6c-a735-7d876f65e5a0",
+      "normalizedName": "empathy"
+    },
+    {
+      "name": "Tokenomics",
+      "id": "d019d84d-eabc-42ad-9a5c-3dd81a55664b",
+      "normalizedName": "tokenomics"
+    },
+    {
+      "name": "Haskell",
+      "id": "1d6754a7-2124-46a6-9873-f6784fdbc241",
+      "normalizedName": "haskell"
+    },
+    {
+      "name": "Agile development",
+      "id": "5fdffd4c-7a9d-4b17-b04f-5170b682bb90",
+      "normalizedName": "agile development"
+    },
+    {
+      "name": "Flutter",
+      "id": "acfd3164-5b4e-4f5f-9354-d63c6d8b1f3e",
+      "normalizedName": "flutter"
+    },
+    {
+      "name": "Polygon",
+      "id": "7e407723-d912-4bcb-bea9-5573152660de",
+      "normalizedName": "polygon"
+    },
+    {
+      "name": "Corda",
+      "id": "28659802-ef4c-45dc-8b9b-6887d861a7de",
+      "normalizedName": "corda"
+    },
+    {
+      "name": "Brand Identity",
+      "id": "fe1d70a8-7b53-4040-b180-b1a51834bc32",
+      "normalizedName": "brand identity"
+    },
+    {
+      "name": "Angular",
+      "id": "d5be3543-000b-4cb5-a416-fdb557ba5e30",
+      "normalizedName": "angular"
+    },
+    {
+      "name": "email marketing",
+      "id": "7c1bd207-45a4-4ca7-b84d-fbd8d1d98831",
+      "normalizedName": "email marketing"
+    },
+    {
+      "name": "RESTful APIs",
+      "id": "6a16471c-5a03-4fa2-acf9-bfd49c1263ac",
+      "normalizedName": "restful apis"
+    },
+    {
+      "name": "Webpack",
+      "id": "c917713a-2da7-45d5-a83c-fcdaea7d058b",
+      "normalizedName": "webpack"
+    },
+    {
+      "name": "HTTP",
+      "id": "bebd0496-1041-41c9-9f59-cc80ace8b803",
+      "normalizedName": "http"
+    },
+    {
+      "name": "Truffle",
+      "id": "ddd9a98a-00ba-4cbd-93cb-933db74d335d",
+      "normalizedName": "truffle"
+    },
+    {
+      "name": "Hardhat",
+      "id": "eb5f589e-bc03-47d7-bfe7-a900970761ef",
+      "normalizedName": "hardhat"
+    },
+    {
+      "name": "Foundry",
+      "id": "19eb51c8-8e0e-4c2d-93f0-84b2ec1187c2",
+      "normalizedName": "foundry"
+    },
+    {
+      "name": "Vercel",
+      "id": "abe7674a-6f3c-474e-a901-b19c879fc528",
+      "normalizedName": "vercel"
+    },
+    {
+      "name": "Jest",
+      "id": "88400f4f-d1c5-4976-a800-0ddaad3ab492",
+      "normalizedName": "jest"
+    },
+    {
+      "name": "usability testing",
+      "id": "614da929-b35d-4139-83b9-edc7a0cc0fde",
+      "normalizedName": "usability testing"
+    },
+    {
+      "name": "Contract Drafting",
+      "id": "836bf9ee-7577-4dbb-87d8-4b2332ac68a9",
+      "normalizedName": "contract drafting"
+    },
+    {
+      "name": "user interface",
+      "id": "991fbb95-bb07-44bf-9378-c30c1fceb433",
+      "normalizedName": "user interface"
+    },
+    {
+      "name": "technologies",
+      "id": "a18b42fc-6576-4bef-a2d7-43b1cb3349d4",
+      "normalizedName": "technologies"
+    },
+    {
+      "name": "Unreal Engine",
+      "id": "f65d09e9-7400-4c72-a620-d15dba0b7b85",
+      "normalizedName": "unreal engine"
+    },
+    {
+      "name": "Administrative Support",
+      "id": "45ee6d14-8087-4ae3-b8a9-970d9d2b4176",
+      "normalizedName": "administrative support"
+    },
+    {
+      "name": "Mobile",
+      "id": "3fede70a-7694-41ec-9d34-6c1a079f9c47",
+      "normalizedName": "mobile"
+    },
+    {
+      "name": "Market Trends",
+      "id": "a59fb699-0af1-4705-96d0-d2cb1c023320",
+      "normalizedName": "market trends"
+    },
+    {
+      "name": "Contract Negotiation",
+      "id": "11037fa0-3b6c-4728-ad30-f62249b2d8f6",
+      "normalizedName": "contract negotiation"
+    },
+    {
+      "name": "analytical thinking",
+      "id": "15bff381-3455-4fd1-9787-fa858b70e8a7",
+      "normalizedName": "analytical thinking"
+    },
+    {
+      "name": "SDK",
+      "id": "4982c647-d764-40d9-bd90-6a72496240f1",
+      "normalizedName": "sdk"
+    },
+    {
+      "name": "PyTorch",
+      "id": "93eb77d5-08e7-4cf9-98ff-bb6fb5f5777d",
+      "normalizedName": "pytorch"
+    },
+    {
+      "name": "GAAP",
+      "id": "f7de772f-9558-4115-b91a-bff43dce8bc0",
+      "normalizedName": "gaap"
+    },
+    {
+      "name": "consensus algorithms",
+      "id": "91cc5ddb-f627-4335-a40e-a2c74702c88a",
+      "normalizedName": "consensus algorithms"
+    },
+    {
+      "name": "Ethers",
+      "id": "7eb81c74-408e-48a6-86ab-686f56d7247c",
+      "normalizedName": "ethers"
+    },
+    {
+      "name": "consensus protocols",
+      "id": "8ddb761d-679a-4620-b074-c1c45a462f73",
+      "normalizedName": "consensus protocols"
+    },
+    {
+      "name": "Scheduling",
+      "id": "3dd3c22f-0f98-41b9-a1e2-561bc5559015",
+      "normalizedName": "scheduling"
+    },
+    {
+      "name": "Community growth",
+      "id": "d58ea097-4875-4ce0-9e43-bf8304b548a2",
+      "normalizedName": "community growth"
+    },
+    {
+      "name": "Applications",
+      "id": "31f298fd-b76b-4df4-845f-b0cea5d09dc9",
+      "normalizedName": "applications"
+    },
+    {
+      "name": "Serverless",
+      "id": "44f3c2b4-2d8e-44bc-b565-e500bdf3d628",
+      "normalizedName": "serverless"
+    },
+    {
+      "name": "Elasticsearch",
+      "id": "2c46bedc-01c0-4a7f-9534-13b6ef5300c0",
+      "normalizedName": "elasticsearch"
+    },
+    {
+      "name": "Public Relations",
+      "id": "601d3329-2bbd-4714-8b2d-14d0eb35032d",
+      "normalizedName": "public relations"
+    },
+    {
+      "name": "Media Relations",
+      "id": "4aefff79-fa3c-4476-a8f7-0efa8a550945",
+      "normalizedName": "media relations"
+    },
+    {
+      "name": "Motivation",
+      "id": "f1e9d733-cde9-4b25-b0a0-03087317de65",
+      "normalizedName": "motivation"
+    },
+    {
+      "name": "Strategy Development",
+      "id": "ac2d27dc-0f38-4557-9468-e000fa7d2c92",
+      "normalizedName": "strategy development"
+    },
+    {
+      "name": "Reliability",
+      "id": "b82510ff-5c0f-477b-841b-8acbebef7bf5",
+      "normalizedName": "reliability"
+    },
+    {
+      "name": "Clean code",
+      "id": "7c739508-6fee-49f7-9beb-8c4da44e9670",
+      "normalizedName": "clean code"
+    },
+    {
+      "name": "MEV",
+      "id": "90ab5e26-508d-41bf-853e-4b8b0c274514",
+      "normalizedName": "mev"
+    },
+    {
+      "name": "Sales Strategy",
+      "id": "8bf6fe6f-7585-420d-9974-6c5671d1bc42",
+      "normalizedName": "sales strategy"
+    },
+    {
+      "name": "Revenue Growth",
+      "id": "f7b1c2a3-445c-4f6a-a384-4fff3322717b",
+      "normalizedName": "revenue growth"
+    },
+    {
+      "name": "Market Analysis",
+      "id": "85177e27-7ba3-4a45-a00e-3a53905c235f",
+      "normalizedName": "market analysis"
+    },
+    {
+      "name": "Functional Programming",
+      "id": "dd4c7c41-dcf4-47c2-b792-f21a428a69aa",
+      "normalizedName": "functional programming"
+    },
+    {
+      "name": "Programming",
+      "id": "b9566eb1-00a7-41e1-92ee-204fa97c9688",
+      "normalizedName": "programming"
+    },
+    {
+      "name": "Formal Verification",
+      "id": "156c36f7-999b-4b1a-bcbe-40030911b122",
+      "normalizedName": "formal verification"
+    },
+    {
+      "name": "Lead Generation",
+      "id": "5f2651a6-a63b-4b1f-b97d-983e531ebc43",
+      "normalizedName": "lead generation"
+    },
+    {
+      "name": "Data-driven",
+      "id": "4f85c847-f5fd-4046-b9da-d783ef61b778",
+      "normalizedName": "data_hyphen_driven"
+    },
+    {
+      "name": "Customer Engagement",
+      "id": "dc795307-efa4-4690-abc7-84ef8904ec20",
+      "normalizedName": "customer engagement"
+    },
+    {
+      "name": "LinkedIn",
+      "id": "dd840cdd-8407-4fcf-ac4c-ed18b252d0e1",
+      "normalizedName": "linkedin"
+    },
+    {
+      "name": "Web3.js",
+      "id": "38cb3b56-c2e2-44b5-9662-aee5e0575839",
+      "normalizedName": "web3.js"
+    },
+    {
+      "name": "User Adoption",
+      "id": "7b637c82-36e8-4621-9ab6-382336f43763",
+      "normalizedName": "user adoption"
+    },
+    {
+      "name": "Product Launch",
+      "id": "e07e4bba-3325-4d5b-ace6-2025842c41d2",
+      "normalizedName": "product launch"
+    },
+    {
+      "name": "Growth",
+      "id": "3180ef76-9aad-4c29-a147-5d0b47f96fc3",
+      "normalizedName": "growth"
+    },
+    {
+      "name": "Performance Testing",
+      "id": "0d0b8d86-2354-44be-99c4-7170ec578365",
+      "normalizedName": "performance testing"
+    },
+    {
+      "name": "operational excellence",
+      "id": "ac5928c0-f284-4e94-9e91-f503baa3a8ba",
+      "normalizedName": "operational excellence"
+    },
+    {
+      "name": "Sketch",
+      "id": "8e3537ae-4e69-4daf-88be-1b151f2af082",
+      "normalizedName": "sketch"
+    },
+    {
+      "name": "Ethereum Virtual Machine",
+      "id": "edd31b69-3933-4b9f-985f-02942907d5d5",
+      "normalizedName": "ethereum virtual machine"
+    },
+    {
+      "name": "Vyper",
+      "id": "8fef3285-7581-401b-8464-b4d1f298193f",
+      "normalizedName": "vyper"
+    },
+    {
+      "name": "Ethers.js",
+      "id": "b66ab9ac-5e16-46f1-a62e-e0efc6f8b72d",
+      "normalizedName": "ethers.js"
+    },
+    {
+      "name": "The Graph",
+      "id": "26efbea7-f4fb-4caa-9b94-9a3c331ea8de",
+      "normalizedName": "the graph"
+    },
+    {
+      "name": "Calendar management",
+      "id": "b901933d-3918-44d5-a995-0c63fda19f65",
+      "normalizedName": "calendar management"
+    },
+    {
+      "name": "Database",
+      "id": "11737db5-53ca-4477-8dcd-7839a64e63fe",
+      "normalizedName": "database"
+    },
+    {
+      "name": "Decentralized Finance",
+      "id": "64dc28b2-7f88-4b8a-b3a5-acc4957dca4d",
+      "normalizedName": "decentralized finance"
+    },
+    {
+      "name": "Redux",
+      "id": "9f0af73a-b9f4-4fb8-87a2-05f26923d556",
+      "normalizedName": "redux"
+    },
+    {
+      "name": "math",
+      "id": "753761a8-c3c1-4063-9ff8-9418be75331d",
+      "normalizedName": "math"
+    },
+    {
+      "name": "Team Player",
+      "id": "694e8aa3-7f61-477f-ba93-868afbd0a0be",
+      "normalizedName": "team player"
+    },
+    {
+      "name": "Education",
+      "id": "39943dd7-b271-4658-8525-105d0dd72b97",
+      "normalizedName": "education"
+    },
+    {
+      "name": "Staking",
+      "id": "06a07498-badd-4b4e-a053-303eb8a4e5e3",
+      "normalizedName": "staking"
+    },
+    {
+      "name": "Payroll",
+      "id": "8e374fb4-15d0-4084-b63f-b1e2a251f809",
+      "normalizedName": "payroll"
+    },
+    {
+      "name": "coaching",
+      "id": "97219527-d255-429d-9da9-2e436faee325",
+      "normalizedName": "coaching"
+    },
+    {
+      "name": "Sales Funnel",
+      "id": "dad90667-017f-4fb7-a609-cb3b77cbf42c",
+      "normalizedName": "sales funnel"
+    },
+    {
+      "name": "Brand Awareness",
+      "id": "1170fd8a-b4a5-4f75-9666-fbab1ac16357",
+      "normalizedName": "brand awareness"
+    },
+    {
+      "name": "Cloudflare",
+      "id": "0733bfc9-1a94-4d45-8cfe-dfaf05a7442e",
+      "normalizedName": "cloudflare"
+    },
+    {
+      "name": "Design Systems",
+      "id": "97f065d1-28d3-494d-ae4c-97386d8213a9",
+      "normalizedName": "design systems"
+    },
+    {
+      "name": "Solana",
+      "id": "92b91414-89f6-4f23-ae26-0c27c9c1bd54",
+      "normalizedName": "solana"
+    },
+    {
+      "name": "Protocols",
+      "id": "18d59d0f-868e-42b4-ab54-8ceeaa45f859",
+      "normalizedName": "protocols"
+    },
+    {
+      "name": "emerging technologies",
+      "id": "72a476c6-4321-44bb-917c-134553a94261",
+      "normalizedName": "emerging technologies"
+    },
+    {
+      "name": "Polkadot",
+      "id": "b382b5ea-3cfe-486a-8d36-d563e3d5c24a",
+      "normalizedName": "polkadot"
+    },
+    {
+      "name": "Systems Programming",
+      "id": "de595e91-c79c-41d1-9445-d2a08ac07584",
+      "normalizedName": "systems programming"
+    },
+    {
+      "name": "DLT",
+      "id": "fe6fe5fd-52ab-4e3b-af3f-97cca2c0755e",
+      "normalizedName": "dlt"
+    },
+    {
+      "name": "Substrate",
+      "id": "55ffddb5-104f-4c71-ad49-7d64477a75e6",
+      "normalizedName": "substrate"
+    },
+    {
+      "name": "System Architecture",
+      "id": "255b4d5f-fd31-4575-bf2c-bc9b1dd6ff4a",
+      "normalizedName": "system architecture"
+    },
+    {
+      "name": "Pandas",
+      "id": "a37c326c-ed9c-450d-b21e-ab2a7c87ce75",
+      "normalizedName": "pandas"
+    },
+    {
+      "name": "Liquid Staking",
+      "id": "54bc9054-314f-41f3-86bb-4287ee3d14dc",
+      "normalizedName": "liquid staking"
+    },
+    {
+      "name": "P2P",
+      "id": "93e4fadd-929f-441a-92a6-95fbf4541e55",
+      "normalizedName": "p2p"
+    },
+    {
+      "name": "Content Production",
+      "id": "abee950f-1d77-4880-af8f-ebe5b804dc53",
+      "normalizedName": "content production"
+    },
+    {
+      "name": "Kotlin",
+      "id": "21c6b039-8870-488a-970a-ad006346977b",
+      "normalizedName": "kotlin"
+    },
+    {
+      "name": "Regulatory Compliance",
+      "id": "2880c616-3c5e-4998-ac6b-2881291cfdc4",
+      "normalizedName": "regulatory compliance"
+    },
+    {
+      "name": "Event Management",
+      "id": "2e3be652-a54f-411a-ad54-8049d8511b7d",
+      "normalizedName": "event management"
+    },
+    {
+      "name": "change management",
+      "id": "6f631c3b-706e-4550-8211-c6da35e581e0",
+      "normalizedName": "change management"
+    },
+    {
+      "name": "KYC",
+      "id": "e156309f-84f9-4a58-bf57-378088741329",
+      "normalizedName": "kyc"
+    },
+    {
+      "name": "AML",
+      "id": "28dcf508-330f-4a6f-bb39-8454b2da0d7e",
+      "normalizedName": "aml"
+    },
+    {
+      "name": "Integration",
+      "id": "67020b91-b1a4-4f01-9961-7983fdf78a34",
+      "normalizedName": "integration"
+    },
+    {
+      "name": "DBT",
+      "id": "f6891020-6b33-4739-82bb-0e5a27235b8f",
+      "normalizedName": "dbt"
+    },
+    {
+      "name": "Redis",
+      "id": "fb144da5-46ca-4fc3-aa74-101f944861dd",
+      "normalizedName": "redis"
+    },
+    {
+      "name": "Data Modeling",
+      "id": "f8158cee-37f3-4fc2-848d-ad13722140e8",
+      "normalizedName": "data modeling"
+    },
+    {
+      "name": "MySQL",
+      "id": "22ad4cb7-d021-4f4f-80e3-3e6dc8b628c5",
+      "normalizedName": "mysql"
+    },
+    {
+      "name": "NoSQL",
+      "id": "b77cf574-3d2f-493d-bf8a-4524e6215e3e",
+      "normalizedName": "nosql"
+    },
+    {
+      "name": "Google Cloud",
+      "id": "f4556d5a-5e3e-482e-9a25-1fae96df82f0",
+      "normalizedName": "google cloud"
+    },
+    {
+      "name": "Go-to-market Strategy",
+      "id": "01a84516-bed8-4598-a185-b6b2564b8724",
+      "normalizedName": "go_hyphen_to_hyphen_market strategy"
+    },
+    {
+      "name": "Stakeholder Engagement",
+      "id": "67cce648-459b-4be3-bf47-d0cff57e3812",
+      "normalizedName": "stakeholder engagement"
+    },
+    {
+      "name": "Microsoft Excel",
+      "id": "2cb358fd-4565-47d7-8673-b30a348e71b5",
+      "normalizedName": "microsoft excel"
+    },
+    {
+      "name": "Risk Assessment",
+      "id": "8342a417-d925-4cfd-bdaa-8253d08b3eb9",
+      "normalizedName": "risk assessment"
+    },
+    {
+      "name": "Google Suite",
+      "id": "3ecbb2ac-df5c-42c2-92d7-831adabffa24",
+      "normalizedName": "google suite"
+    },
+    {
+      "name": "Bash",
+      "id": "9a128363-1797-4437-92ba-1b8283359411",
+      "normalizedName": "bash"
+    },
+    {
+      "name": "Budget management",
+      "id": "f1d86aac-00ca-4237-898c-190c8a6ee85c",
+      "normalizedName": "budget management"
+    },
+    {
+      "name": "Financial Operations",
+      "id": "9c2a73a1-4c2c-4b51-b5ad-0593c5b14e9a",
+      "normalizedName": "financial operations"
+    },
+    {
+      "name": "Banking",
+      "id": "d25307f2-ccab-46db-be7e-f54bcb3cdfaf",
+      "normalizedName": "banking"
+    },
+    {
+      "name": "KPIs",
+      "id": "801267a2-b638-4055-b23c-a365b4b8bc0b",
+      "normalizedName": "kpis"
+    },
+    {
+      "name": "OKRs",
+      "id": "cf5baa3d-ab7f-407f-8850-3367d3eba1ef",
+      "normalizedName": "okrs"
+    },
+    {
+      "name": "Video Editing",
+      "id": "c094bafe-e75a-4819-88d5-ee14ac72ca23",
+      "normalizedName": "video editing"
+    },
+    {
+      "name": "Powerpoint",
+      "id": "b0ccee2e-1b63-4c44-a983-1ad6558e049b",
+      "normalizedName": "powerpoint"
+    },
+    {
+      "name": "Statistics",
+      "id": "4080fb86-21b0-42d6-aada-c1af4ce644f4",
+      "normalizedName": "statistics"
+    },
+    {
+      "name": "Accounts Payable",
+      "id": "0f58d671-251c-41e6-9439-536bda27c0ea",
+      "normalizedName": "accounts payable"
+    },
+    {
+      "name": "Due Diligence",
+      "id": "74a2b686-32b7-4aa2-b9b1-bfe7c1df1e3c",
+      "normalizedName": "due diligence"
+    },
+    {
+      "name": "APAC",
+      "id": "5a360c94-d9ac-45b0-9a7f-a0a8916a8077",
+      "normalizedName": "apac"
+    },
+    {
+      "name": "ownership",
+      "id": "66d384d2-daf0-4495-b132-35931602b9ff",
+      "normalizedName": "ownership"
+    },
+    {
+      "name": "ROI",
+      "id": "909ff325-48a5-4f94-9301-104eb80ffdd8",
+      "normalizedName": "roi"
+    },
+    {
+      "name": "Financial Reporting",
+      "id": "209f942b-b275-47c7-bdfa-2963863797e9",
+      "normalizedName": "financial reporting"
+    },
+    {
+      "name": "Training",
+      "id": "1d57445b-fc99-4657-b825-ec4951893454",
+      "normalizedName": "training"
+    },
+    {
+      "name": "NetSuite",
+      "id": "f80395fb-3ae0-45e7-8f5d-3bc4c39c2d1e",
+      "normalizedName": "netsuite"
+    },
+    {
+      "name": "Tax",
+      "id": "ca8c7bb5-ad3d-47b8-85bd-05393cc457e8",
+      "normalizedName": "tax"
+    },
+    {
+      "name": "cybersecurity",
+      "id": "97248a23-f0b2-4fb8-9776-2039952d9c15",
+      "normalizedName": "cybersecurity"
+    },
+    {
+      "name": "Salesforce",
+      "id": "59a83416-95bb-41dd-a618-ccb7c5e2829a",
+      "normalizedName": "salesforce"
+    },
+    {
+      "name": "B2B",
+      "id": "fa3ec85b-418d-44c4-8901-2ef196344ada",
+      "normalizedName": "b2b"
+    },
+    {
+      "name": "Architecture",
+      "id": "e6d49469-ef6e-46a5-84b8-9da242014761",
+      "normalizedName": "architecture"
+    },
+    {
+      "name": "Containers",
+      "id": "8e0b5f3f-461a-4b19-ba39-b57a29259c2f",
+      "normalizedName": "containers"
+    },
+    {
+      "name": "APIs",
+      "id": "1d2cbf3b-e1ca-450e-9904-46490eb4f814",
+      "normalizedName": "apis"
+    },
+    {
+      "name": "ZenDesk",
+      "id": "856a29c5-604b-4d12-b711-609efb471e88",
+      "normalizedName": "zendesk"
+    },
+    {
+      "name": "Events",
+      "id": "b7807abc-067c-4b26-9a30-720d03bb2eb8",
+      "normalizedName": "events"
+    },
+    {
+      "name": "Metaverse",
+      "id": "43bcf16b-2a1e-4268-8226-f9651f322d33",
+      "normalizedName": "metaverse"
+    },
+    {
+      "name": "Tech",
+      "id": "75b1e0a4-8c6a-4032-be4a-5fcf21e3521d",
+      "normalizedName": "tech"
+    },
+    {
+      "name": "Web2",
+      "id": "2f1bd89e-41bf-45b6-87d0-23e405f79643",
+      "normalizedName": "web2"
+    },
+    {
+      "name": "Design Thinking",
+      "id": "0a84f15d-e506-42ff-9158-fe433d861615",
+      "normalizedName": "design thinking"
+    },
+    {
+      "name": "Scrum",
+      "id": "e582992a-42a4-486b-a9c5-091ca0af9275",
+      "normalizedName": "scrum"
+    },
+    {
+      "name": "Remote Work",
+      "id": "b80d9e95-7353-420a-821c-8ae736fa9f84",
+      "normalizedName": "remote work"
+    },
+    {
+      "name": "SDLC",
+      "id": "5ce256bc-073e-4496-b261-73b6a92100f2",
+      "normalizedName": "sdlc"
+    },
+    {
+      "name": "Cypress",
+      "id": "3f60f756-7862-4086-b52b-06c6f23ba547",
+      "normalizedName": "cypress"
+    },
+    {
+      "name": "Startup environment",
+      "id": "fe44c528-3259-44bb-8d80-c82d03e1dc74",
+      "normalizedName": "startup environment"
+    },
+    {
+      "name": "User Acquisition",
+      "id": "8453a61e-272b-43f8-b532-ab29d4839629",
+      "normalizedName": "user acquisition"
+    },
+    {
+      "name": "Audit",
+      "id": "8aa803da-c420-43b9-9733-33e88ca6b169",
+      "normalizedName": "audit"
+    },
+    {
+      "name": "Test Driven Development",
+      "id": "d4bc54fd-68f3-4a54-9417-8cb7969828ff",
+      "normalizedName": "test driven development"
+    },
+    {
+      "name": "NFT",
+      "id": "ceb4694c-f11f-4b3a-a781-44abc3f23ff1",
+      "normalizedName": "nft"
+    },
+    {
+      "name": "Scalability",
+      "id": "4f0d25a3-da29-42d2-9a43-99b9939dfe43",
+      "normalizedName": "scalability"
+    },
+    {
+      "name": "Continuous Integration",
+      "id": "27244dee-924f-482c-856f-b8d09d88a4d7",
+      "normalizedName": "continuous integration"
+    },
+    {
+      "name": "Automated Testing",
+      "id": "52b30ae5-64a1-4bb4-a93d-a8a76f2ec738",
+      "normalizedName": "automated testing"
+    },
+    {
+      "name": "Decentralized Applications",
+      "id": "06992b7f-6fde-47e3-b0ee-ab29bb9bca36",
+      "normalizedName": "decentralized applications"
+    },
+    {
+      "name": "Web development",
+      "id": "0d90b977-b0e1-4c58-9f2f-90b21166b828",
+      "normalizedName": "web development"
+    },
+    {
+      "name": "API Design",
+      "id": "be2194d6-e122-43ef-bbda-96ec30fd2bef",
+      "normalizedName": "api design"
+    },
+    {
+      "name": "User Feedback",
+      "id": "7e8b0239-62ed-4787-a662-62db2ebb4769",
+      "normalizedName": "user feedback"
+    },
+    {
+      "name": "Frontend",
+      "id": "4f4a62b5-64ca-4ef6-b2c2-57802e993ffa",
+      "normalizedName": "frontend"
+    },
+    {
+      "name": "Cloud Infrastructure",
+      "id": "03770e65-5217-42e1-9fca-ee57b8716ecc",
+      "normalizedName": "cloud infrastructure"
+    },
+    {
+      "name": "autonomy",
+      "id": "616dd202-7fba-43d1-acda-8969d18c746f",
+      "normalizedName": "autonomy"
+    },
+    {
+      "name": "Web Applications",
+      "id": "899387d4-0e23-4180-9d11-775c3fe7e047",
+      "normalizedName": "web applications"
+    },
+    {
+      "name": "application security",
+      "id": "a0bb451c-960c-4e58-b1fc-b6f5e3964acc",
+      "normalizedName": "application security"
+    },
+    {
+      "name": "governance",
+      "id": "59914efb-01a0-44cf-ad97-dc1f68d2b79b",
+      "normalizedName": "governance"
+    },
+    {
+      "name": "protocol",
+      "id": "f13149b0-3254-4ea0-ab33-3e9d1b6002b6",
+      "normalizedName": "protocol"
+    },
+    {
+      "name": "Messaging",
+      "id": "ebe23c98-5095-4c09-a514-675bcfe913cc",
+      "normalizedName": "messaging"
+    },
+    {
+      "name": "Storytelling",
+      "id": "2d7d68ae-69d1-491c-ba98-632064d71ceb",
+      "normalizedName": "storytelling"
+    },
+    {
+      "name": "Growth Strategy",
+      "id": "84886ec4-7c12-4fdc-a545-d0aae49d7e5f",
+      "normalizedName": "growth strategy"
+    },
+    {
+      "name": "SaaS",
+      "id": "44324db6-64eb-4743-b1ee-d8d5d3d534d4",
+      "normalizedName": "saas"
+    },
+    {
+      "name": "Mathematics",
+      "id": "027e392b-641f-495c-9ef7-3ccb3206cbe1",
+      "normalizedName": "mathematics"
+    },
+    {
+      "name": "Systems Design",
+      "id": "26dcb234-9bc3-465c-a8be-aab505668040",
+      "normalizedName": "systems design"
+    },
+    {
+      "name": "Insights",
+      "id": "44f17593-0458-4441-b18e-05ff3146770b",
+      "normalizedName": "insights"
+    },
+    {
+      "name": "Statistical Analysis",
+      "id": "354e9d13-4a7c-4116-b4c0-ccca58f30f67",
+      "normalizedName": "statistical analysis"
+    },
+    {
+      "name": "R",
+      "id": "eaab3433-b76f-4add-ac9f-2c2c42d5896c",
+      "normalizedName": "r"
+    },
+    {
+      "name": "people skills",
+      "id": "b8c7d716-71ec-4a66-9a62-70862d7605ba",
+      "normalizedName": "people skills"
+    },
+    {
+      "name": "creative thinking",
+      "id": "967930b3-7219-47ae-b316-c332cb60c16a",
+      "normalizedName": "creative thinking"
+    },
+    {
+      "name": "Content Marketing",
+      "id": "23174b0c-0fde-427b-bee7-04fd95fa1fa2",
+      "normalizedName": "content marketing"
+    },
+    {
+      "name": "Startups",
+      "id": "76c98cfb-d311-4f2a-9441-c9f5cc2b8e51",
+      "normalizedName": "startups"
+    },
+    {
+      "name": "Agile",
+      "id": "21c78fd9-09b6-416b-a357-096857823e84",
+      "normalizedName": "agile"
+    },
+    {
+      "name": "Business",
+      "id": "a9ffe7c7-3fa5-4b71-8008-f558f8fa7022",
+      "normalizedName": "business"
+    },
+    {
+      "name": "cross-functional",
+      "id": "061ebdef-ac97-4782-a405-d27bfcaebe55",
+      "normalizedName": "cross_hyphen_functional"
+    },
+    {
+      "name": "presentations",
+      "id": "bc12209b-a0c5-4d94-a99e-8272d4997a4f",
+      "normalizedName": "presentations"
+    },
+    {
+      "name": "web",
+      "id": "849df079-6dc5-4499-bab3-b466ac95c1e9",
+      "normalizedName": "web"
+    },
+    {
+      "name": "Protocol Design",
+      "id": "e11dcd4e-eabd-48fd-a94d-02012d917eb1",
+      "normalizedName": "protocol design"
+    },
+    {
+      "name": "Applied Cryptography",
+      "id": "4abf0899-15e3-46ef-b8d4-d8ea4aace81f",
+      "normalizedName": "applied cryptography"
+    },
+    {
+      "name": "development",
+      "id": "b26e2024-3071-4a6b-8b83-839adbfbc253",
+      "normalizedName": "development"
+    },
+    {
+      "name": "Mentoring",
+      "id": "05809379-57ae-48d3-a290-06bdf5879be0",
+      "normalizedName": "mentoring"
+    },
+    {
+      "name": "Hiring",
+      "id": "a83b90f2-d2cf-452e-b5bd-87196cf1d335",
+      "normalizedName": "hiring"
+    },
+    {
+      "name": "Deployment",
+      "id": "8909f6ba-9d56-44c1-b134-833697919106",
+      "normalizedName": "deployment"
+    },
+    {
+      "name": "Unix",
+      "id": "e76cea7b-e0f6-4440-a6d0-cb8ca5b02c1c",
+      "normalizedName": "unix"
+    },
+    {
+      "name": "Performance Optimization",
+      "id": "1a622f2b-e6c6-4306-aea5-ac698e25bc00",
+      "normalizedName": "performance optimization"
+    },
+    {
+      "name": "Software Architecture",
+      "id": "c757db81-aaab-4f7d-83f8-c4ecb355eb7e",
+      "normalizedName": "software architecture"
+    },
+    {
+      "name": "Technical Communication",
+      "id": "abe84bf1-6e27-4fd6-896d-1b9e9fe7caa5",
+      "normalizedName": "technical communication"
+    },
+    {
+      "name": "Decentralization",
+      "id": "8051e3d5-07ef-446f-8d15-bfe329a5d6ba",
+      "normalizedName": "decentralization"
+    },
+    {
+      "name": "Economics",
+      "id": "893db280-8154-4668-89a8-9ad174920495",
+      "normalizedName": "economics"
+    },
+    {
+      "name": "Scripting",
+      "id": "cffec7ed-f8af-4edd-818e-2a4607bf9110",
+      "normalizedName": "scripting"
+    },
+    {
+      "name": "Linux",
+      "id": "1ba5b7ec-6cd4-4109-9292-dcd0354a4473",
+      "normalizedName": "linux"
+    },
+    {
+      "name": "Puppet",
+      "id": "5dafd4e8-1684-4163-b87f-bdfb50886123",
+      "normalizedName": "puppet"
+    },
+    {
+      "name": "Jenkins",
+      "id": "00ee75f3-432e-46ab-9392-fcff0ebc848c",
+      "normalizedName": "jenkins"
+    },
+    {
+      "name": "Decision Making",
+      "id": "2a6d0696-25b6-4db0-9ff8-1f6a8868c51d",
+      "normalizedName": "decision making"
+    },
+    {
+      "name": "GSuite",
+      "id": "167afe96-2394-4647-9fa0-e1714aeef0c1",
+      "normalizedName": "gsuite"
+    },
+    {
+      "name": "Vendor Management",
+      "id": "ea257dad-d025-4105-a596-0899eeca85a5",
+      "normalizedName": "vendor management"
+    },
+    {
+      "name": "Software",
+      "id": "cf3202d1-f1da-45c3-abe4-9b75534deecb",
+      "normalizedName": "software"
+    },
+    {
+      "name": "Cloud",
+      "id": "dfad6734-90c5-4b2e-a5c1-f4d453f876c7",
+      "normalizedName": "cloud"
+    },
+    {
+      "name": "GraphQL",
+      "id": "0a2df85f-806a-409d-94e1-cc14846712e2",
+      "normalizedName": "graphql"
+    },
+    {
+      "name": "Kafka",
+      "id": "430bb7fd-4ac0-4178-8deb-3350e33151a9",
+      "normalizedName": "kafka"
+    },
+    {
+      "name": "CircleCI",
+      "id": "c8c9c245-d7de-43e6-946e-a9ff3bd70fbb",
+      "normalizedName": "circleci"
+    },
+    {
+      "name": "customer experience",
+      "id": "c9004e67-5242-4207-8740-75305b4392b3",
+      "normalizedName": "customer experience"
+    },
+    {
+      "name": "Big Data",
+      "id": "c369bf91-d216-400d-829e-1fa881a65e9f",
+      "normalizedName": "big data"
+    },
+    {
+      "name": "gRPC",
+      "id": "84777b9c-a300-44ae-b694-adaa894651a3",
+      "normalizedName": "grpc"
+    },
+    {
+      "name": "Coding",
+      "id": "a0a42073-6487-4815-8977-944a6e1ce232",
+      "normalizedName": "coding"
+    },
+    {
+      "name": "Code Quality",
+      "id": "736383d5-165a-4f5b-8f88-d57161bc5fc7",
+      "normalizedName": "code quality"
+    },
+    {
+      "name": "iOS",
+      "id": "d0f70c48-7d6e-421b-a8e9-1edbbfe992e9",
+      "normalizedName": "ios"
+    },
+    {
+      "name": "best practices",
+      "id": "80b71e77-56bd-45ab-a3ed-39f223cbf245",
+      "normalizedName": "best practices"
+    },
+    {
+      "name": "Android",
+      "id": "252d2daf-26e0-4d6e-85fb-cff497fa95ff",
+      "normalizedName": "android"
+    },
+    {
+      "name": "critical thinking",
+      "id": "c18cdae5-f255-42c5-a90c-b4bce78bc01c",
+      "normalizedName": "critical thinking"
+    },
+    {
+      "name": "usability",
+      "id": "90266d30-63ae-4925-bb5f-b282ed5ea1e5",
+      "normalizedName": "usability"
+    },
+    {
+      "name": "performance",
+      "id": "f953e239-07b3-4a26-addd-d25536b3539c",
+      "normalizedName": "performance"
+    },
+    {
+      "name": "Incident Response",
+      "id": "0f8267aa-9e38-4c55-abfa-867df8f22020",
+      "normalizedName": "incident response"
+    },
+    {
+      "name": "IAM",
+      "id": "8ce014b1-2660-4d59-8763-ffc34d540a55",
+      "normalizedName": "iam"
+    },
+    {
+      "name": "IT",
+      "id": "46518952-28f9-4fbf-a0bd-0e303313c53c",
+      "normalizedName": "it"
+    },
+    {
+      "name": "Microservices",
+      "id": "9dd1f013-5f03-4e5a-afbe-33b271a30022",
+      "normalizedName": "microservices"
+    },
+    {
+      "name": "MongoDB",
+      "id": "29f0ad35-797b-444e-8bcd-99c6cec92e43",
+      "normalizedName": "mongodb"
+    },
+    {
+      "name": "DynamoDB",
+      "id": "f65380a2-fcfd-4262-8f4f-e1193f2c850e",
+      "normalizedName": "dynamodb"
+    },
+    {
+      "name": "Postgres",
+      "id": "2cfb98ff-d2ba-45f5-9e1f-19c39cb6c167",
+      "normalizedName": "postgres"
+    },
+    {
+      "name": "DAOs",
+      "id": "0393bc99-0fab-4e67-92a2-ebaff9b33669",
+      "normalizedName": "daos"
+    },
+    {
+      "name": "UX",
+      "id": "fd02c06b-eff2-463c-b65b-a7e57ec6f41a",
+      "normalizedName": "ux"
+    },
+    {
+      "name": "SRE",
+      "id": "c8165fdf-eb41-4933-851a-3ef386c76b08",
+      "normalizedName": "sre"
+    },
+    {
+      "name": "observability",
+      "id": "410fa692-9eea-4dcc-9740-5b8be5cab7dd",
+      "normalizedName": "observability"
+    },
+    {
+      "name": "ETL",
+      "id": "2638821a-7d1f-4202-a476-e9cd988d674c",
+      "normalizedName": "etl"
+    },
+    {
+      "name": "Data Processing",
+      "id": "b81d6f77-b259-4089-a43a-53a31da588ef",
+      "normalizedName": "data processing"
+    },
+    {
+      "name": "Data Pipelines",
+      "id": "f26c1eaf-6a3a-4c0b-b28f-29ec915e01f0",
+      "normalizedName": "data pipelines"
+    },
+    {
+      "name": "REST",
+      "id": "9d93ebdf-8b65-4fd7-829a-a6e6597109f6",
+      "normalizedName": "rest"
+    },
+    {
+      "name": "Client Services",
+      "id": "8ccf4045-3296-497f-81ab-9f20923a63d6",
+      "normalizedName": "client services"
+    },
+    {
+      "name": "Support",
+      "id": "9894f1d7-124b-4518-90fa-88aac0c912de",
+      "normalizedName": "support"
+    },
+    {
+      "name": "financial markets",
+      "id": "00a7a3b4-ce2c-44d6-a272-5d12bf4886c4",
+      "normalizedName": "financial markets"
+    },
+    {
+      "name": "product development",
+      "id": "2023312e-776b-45a7-9dff-8d7eb80ab371",
+      "normalizedName": "product development"
+    },
+    {
+      "name": "Roadmap",
+      "id": "50b6de03-bd83-4b8f-b43d-f9f93ff783ed",
+      "normalizedName": "roadmap"
+    },
+    {
+      "name": "Snowflake",
+      "id": "4ce09867-e7ad-45d7-a866-da839378ea04",
+      "normalizedName": "snowflake"
+    },
+    {
+      "name": "Cross Functional Teams",
+      "id": "1eae445d-2c01-45ce-bf2c-ac04bc47ad37",
+      "normalizedName": "cross functional teams"
+    },
+    {
+      "name": "CPA",
+      "id": "10dbd5af-1c68-4986-819c-29e83ddce5e6",
+      "normalizedName": "cpa"
+    },
+    {
+      "name": "detail-oriented",
+      "id": "3b6be74f-126d-4159-9b03-ab58be98365c",
+      "normalizedName": "detail_hyphen_oriented"
+    },
+    {
+      "name": "Google Sheets",
+      "id": "915d4e47-1352-480f-8a34-7d8fd17669ec",
+      "normalizedName": "google sheets"
+    },
+    {
+      "name": "forecasting",
+      "id": "d772c1cf-1131-42a9-97b1-24d7d5addc7d",
+      "normalizedName": "forecasting"
+    },
+    {
+      "name": "financial modeling",
+      "id": "29944c47-dba6-4dd6-946d-836f4b2f19c8",
+      "normalizedName": "financial modeling"
+    },
+    {
+      "name": "open financial system",
+      "id": "24aa9468-3647-4b40-b702-f5c00e0e47cf",
+      "normalizedName": "open financial system"
+    },
+    {
+      "name": "Engineering Management",
+      "id": "18f5394d-d60d-491e-885e-9eacb92ffd5c",
+      "normalizedName": "engineering management"
+    },
+    {
+      "name": "Recruitment",
+      "id": "8bf8ade6-65c4-4570-a77c-76f14cef55f8",
+      "normalizedName": "recruitment"
+    },
+    {
+      "name": "Strategic Planning",
+      "id": "353d955a-2b3f-4a1a-96e1-bae7cd5dd91a",
+      "normalizedName": "strategic planning"
+    },
+    {
+      "name": "Metrics",
+      "id": "d499dd7c-501c-4c6c-9c3e-295a312c0a38",
+      "normalizedName": "metrics"
+    },
+    {
+      "name": "Customer Support",
+      "id": "55af9780-d5ea-4421-b5a3-6c3caa6c0167",
+      "normalizedName": "customer support"
+    },
+    {
+      "name": "People Management",
+      "id": "9d19ec50-28c2-47c0-ab89-e606ca2be8a0",
+      "normalizedName": "people management"
+    },
+    {
+      "name": "Execution",
+      "id": "5536b517-6784-4568-9306-6330964ef486",
+      "normalizedName": "execution"
+    },
+    {
+      "name": "Performance Management",
+      "id": "f5f301ed-9dc4-4120-95e1-d6b883fa205f",
+      "normalizedName": "performance management"
+    },
+    {
+      "name": "Legal",
+      "id": "334a63ca-ae65-4070-b582-5745a28d10d0",
+      "normalizedName": "legal"
+    },
+    {
+      "name": "Excel",
+      "id": "55d89274-33be-4e52-ba0f-692066e235ec",
+      "normalizedName": "excel"
+    },
+    {
+      "name": "Information Security",
+      "id": "23c67653-1cfa-498b-9182-e64fb9c11c58",
+      "normalizedName": "information security"
+    },
+    {
+      "name": "Digital Assets",
+      "id": "1f8bf2f2-314d-486d-852c-5b1eb7ff7aa5",
+      "normalizedName": "digital assets"
+    },
+    {
+      "name": "Budgeting",
+      "id": "d8a5fa4e-f304-415d-9efa-23b99da62018",
+      "normalizedName": "budgeting"
+    },
+    {
+      "name": "Partner Management",
+      "id": "8a59c1f7-fd9a-4218-90b9-6669a87c3bbf",
+      "normalizedName": "partner management"
+    },
+    {
+      "name": "Financial Services",
+      "id": "23a9dc1b-e72c-4385-9d90-74fe907cf09c",
+      "normalizedName": "financial services"
+    },
+    {
+      "name": "Optimization",
+      "id": "3123cf38-427e-4bba-bd7f-bf45c8ac87e7",
+      "normalizedName": "optimization"
+    },
+    {
+      "name": "Creativity",
+      "id": "7e12959c-2960-4696-9af4-7365a305ae09",
+      "normalizedName": "creativity"
+    },
+    {
+      "name": "Implementation",
+      "id": "335f07b1-f64e-47e5-bddf-c1eac1dbc317",
+      "normalizedName": "implementation"
+    },
+    {
+      "name": "Product Roadmap",
+      "id": "ecfc8d25-e8dd-4408-9116-dad640ed416e",
+      "normalizedName": "product roadmap"
+    },
+    {
+      "name": "data",
+      "id": "6d1d2e00-580f-4a46-b90f-933e5cccf68d",
+      "normalizedName": "data"
+    },
+    {
+      "name": "consulting",
+      "id": "d606ef84-f00b-49f1-8538-a601b6666d7a",
+      "normalizedName": "consulting"
+    },
+    {
+      "name": "Ruby",
+      "id": "190fde77-6b73-4929-a779-583522c37b0a",
+      "normalizedName": "ruby"
+    },
+    {
+      "name": "Threat modeling",
+      "id": "56f282e5-409f-4230-92c8-b58bac618558",
+      "normalizedName": "threat modeling"
+    },
+    {
+      "name": "Code review",
+      "id": "94fd7b32-6c10-4ffa-922f-30ec320ed1b7",
+      "normalizedName": "code review"
+    },
+    {
+      "name": "Independence",
+      "id": "4bfb2890-6738-4a10-a876-a2e8a5d1517f",
+      "normalizedName": "independence"
+    },
+    {
+      "name": "Technical solutions",
+      "id": "fa996c84-b2e2-4d4a-952e-c945a84f1bce",
+      "normalizedName": "technical solutions"
+    },
+    {
+      "name": "Vue.js",
+      "id": "3f01b155-f08c-409b-83aa-965d4b9973e4",
+      "normalizedName": "vue.js"
+    },
+    {
+      "name": "Next.js",
+      "id": "2b4dfc8d-90db-4752-92d8-4570bc78494b",
+      "normalizedName": "next.js"
+    },
+    {
+      "name": "Recruiting",
+      "id": "6d907cbe-5088-4512-914a-cf1479b7006a",
+      "normalizedName": "recruiting"
+    },
+    {
+      "name": "HR",
+      "id": "a83b1985-70d4-4d12-92b0-2f49db98a213",
+      "normalizedName": "hr"
+    },
+    {
+      "name": "Onboarding",
+      "id": "dad3a858-ebc9-4508-9874-03299c291fd5",
+      "normalizedName": "onboarding"
+    },
+    {
+      "name": "Office Management",
+      "id": "649025e3-e9ad-4c94-a4d9-43752124cdea",
+      "normalizedName": "office management"
+    },
+    {
+      "name": "SEO",
+      "id": "7c141984-6e52-46c9-91dc-d6d260c66b97",
+      "normalizedName": "seo"
+    },
+    {
+      "name": "Cryptocurrencies",
+      "id": "0d92bf80-6e92-44ca-b71d-025b876b026e",
+      "normalizedName": "cryptocurrencies"
+    },
+    {
+      "name": "Data Protection",
+      "id": "30965e10-e1f2-4d45-acaa-695ec59ae3d5",
+      "normalizedName": "data protection"
+    },
+    {
+      "name": "Web 3.0",
+      "id": "8ec4eef4-113d-4d9b-826f-2e573831a3d3",
+      "normalizedName": "web 3.0"
+    },
+    {
+      "name": "Corporate Governance",
+      "id": "376fedf4-9657-4710-8284-86bf92b6eb34",
+      "normalizedName": "corporate governance"
+    },
+    {
+      "name": "Entrepreneurship",
+      "id": "b96a76f4-90c0-42c9-9896-4015c9ab9963",
+      "normalizedName": "entrepreneurship"
+    },
+    {
+      "name": "Product",
+      "id": "7934ea55-1246-4d6c-a3ac-5002da22968b",
+      "normalizedName": "product"
+    },
+    {
+      "name": "Technology",
+      "id": "95d3a9b5-b233-4fd3-9dcb-db7b2bf70811",
+      "normalizedName": "technology"
+    },
+    {
+      "name": "Payments",
+      "id": "528d84bd-04e5-4a28-b2f2-f0a3b0444ba8",
+      "normalizedName": "payments"
+    },
+    {
+      "name": "API",
+      "id": "b88bcf43-0090-40aa-8c9d-53e7d0e4a6c8",
+      "normalizedName": "api"
+    },
+    {
+      "name": "PostgreSQL",
+      "id": "bef3467f-7865-4141-a8b4-0583eac93420",
+      "normalizedName": "postgresql"
+    },
+    {
+      "name": "Team Leadership",
+      "id": "193fa2fa-1dff-4a25-bc42-19fd252671e1",
+      "normalizedName": "team leadership"
+    },
+    {
+      "name": "Technical Leadership",
+      "id": "6b81f6b1-5746-4e4e-9d32-a85ef3fe51dc",
+      "normalizedName": "technical leadership"
+    },
+    {
+      "name": "Auditing",
+      "id": "dad6b5bc-c686-447f-9538-d6cca55c79a8",
+      "normalizedName": "auditing"
+    },
+    {
+      "name": "Wireframes",
+      "id": "2f4f126d-2f3b-481b-b26a-a3fa52abe5f4",
+      "normalizedName": "wireframes"
+    },
+    {
+      "name": "Financial Technology",
+      "id": "130b1bcc-16d3-4191-a3fc-cd360c88f93e",
+      "normalizedName": "financial technology"
+    },
+    {
+      "name": "User Experience",
+      "id": "4b375208-90ca-4dea-bb45-635c538717f5",
+      "normalizedName": "user experience"
+    },
+    {
+      "name": "Design System",
+      "id": "280d5508-5dc7-48db-b0a2-a1a10f74c6ce",
+      "normalizedName": "design system"
+    },
+    {
+      "name": "Accessibility",
+      "id": "8e8675fb-d9f8-4b52-9d16-fa2c253d35f2",
+      "normalizedName": "accessibility"
+    },
+    {
+      "name": "Information Architecture",
+      "id": "785dc2c3-ca78-4c2c-99ad-cd5bde68bac0",
+      "normalizedName": "information architecture"
+    },
+    {
+      "name": "User Research",
+      "id": "49ea21d9-d490-423e-9e29-489466543b84",
+      "normalizedName": "user research"
+    },
+    {
+      "name": "Prototypes",
+      "id": "84ab89c4-15c7-49ba-a025-42efc38556ea",
+      "normalizedName": "prototypes"
+    },
+    {
+      "name": "Vue",
+      "id": "67ce23fe-4717-4d82-bd1a-c9297ec38f1f",
+      "normalizedName": "vue"
+    },
+    {
+      "name": "UI/UX Design",
+      "id": "19fc0902-94bc-47af-9e03-7e03d3d7ed87",
+      "normalizedName": "ui/ux design"
+    },
+    {
+      "name": "Responsive Design",
+      "id": "731bdc26-b6b3-4af4-8aee-b046c6600206",
+      "normalizedName": "responsive design"
+    },
+    {
+      "name": "monitoring",
+      "id": "8aa2d2b6-7cbe-49ad-b4be-eea76c465254",
+      "normalizedName": "monitoring"
+    },
+    {
+      "name": "Marketing Strategy",
+      "id": "60a91e56-2f6a-4127-883a-196cb0ae3a79",
+      "normalizedName": "marketing strategy"
+    },
+    {
+      "name": "Product Strategy",
+      "id": "70dac616-bd33-4b3e-a17a-a35d071f894a",
+      "normalizedName": "product strategy"
+    },
+    {
+      "name": "Interaction Design",
+      "id": "a9ff7de2-6621-4f2a-a7f0-ad768dba7eb5",
+      "normalizedName": "interaction design"
+    },
+    {
+      "name": "Testing",
+      "id": "73e0ca53-327e-4b66-9691-1987cfb3e9b8",
+      "normalizedName": "testing"
+    },
+    {
+      "name": "Stakeholder Management",
+      "id": "6fcf1f2a-ec55-4213-b8b8-6f9d2608587f",
+      "normalizedName": "stakeholder management"
+    },
+    {
+      "name": "Digital Marketing",
+      "id": "ea371d1e-1e1c-40f9-bdbd-26558bd6868b",
+      "normalizedName": "digital marketing"
+    },
+    {
+      "name": "Graphic Design",
+      "id": "6d7846fd-45f2-4385-b88f-4b060d204006",
+      "normalizedName": "graphic design"
+    },
+    {
+      "name": "Branding",
+      "id": "e7438504-6eaf-47d2-931b-5f1a3e737e87",
+      "normalizedName": "branding"
+    },
+    {
+      "name": "Typography",
+      "id": "893283b8-ee06-4bdd-947d-6fbab0d240c1",
+      "normalizedName": "typography"
+    },
+    {
+      "name": "Adobe Creative Suite",
+      "id": "d777f074-6a78-4e59-a985-31375c3b442b",
+      "normalizedName": "adobe creative suite"
+    },
+    {
+      "name": "Content Strategy",
+      "id": "38198b62-7d39-4689-9015-bab2aaa95760",
+      "normalizedName": "content strategy"
+    },
+    {
+      "name": "Copywriting",
+      "id": "3dfc8777-0911-41d5-bc00-1e5a2c64f2db",
+      "normalizedName": "copywriting"
+    },
+    {
+      "name": "Facebook",
+      "id": "1e62862f-d041-4788-92ef-939065b0ad35",
+      "normalizedName": "facebook"
+    },
+    {
+      "name": "independent work",
+      "id": "fb6aceef-4983-4032-8c9f-d5fca5cce7c2",
+      "normalizedName": "independent work"
+    },
+    {
+      "name": "Management",
+      "id": "5383e5c4-11b8-4f88-a420-b63db7e9b9f1",
+      "normalizedName": "management"
+    },
+    {
+      "name": "Google Analytics",
+      "id": "32e52e14-50a9-4514-be72-933d83851153",
+      "normalizedName": "google analytics"
+    },
+    {
+      "name": "team management",
+      "id": "c99213ee-7646-433f-a886-66b219ae1d6e",
+      "normalizedName": "team management"
+    },
+    {
+      "name": "Research",
+      "id": "7a79332f-9966-41d2-9ae2-ca85b56a6b49",
+      "normalizedName": "research"
+    },
+    {
+      "name": "content writing",
+      "id": "36988cd7-e1b1-4bb2-bd52-39d61962f7e8",
+      "normalizedName": "content writing"
+    },
+    {
+      "name": "Mentorship",
+      "id": "191075ed-3105-4594-9db7-69b7ccc02cf6",
+      "normalizedName": "mentorship"
+    },
+    {
+      "name": "proofreading",
+      "id": "74b19aba-3a5a-4603-b3cb-691fdc6bc203",
+      "normalizedName": "proofreading"
+    },
+    {
+      "name": "Quality Assurance",
+      "id": "ffa4686a-99f9-4690-8d36-a41c4f4d4557",
+      "normalizedName": "quality assurance"
+    },
+    {
+      "name": "Design Patterns",
+      "id": "39dae15d-48a0-4622-8d0d-2d7b94ce2f2b",
+      "normalizedName": "design patterns"
+    },
+    {
+      "name": "Client Relationships",
+      "id": "262848a6-d0b3-47c7-b0cb-4a126dd11144",
+      "normalizedName": "client relationships"
+    },
+    {
+      "name": "Self-Motivated",
+      "id": "5a826870-f714-4f33-ad1d-f64670b6239f",
+      "normalizedName": "self_hyphen_motivated"
+    },
+    {
+      "name": "Teamwork",
+      "id": "a353744c-b517-489c-b2d9-585c9d0eef3d",
+      "normalizedName": "teamwork"
+    },
+    {
+      "name": "Relationship Building",
+      "id": "a663e6b4-0da8-4a29-9fad-83808fb76ce5",
+      "normalizedName": "relationship building"
+    },
+    {
+      "name": "Microsoft Office",
+      "id": "4daf6b3a-0f0f-4665-bbad-5536fb821bc9",
+      "normalizedName": "microsoft office"
+    },
+    {
+      "name": "CRM",
+      "id": "b985b3d2-c420-44c2-90ef-952ff7e18959",
+      "normalizedName": "crm"
+    },
+    {
+      "name": "Sales",
+      "id": "3c83de9b-153b-4819-b0d3-7750aa97c2ce",
+      "normalizedName": "sales"
+    },
+    {
+      "name": "QA",
+      "id": "52c946b1-ceb0-4368-86a1-10bc91c482e8",
+      "normalizedName": "qa"
+    },
+    {
+      "name": "Test Automation",
+      "id": "78e5fb8c-d9a0-46df-b710-1985c5974f43",
+      "normalizedName": "test automation"
+    },
+    {
+      "name": "Digital Identity",
+      "id": "a95b5068-6eba-4b1f-a93b-398f5882d4ce",
+      "normalizedName": "digital identity"
+    },
+    {
+      "name": "Git",
+      "id": "aa94e021-ac36-4e4e-8ce1-258ccfb59c43",
+      "normalizedName": "git"
+    },
+    {
+      "name": "Strategic Partnerships",
+      "id": "16e4765f-1186-4f10-8da8-a73cf3e948f7",
+      "normalizedName": "strategic partnerships"
+    },
+    {
+      "name": "customer service",
+      "id": "615a2f2b-0579-42ee-95bb-c96047b6461d",
+      "normalizedName": "customer service"
+    },
+    {
+      "name": "troubleshooting",
+      "id": "49f5e222-4988-422a-85c2-fd28d664eb18",
+      "normalizedName": "troubleshooting"
+    },
+    {
+      "name": "technical support",
+      "id": "33321ccf-7a8d-4574-a6f5-578b860fdde1",
+      "normalizedName": "technical support"
+    },
+    {
+      "name": "Docker",
+      "id": "0149c96b-e6be-4e78-8bfe-588bd15f77f5",
+      "normalizedName": "docker"
+    },
+    {
+      "name": "Cloud Security",
+      "id": "bab9d2db-7068-4da7-8a08-ada1a65e4181",
+      "normalizedName": "cloud security"
+    },
+    {
+      "name": "Ansible",
+      "id": "0bbd14c4-da16-4897-a7d9-476d6b9882ed",
+      "normalizedName": "ansible"
+    },
+    {
+      "name": "Google Workspace",
+      "id": "f40c5301-035a-460d-b35f-be418f991783",
+      "normalizedName": "google workspace"
+    },
+    {
+      "name": "Public Speaking",
+      "id": "d9eaa3a2-828c-4120-80ba-be56e0998cea",
+      "normalizedName": "public speaking"
+    },
+    {
+      "name": "Innovation",
+      "id": "c4c7cad7-ad6e-47eb-8ce2-e498cee5434a",
+      "normalizedName": "innovation"
+    },
+    {
+      "name": "Data Analysis",
+      "id": "4c01e471-d0ff-48df-93d0-a3af9d8b0d12",
+      "normalizedName": "data analysis"
+    },
+    {
+      "name": "Design",
+      "id": "a2a5e177-e918-4415-9c0a-b15e58219e96",
+      "normalizedName": "design"
+    },
+    {
+      "name": "Code Reviews",
+      "id": "2bd50d55-f269-4930-8f6e-2d9b7b9d2718",
+      "normalizedName": "code reviews"
+    },
+    {
+      "name": "Developer Tools",
+      "id": "fe5d49ac-0ad5-47bd-b27b-a30d4aa54fb2",
+      "normalizedName": "developer tools"
+    },
+    {
+      "name": "Confidentiality",
+      "id": "76329b6b-bb7c-4471-921b-c522b7be1d4a",
+      "normalizedName": "confidentiality"
+    },
+    {
+      "name": "Partnership",
+      "id": "d6bbb70b-05b3-4ab6-b4fd-e0bb192f77c8",
+      "normalizedName": "partnership"
+    },
+    {
+      "name": "Process Improvement",
+      "id": "96bee94e-9b69-4840-a22f-6914099ca8d0",
+      "normalizedName": "process improvement"
+    },
+    {
+      "name": "Analytical Skills",
+      "id": "f0b4d294-ae60-445d-96ac-47e677d0cdab",
+      "normalizedName": "analytical skills"
+    },
+    {
+      "name": "smart contract development",
+      "id": "5909e83b-fda3-4707-a7db-7d4428401efc",
+      "normalizedName": "smart contract development"
+    },
+    {
+      "name": "Computer Science",
+      "id": "c29b01c9-0e1e-4d5d-8351-b6125d0f5e3e",
+      "normalizedName": "computer science"
+    },
+    {
+      "name": "software development",
+      "id": "5eff8c74-104a-4b03-a981-71eed993a1ca",
+      "normalizedName": "software development"
+    },
+    {
+      "name": "privacy",
+      "id": "ca68a60e-3b5b-497c-870f-9ab56074436f",
+      "normalizedName": "privacy"
+    },
+    {
+      "name": "Golang",
+      "id": "a3849780-1ba5-4101-bdb6-60e025c73624",
+      "normalizedName": "golang"
+    },
+    {
+      "name": "Trading",
+      "id": "6beba3d7-21fa-4f68-abdb-0851ff566951",
+      "normalizedName": "trading"
+    },
+    {
+      "name": "Gaming",
+      "id": "398bb354-0466-47e6-9652-c5c085be63f4",
+      "normalizedName": "gaming"
+    },
+    {
+      "name": "Community Management",
+      "id": "fd74b8f0-4cd9-4b47-91b1-36cf961ed18f",
+      "normalizedName": "community management"
+    },
+    {
+      "name": "Github",
+      "id": "62b5ff21-170e-4f87-bea3-3d36be515557",
+      "normalizedName": "github"
+    },
+    {
+      "name": "Confluence",
+      "id": "1dd99a72-7962-48d2-bdb3-63f7a985e5a9",
+      "normalizedName": "confluence"
+    },
+    {
+      "name": "Jira",
+      "id": "26ba99c9-ea55-487f-9ba4-3eb6d4449bfc",
+      "normalizedName": "jira"
+    },
+    {
+      "name": "Datadog",
+      "id": "83af70c6-59c8-4501-9b74-bd304bfe7fe7",
+      "normalizedName": "datadog"
+    },
+    {
+      "name": "Developer Community",
+      "id": "59c67914-7d3f-49ba-bef4-bd5587a24f77",
+      "normalizedName": "developer community"
+    },
+    {
+      "name": "Campaigns",
+      "id": "d8eff685-5d84-4e7b-b00b-e451afde0742",
+      "normalizedName": "campaigns"
+    },
+    {
+      "name": "Crypto Ecosystem",
+      "id": "43e95e8a-518f-4212-b82d-dbd78dda473a",
+      "normalizedName": "crypto ecosystem"
+    },
+    {
+      "name": "Self-Starter",
+      "id": "845ae30a-ae4b-435b-8c3b-d0d80f08b3b0",
+      "normalizedName": "self_hyphen_starter"
+    },
+    {
+      "name": "Visual Design",
+      "id": "cecdbb0d-1b3b-4456-96e2-ee7e137d9ac7",
+      "normalizedName": "visual design"
+    },
+    {
+      "name": "Motion Design",
+      "id": "221557a0-8d91-4dbc-a004-758c469a1878",
+      "normalizedName": "motion design"
+    },
+    {
+      "name": "Advertising",
+      "id": "9831c936-f78a-4656-9af0-65505f99e0e5",
+      "normalizedName": "advertising"
+    },
+    {
+      "name": "Animation",
+      "id": "f6ef75b1-25e6-4c95-a327-e78ecd9f2580",
+      "normalizedName": "animation"
+    },
+    {
+      "name": "prioritization",
+      "id": "3b6fa4a3-9038-4b16-bdec-073a5191f18c",
+      "normalizedName": "prioritization"
+    },
+    {
+      "name": "fintech",
+      "id": "8242aba7-80b7-4e4c-b3f6-2b5bb42d85d6",
+      "normalizedName": "fintech"
+    },
+    {
+      "name": "Compilers",
+      "id": "e9afe313-e2f4-42e2-b0ed-4dbebc5b7aea",
+      "normalizedName": "compilers"
+    },
+    {
+      "name": "Swift",
+      "id": "f8854996-0218-450e-9d10-16ba95b9b30e",
+      "normalizedName": "swift"
+    },
+    {
+      "name": "Software Engineering",
+      "id": "7d453e8b-a781-4bae-b465-337ea7c30b9e",
+      "normalizedName": "software engineering"
+    },
+    {
+      "name": "Developer experience",
+      "id": "6f1b7f0b-01c4-418d-846a-5d3bfb28bc60",
+      "normalizedName": "developer experience"
+    },
+    {
+      "name": "C/C++",
+      "id": "62d33dac-7298-443e-a577-f2d4d9dd5908",
+      "normalizedName": "c/c_plus__plus_"
+    },
+    {
+      "name": "Technical Documentation",
+      "id": "c633d0dd-9af2-4d5d-91bb-b504acb637de",
+      "normalizedName": "technical documentation"
+    },
+    {
+      "name": "Security",
+      "id": "b53e7ba8-1d34-44f8-935e-aa16781187f7",
+      "normalizedName": "security"
+    },
+    {
+      "name": "Data Visualization",
+      "id": "3cffebab-4b4f-4dcc-a3c0-cab25bfcf6dd",
+      "normalizedName": "data visualization"
+    },
+    {
+      "name": "Tooling",
+      "id": "d9fbae60-3ef2-4222-8102-0defef0acd74",
+      "normalizedName": "tooling"
+    },
+    {
+      "name": "Social Media Management",
+      "id": "e8d00c59-acdb-4c2c-b371-7689c0481f28",
+      "normalizedName": "social media management"
+    },
+    {
+      "name": "HubSpot",
+      "id": "e942dd4d-2e0c-4ff0-b8b4-84739e8b67c6",
+      "normalizedName": "hubspot"
+    },
+    {
+      "name": "Editing",
+      "id": "8fdb0262-d11e-4928-a0be-c3b8bc54cfba",
+      "normalizedName": "editing"
+    },
+    {
+      "name": "Startup",
+      "id": "a26b7c59-3eeb-4620-9cdf-11f18bb3d847",
+      "normalizedName": "startup"
+    },
+    {
+      "name": "Writing",
+      "id": "63e68431-7c26-471b-a074-6cfbc57298a0",
+      "normalizedName": "writing"
+    },
+    {
+      "name": "AWS",
+      "id": "8783e781-0c9e-49d6-8ce1-53ab3e26d5f4",
+      "normalizedName": "aws"
+    },
+    {
+      "name": "operating systems",
+      "id": "16245bd7-2381-4a04-853c-80ea7bc3c9b3",
+      "normalizedName": "operating systems"
+    },
+    {
+      "name": "Helm",
+      "id": "6da774bd-610a-41ef-8593-25d8633598ba",
+      "normalizedName": "helm"
+    },
+    {
+      "name": "Azure",
+      "id": "a62fd636-de90-427a-9647-dabee9cc58e8",
+      "normalizedName": "azure"
+    },
+    {
+      "name": "Bitcoin",
+      "id": "b3c12932-fab5-4e57-a2c5-31a3132063ce",
+      "normalizedName": "bitcoin"
+    },
+    {
+      "name": "automation tools",
+      "id": "e28abf00-0756-4b7f-b33c-f410fc7991ba",
+      "normalizedName": "automation tools"
+    },
+    {
+      "name": "GCP",
+      "id": "9ae604b9-7300-4b56-88c9-4a45bc6a184f",
+      "normalizedName": "gcp"
+    },
+    {
+      "name": "Kubernetes",
+      "id": "a37db545-31ee-4100-853e-7737bc3909f3",
+      "normalizedName": "kubernetes"
+    },
+    {
+      "name": "Terraform",
+      "id": "7942e909-dcb4-45cc-be15-c8b330cf10c7",
+      "normalizedName": "terraform"
+    },
+    {
+      "name": "Distributed Systems",
+      "id": "040c3d34-5eb4-4d4c-9ca7-d4a225347133",
+      "normalizedName": "distributed systems"
+    },
+    {
+      "name": "Cryptography",
+      "id": "e00d09b5-3e33-43ff-83b3-61a8433ac069",
+      "normalizedName": "cryptography"
+    },
+    {
+      "name": "Databases",
+      "id": "53609331-0c0a-484d-a486-fc64b95d8cc0",
+      "normalizedName": "databases"
+    },
+    {
+      "name": "Game Theory",
+      "id": "02bf42c8-1016-4924-b6f7-54c19df29782",
+      "normalizedName": "game theory"
+    },
+    {
+      "name": "UI/UX",
+      "id": "190f1104-11e1-4ae7-9f7e-ddce39dc09c9",
+      "normalizedName": "ui/ux"
+    },
+    {
+      "name": "Product Design",
+      "id": "7e1095c7-d3fa-41c6-85cc-3ef4ee277f9c",
+      "normalizedName": "product design"
+    },
+    {
+      "name": "Prototyping",
+      "id": "4062061d-c320-4d87-a784-6b44117e1980",
+      "normalizedName": "prototyping"
+    },
+    {
+      "name": "customer success",
+      "id": "b3ff9e88-243a-47dd-beee-f26cea29d165",
+      "normalizedName": "customer success"
+    },
+    {
+      "name": "account management",
+      "id": "a3e9ce61-14e7-4c8e-8849-dfd0ad89a080",
+      "normalizedName": "account management"
+    },
+    {
+      "name": "Korean",
+      "id": "22c979ac-8cd2-433e-a29d-fede65ee5564",
+      "normalizedName": "korean"
+    },
+    {
+      "name": "Relationship Management",
+      "id": "6b3b5f58-ef2f-419b-9395-60046d1e4f8f",
+      "normalizedName": "relationship management"
+    },
+    {
+      "name": "Event Organization",
+      "id": "e5f33d3d-9815-4fc0-8f16-1fb4e39bd7be",
+      "normalizedName": "event organization"
+    },
+    {
+      "name": "Strategic Thinking",
+      "id": "0cd4378d-241a-4cac-843c-1a0c327d8fa8",
+      "normalizedName": "strategic thinking"
+    },
+    {
+      "name": "Logistics",
+      "id": "5913d6d3-d575-4b8d-b78a-1ce5045c9deb",
+      "normalizedName": "logistics"
+    },
+    {
+      "name": "Mandarin",
+      "id": "7ea9b2dd-7481-4b41-b191-13d8ab55ee9a",
+      "normalizedName": "mandarin"
+    },
+    {
+      "name": "Scala",
+      "id": "eeb85cc3-5c91-46f7-8512-f64446f46193",
+      "normalizedName": "scala"
+    },
+    {
+      "name": "A/B Testing",
+      "id": "2c279939-97c9-4ed5-a47e-d9855619616c",
+      "normalizedName": "a/b testing"
+    },
+    {
+      "name": "Product Marketing",
+      "id": "763d65c6-0f38-41a6-a6b6-0efd7740f766",
+      "normalizedName": "product marketing"
+    },
+    {
+      "name": "Data Analytics",
+      "id": "3090cfbd-05f8-4b99-81dd-702275d41800",
+      "normalizedName": "data analytics"
+    },
+    {
+      "name": "Growth Marketing",
+      "id": "bddd0fcc-2335-474b-8886-17039130af8a",
+      "normalizedName": "growth marketing"
+    },
+    {
+      "name": "game development",
+      "id": "63bfd9c8-1bc5-40c6-923a-24eee77b4dce",
+      "normalizedName": "game development"
+    },
+    {
+      "name": "C++",
+      "id": "e4a19e7c-23e6-485d-a03e-1499e73eaf83",
+      "normalizedName": "c_plus__plus_"
+    },
+    {
+      "name": "debugging",
+      "id": "d766ce4f-1313-4e30-802c-ae8bacf08a5c",
+      "normalizedName": "debugging"
+    },
+    {
+      "name": "Unity",
+      "id": "2dc1a629-f098-4d41-84c6-1140b329d9c4",
+      "normalizedName": "unity"
+    },
+    {
+      "name": "SDKs",
+      "id": "e08e4e92-3c3c-4d1d-ba45-1efc31a27560",
+      "normalizedName": "sdks"
+    },
+    {
+      "name": "algorithms",
+      "id": "03f42ed5-a4b0-4efb-95c9-9f8478521322",
+      "normalizedName": "algorithms"
+    },
+    {
+      "name": "Software Engineer",
+      "id": "84e697cf-8594-447c-907e-21f6a2c7b134",
+      "normalizedName": "software engineer"
+    },
+    {
+      "name": "system design",
+      "id": "0c363ebf-5a1c-42a0-89a7-5078f7df7628",
+      "normalizedName": "system design"
+    },
+    {
+      "name": "Solidity",
+      "id": "ab3d740c-cddb-4905-b7fb-2cc55ebaf8a4",
+      "normalizedName": "solidity"
+    },
+    {
+      "name": "smart contract",
+      "id": "230912c0-4db4-4097-b72e-0b9a975a52df",
+      "normalizedName": "smart contract"
+    },
+    {
+      "name": "data structures",
+      "id": "032a0360-96ea-44aa-bff1-f9fe61ee7643",
+      "normalizedName": "data structures"
+    },
+    {
+      "name": "mobile applications",
+      "id": "7d166983-2a5e-4d5f-944f-d419b1309631",
+      "normalizedName": "mobile applications"
+    },
+    {
+      "name": "React Native",
+      "id": "619357b3-1a9f-432a-9a39-8bc062714242",
+      "normalizedName": "react native"
+    },
+    {
+      "name": "analysis",
+      "id": "eca5b448-c36e-45e6-a149-7baa99f0aaf3",
+      "normalizedName": "analysis"
+    },
+    {
+      "name": "reporting",
+      "id": "8f808b7a-12c3-4395-9888-394bd1a69f0d",
+      "normalizedName": "reporting"
+    },
+    {
+      "name": "accounting",
+      "id": "94b7cd0d-7057-401e-9df5-1b54d7c2e7df",
+      "normalizedName": "accounting"
+    },
+    {
+      "name": "financial planning",
+      "id": "f1faf5af-2d9a-4d94-831f-3a1a81cbfd21",
+      "normalizedName": "financial planning"
+    },
+    {
+      "name": "financial statements",
+      "id": "e76b76d9-0a85-4475-b35a-a7aa89225e6e",
+      "normalizedName": "financial statements"
+    },
+    {
+      "name": "risk management",
+      "id": "bbbddf5e-ee01-4ec9-adab-2aa9cc7ad825",
+      "normalizedName": "risk management"
+    },
+    {
+      "name": "financial analysis",
+      "id": "2c5f91c9-3047-4253-8821-23374d528c68",
+      "normalizedName": "financial analysis"
+    },
+    {
+      "name": "Event Planning",
+      "id": "4b4c9c45-2f94-42ce-93b2-567bb8d874e4",
+      "normalizedName": "event planning"
+    },
+    {
+      "name": "strategy",
+      "id": "308bc6e8-bf4a-4483-aa17-fc434679af4d",
+      "normalizedName": "strategy"
+    },
+    {
+      "name": "distributed computing",
+      "id": "6a89e0b0-7608-453c-8e05-4939f35c20e3",
+      "normalizedName": "distributed computing"
+    },
+    {
+      "name": "program management",
+      "id": "54fb320c-ebf9-4960-ba5b-b55134611def",
+      "normalizedName": "program management"
+    },
+    {
+      "name": "Organizational Skills",
+      "id": "c36d3d23-8add-409f-897a-f4dba037661b",
+      "normalizedName": "organizational skills"
+    },
+    {
+      "name": "Campaign Management",
+      "id": "950d6c29-0004-4aac-903e-3c743b70a67f",
+      "normalizedName": "campaign management"
+    },
+    {
+      "name": "Community Engagement",
+      "id": "c42aae1c-ab22-49d7-ab91-0595480a72c0",
+      "normalizedName": "community engagement"
+    },
+    {
+      "name": "Community Building",
+      "id": "ec30f844-259e-4cad-bd10-baa0ade5b9a0",
+      "normalizedName": "community building"
+    },
+    {
+      "name": "Product Launches",
+      "id": "4b5caffb-4322-43ca-a47d-de22291daa1f",
+      "normalizedName": "product launches"
+    },
+    {
+      "name": "Move",
+      "id": "258abbab-b51a-4c22-af40-84fc33d41c8a",
+      "normalizedName": "move"
+    },
+    {
+      "name": "Developer Relations",
+      "id": "1cec2c7a-5ce8-4703-9fc6-7972f63e94be",
+      "normalizedName": "developer relations"
+    },
+    {
+      "name": "Twitter",
+      "id": "dba2c9b7-791e-4f15-a4a5-a7503e009654",
+      "normalizedName": "twitter"
+    },
+    {
+      "name": "Cryptocurrency",
+      "id": "92da01cd-d6f4-4b93-913a-762d04a26993",
+      "normalizedName": "cryptocurrency"
+    },
+    {
+      "name": "Developer Tooling",
+      "id": "4bcd11c6-68a7-4b76-9018-85246c972438",
+      "normalizedName": "developer tooling"
+    },
+    {
+      "name": "Conferences",
+      "id": "8c266afb-a3f5-45b4-8481-780374bbebe9",
+      "normalizedName": "conferences"
+    },
+    {
+      "name": "Content Creation",
+      "id": "dc7168b6-a231-4e34-9236-3eacc863ad31",
+      "normalizedName": "content creation"
+    },
+    {
+      "name": "Social Media",
+      "id": "2016cf52-51e9-4d2c-a21e-79fd5daf6dfe",
+      "normalizedName": "social media"
+    },
+    {
+      "name": "Engineering",
+      "id": "29a31a71-52a5-461e-aa64-1f5b233b24bb",
+      "normalizedName": "engineering"
+    },
+    {
+      "name": "Analytics",
+      "id": "501f849f-9acd-4206-a711-ea27ae0c14fd",
+      "normalizedName": "analytics"
+    },
+    {
+      "name": "Programming languages",
+      "id": "2e45390d-9a80-469a-afe1-da295d59c001",
+      "normalizedName": "programming languages"
+    },
+    {
+      "name": "Figma",
+      "id": "0e8edf74-c908-4d84-8970-a058dc6c6b5a",
+      "normalizedName": "figma"
+    },
+    {
+      "name": "Leadership",
+      "id": "5a5d1463-2078-420f-8256-004cbcd98453",
+      "normalizedName": "leadership"
+    },
+    {
+      "name": "Organization",
+      "id": "f4ef0ba6-cce7-4cfa-9f41-e53a40369164",
+      "normalizedName": "organization"
+    },
+    {
+      "name": "Time-Management",
+      "id": "bee6f73a-16e1-4e82-bf24-a4e8483b2a10",
+      "normalizedName": "time_hyphen_management"
+    },
+    {
+      "name": "Photoshop",
+      "id": "eaa5ac91-679f-45f0-ae0d-2c9098643c26",
+      "normalizedName": "photoshop"
+    },
+    {
+      "name": "Illustrator",
+      "id": "ab87212d-bcd4-4330-b65b-a8e36a856975",
+      "normalizedName": "illustrator"
+    },
+    {
+      "name": "Data Science",
+      "id": "377b9254-1061-48ca-b6fc-ff285880b02c",
+      "normalizedName": "data science"
+    },
+    {
+      "name": "Machine Learning",
+      "id": "cb44923a-393f-4b4c-8272-e2c6cfb5b2b6",
+      "normalizedName": "machine learning"
+    },
+    {
+      "name": "AI",
+      "id": "fdb910ff-085e-4dd1-81ab-137c0e7465d4",
+      "normalizedName": "ai"
+    },
+    {
+      "name": "negotiation",
+      "id": "d6076cc6-e617-4666-9271-bbbfed52ffcf",
+      "normalizedName": "negotiation"
+    },
+    {
+      "name": "networking",
+      "id": "3af0ec7e-0554-4053-b260-e02fb7e19d53",
+      "normalizedName": "networking"
+    },
+    {
+      "name": "commercial agreements",
+      "id": "21cc0266-0372-41d1-b95c-7be2470859d1",
+      "normalizedName": "commercial agreements"
+    },
+    {
+      "name": "capital markets",
+      "id": "05007a98-fe96-4fbb-9356-41682f88a851",
+      "normalizedName": "capital markets"
+    },
+    {
+      "name": "partnerships",
+      "id": "dfba8edd-2ca7-44a9-aa55-d7043f7896a9",
+      "normalizedName": "partnerships"
+    },
+    {
+      "name": "presentation",
+      "id": "7f3dd6f9-b3ed-457c-b724-bcabc2eed696",
+      "normalizedName": "presentation"
+    },
+    {
+      "name": "crypto industry",
+      "id": "261967a6-3a62-40de-b370-1df0d714cdac",
+      "normalizedName": "crypto industry"
+    },
+    {
+      "name": "Python",
+      "id": "3a825090-717a-4a2a-a543-ccfc4f0f58c7",
+      "normalizedName": "python"
+    },
+    {
+      "name": "Data Engineering",
+      "id": "051595e4-3ea1-4f4c-94ca-ab0e0ec4f2b4",
+      "normalizedName": "data engineering"
+    },
+    {
+      "name": "Airflow",
+      "id": "7900ddec-ef4d-4334-89e1-60c1441f7347",
+      "normalizedName": "airflow"
+    },
+    {
+      "name": "Tableau",
+      "id": "024a14d3-9b15-4eb8-be99-cfa65ecbb9ce",
+      "normalizedName": "tableau"
+    },
+    {
+      "name": "Data Collection",
+      "id": "ce729e49-22bd-4bef-bcc7-f7cb31eace1f",
+      "normalizedName": "data collection"
+    },
+    {
+      "name": "SQL",
+      "id": "722c89c1-bcd7-47b4-ac57-af54bfd254c2",
+      "normalizedName": "sql"
+    },
+    {
+      "name": "Data Management",
+      "id": "0afeaffb-b0ee-4888-8fc1-aab673d413c6",
+      "normalizedName": "data management"
+    },
+    {
+      "name": "Looker",
+      "id": "3292dccd-02e7-44be-8b84-d1c5f2b246ca",
+      "normalizedName": "looker"
+    },
+    {
+      "name": "policy",
+      "id": "b629971d-bbe9-422e-b5e0-01cfd45caf27",
+      "normalizedName": "policy"
+    },
+    {
+      "name": "interpersonal skills",
+      "id": "b0664c64-c4fb-47ef-8e4e-2f8411499d2f",
+      "normalizedName": "interpersonal skills"
+    },
+    {
+      "name": "compliance",
+      "id": "b58eea7b-388b-44a6-bcaf-7ece5a7e0e02",
+      "normalizedName": "compliance"
+    },
+    {
+      "name": "decentralized technologies",
+      "id": "72cd9ec5-5dec-44e7-a9a1-5bf6bea51726",
+      "normalizedName": "decentralized technologies"
+    },
+    {
+      "name": "regulatory",
+      "id": "83c1bbfd-bbdc-4362-942b-82d8eab38aae",
+      "normalizedName": "regulatory"
+    },
+    {
+      "name": "Finance",
+      "id": "5a1569b0-b882-4db3-ae13-a88881279c13",
+      "normalizedName": "finance"
+    },
+    {
+      "name": "Crypto",
+      "id": "80e806b5-fe02-46ce-8eac-9724af2263d6",
+      "normalizedName": "crypto"
+    },
+    {
+      "name": "Investor Relations",
+      "id": "2a5b4758-7b52-498b-b993-11997e0305b4",
+      "normalizedName": "investor relations"
+    },
+    {
+      "name": "Discord",
+      "id": "10edf32d-0370-4fe7-8ebf-fa895fd58b45",
+      "normalizedName": "discord"
+    },
+    {
+      "name": "engagement",
+      "id": "bf09172b-167f-45e5-944f-c0c2bed8f40b",
+      "normalizedName": "engagement"
+    },
+    {
+      "name": "feedback",
+      "id": "1793b48b-8c71-4c14-86f0-180492d20b14",
+      "normalizedName": "feedback"
+    },
+    {
+      "name": "Telegram",
+      "id": "45327dc4-dd24-4dd5-ab01-7fbfa610dcd9",
+      "normalizedName": "telegram"
+    },
+    {
+      "name": "multitasking",
+      "id": "af76161a-1b25-4375-8a86-d95ac2f6a686",
+      "normalizedName": "multitasking"
+    },
+    {
+      "name": "Web3",
+      "id": "5c6bef98-2589-41f6-b77f-7e461848ec27",
+      "normalizedName": "web3"
+    },
+    {
+      "name": "Attention to Detail",
+      "id": "8663da53-1f17-4a39-bc43-b13ce935fa44",
+      "normalizedName": "attention to detail"
+    },
+    {
+      "name": "Product Management",
+      "id": "3ebcddb9-8946-41e9-af65-8ebd0177eedf",
+      "normalizedName": "product management"
+    },
+    {
+      "name": "Operations",
+      "id": "72906755-da8c-48bd-8a72-f2a5ddd8221e",
+      "normalizedName": "operations"
+    },
+    {
+      "name": "Cross-functional Collaboration",
+      "id": "30fadf4e-1910-4bb4-8063-948a0be3d56b",
+      "normalizedName": "cross_hyphen_functional collaboration"
+    },
+    {
+      "name": "German",
+      "id": "8a036156-6261-48f0-b7fe-8c4133a1c107",
+      "normalizedName": "german"
+    },
+    {
+      "name": "English",
+      "id": "55b89d16-55b4-4123-ba54-85f2fe189a2b",
+      "normalizedName": "english"
+    },
+    {
+      "name": "analytical",
+      "id": "04afc35a-f3d1-4a9f-938b-edad8b1087cd",
+      "normalizedName": "analytical"
+    },
+    {
+      "name": "problem-solving",
+      "id": "902966e6-83ca-4d54-a07f-ae72212e35b4",
+      "normalizedName": "problem_hyphen_solving"
+    },
+    {
+      "name": "Project Management",
+      "id": "61935d44-061d-4ed8-b4f6-a788c0e63d99",
+      "normalizedName": "project management"
+    },
+    {
+      "name": "Ethereum",
+      "id": "3043bb2c-c748-4b75-a788-ec1fe0eee891",
+      "normalizedName": "ethereum"
+    },
+    {
+      "name": "Cosmos",
+      "id": "b1e03c2c-9586-4762-a755-e6c0f0030e43",
+      "normalizedName": "cosmos"
+    },
+    {
+      "name": "Documentation",
+      "id": "68f17b00-5e62-44ea-8e5b-706e39d96447",
+      "normalizedName": "documentation"
+    },
+    {
+      "name": "Automation",
+      "id": "46942393-da9d-47c4-b9d2-1ff74c5c63e7",
+      "normalizedName": "automation"
+    },
+    {
+      "name": "Grafana",
+      "id": "404ea624-771e-4068-af05-525ea68c793e",
+      "normalizedName": "grafana"
+    },
+    {
+      "name": "GitHub Actions",
+      "id": "87233c00-e253-4264-8ee9-16c903e19fd2",
+      "normalizedName": "github actions"
+    },
+    {
+      "name": "Planning",
+      "id": "a1cc9438-70ec-473b-b035-e55e5bee9ec5",
+      "normalizedName": "planning"
+    },
+    {
+      "name": "Fuzzing",
+      "id": "49554ff7-466a-4fb1-b1eb-e9b00f059d94",
+      "normalizedName": "fuzzing"
+    },
+    {
+      "name": "Infrastructure",
+      "id": "003f0863-a45b-41a9-8275-cd7669992743",
+      "normalizedName": "infrastructure"
+    },
+    {
+      "name": "Infrastructure as Code",
+      "id": "5592c0c7-1ec1-417b-a2ef-661df85c5437",
+      "normalizedName": "infrastructure as code"
+    },
+    {
+      "name": "Geth",
+      "id": "43fa6b9b-e126-4fbb-bdce-5057d55b2cff",
+      "normalizedName": "geth"
+    },
+    {
+      "name": "Smart contracts",
+      "id": "8b61cdaa-32a0-4449-b1d2-4affa438e414",
+      "normalizedName": "smart contracts"
+    },
+    {
+      "name": "DevOps",
+      "id": "2cea2c76-e53a-45a3-9eee-12b420c11a64",
+      "normalizedName": "devops"
+    },
+    {
+      "name": "Cosmos SDK",
+      "id": "686e4a15-c8cb-429b-a70f-4d0536867000",
+      "normalizedName": "cosmos sdk"
+    },
+    {
+      "name": "EVM",
+      "id": "151db68e-7ab6-409c-9aa7-a2f1c7f9c9d8",
+      "normalizedName": "evm"
+    },
+    {
+      "name": "Community",
+      "id": "6bb39097-e400-4e6e-98b8-9a48f82f6898",
+      "normalizedName": "community"
+    },
+    {
+      "name": "dApps",
+      "id": "c04eff0f-f60d-43c2-8c84-803a00bebced",
+      "normalizedName": "dapps"
+    },
+    {
+      "name": "Business Development",
+      "id": "176050ff-5938-413c-8dee-96d84ddf0aa6",
+      "normalizedName": "business development"
+    },
+    {
+      "name": "Travel",
+      "id": "42dffed1-a1e9-4ae1-9c2a-479660fdae02",
+      "normalizedName": "travel"
+    },
+    {
+      "name": "Ecosystem",
+      "id": "b72f62d3-20a9-4fbb-89ee-04a2290fa54e",
+      "normalizedName": "ecosystem"
+    },
+    {
+      "name": "DeFi",
+      "id": "5639c45e-6bd0-4295-b6b5-d22afb442b08",
+      "normalizedName": "defi"
+    },
+    {
+      "name": "Technical Writing",
+      "id": "9f45c67e-90e4-4724-ae3e-8ec8dbf9e62c",
+      "normalizedName": "technical writing"
+    },
+    {
+      "name": "Collaboration",
+      "id": "e50a37f1-94a9-486a-a4e1-1ee8e16c69f5",
+      "normalizedName": "collaboration"
+    },
+    {
+      "name": "Slack",
+      "id": "56f893dd-c2a8-4f21-bca0-6c83b12ee8f3",
+      "normalizedName": "slack"
+    },
+    {
+      "name": "Process Optimization",
+      "id": "af805086-0f8d-4dae-ae15-a72b2cb369de",
+      "normalizedName": "process optimization"
+    },
+    {
+      "name": "Business Operations",
+      "id": "42050e18-efdc-4e0e-9e4b-94a9dd3e8cf1",
+      "normalizedName": "business operations"
+    },
+    {
+      "name": "Learning",
+      "id": "9fc403f6-eebc-444a-ae74-571daed3f359",
+      "normalizedName": "learning"
+    },
+    {
+      "name": "Notion",
+      "id": "26872a49-10c0-43ec-9a01-4bc6d6f84b9b",
+      "normalizedName": "notion"
+    },
+    {
+      "name": "Market Research",
+      "id": "6a573efb-b004-4463-9ebf-fdad05b50402",
+      "normalizedName": "market research"
+    },
+    {
+      "name": "Adaptability",
+      "id": "0f0a8631-01ea-494d-acc6-2be3ac9769f3",
+      "normalizedName": "adaptability"
+    },
+    {
+      "name": "ArgoCD",
+      "id": "80c8dd47-f815-4cf5-83c7-a9329d200bfe",
+      "normalizedName": "argocd"
+    },
+    {
+      "name": "Industry Trends",
+      "id": "6d854f22-6821-41fa-95cc-320d88b454b2",
+      "normalizedName": "industry trends"
+    },
+    {
+      "name": "Prometheus",
+      "id": "df969127-fd30-49d2-a598-bf9836c75ad7",
+      "normalizedName": "prometheus"
+    }
+  ]
+}

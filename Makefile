@@ -52,3 +52,8 @@ docker_build:
 
 docker_run:
 	docker run -p 8080:8080 image
+
+serve_test_jobs:
+	@chmod +x ./scripts/update_webhook_url_script.sh
+	./scripts/post_test_jobs.sh
+   

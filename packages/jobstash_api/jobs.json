@@ -14,6 +14,11 @@
         },
         {
           "id": "e0f5baa7-8370-4dd9-ab2e-dd012fc61e0f",
+          "name": "iOS",
+          "normalizedName": "ios"
+        },
+        {
+          "id": "e0f5baa7-8370-4dd9-ab2e-dd012fc61e0f",
           "name": "G-Suite",
           "normalizedName": "g_hyphen_suite"
         },
