@@ -12,6 +12,10 @@ class Config {
   static bool get isDevEnv => env('BOT_NAME') == 'JobStashDevBot';
 
   static String get openAiApiKey => env('OPEN_AI_API_KEY');
+
+  static const List<int> admins = [25954567];
+
+  static bool checkIsAdmin(int userId) => admins.contains(userId);
 }
 
 T env<T>(String key) {

@@ -19,13 +19,10 @@ class Mailer {
 
       //parse job
       final body = await parseRequestBody<List<dynamic>>(request);
+      // final posts = body.map((e) => Post.fromJson(e)).toList().sublist(0, 20);
       final posts = body.map((e) => Post.fromJson(e)).toList();
 
       final reporter = Reporter();
-
-      //store how many users are receiving how many job postings for logging and print to console
-      // final userIdToPostCountMap = <String, int>{};
-      // final postIdToUsersCountMap = <int, int>{};
 
       await Future.wait(posts.map((post) async {
         final userIds = await filtersDao.getUsersFor(
@@ -38,11 +35,8 @@ class Mailer {
           maximumHeadCount: post.organization.properties.headcountEstimate?.high,
           tags: post.job.tags?.map((e) => e.name).toList(),
         );
-        // postIdToUsersCountMap[post.hashCode] = userIds.length;
         await _sendMail(telegramApi, userIds, post);
         reporter.aggregate(post, userIds);
-
-        // await Reporter().report(posts, postIdToUsersCountMap, userIds);
       }));
 
       await reporter.report(posts.length);

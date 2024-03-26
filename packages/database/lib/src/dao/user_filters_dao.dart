@@ -74,6 +74,11 @@ class UserFiltersDao {
       tags,
     );
   }
+
+  Future<int> getUsersCount() async {
+    final documents = await collection.get();
+    return documents.length;
+  }
 }
 
 extension UserDaoExt on UserFiltersDao {

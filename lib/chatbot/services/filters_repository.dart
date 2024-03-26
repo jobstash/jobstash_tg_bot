@@ -74,6 +74,10 @@ class FiltersRepository {
   Future<bool> isUserExists(int userId) {
     return _userDao.isUserExists(userId);
   }
+
+  Future<int> getUsersCount() {
+    return _userDao.getUsersCount();
+  }
 }
 
 class _InMemoryCache {
