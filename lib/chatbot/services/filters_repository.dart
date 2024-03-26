@@ -1,51 +1,20 @@
 import 'package:database/database.dart';
 import 'package:database/src/model/user_filters_dto.dart';
-import 'package:jobstash_api/jobstash_api.dart';
-
-/// Applicable filters
-/// - location
-/// - salary
-/// - seniority
-/// - commitment
-/// - head count
-/// - tags
-final _relevantFiltersIds = [
-  // 'locations',
-  // 'salary',
-  // 'seniority',
-  // 'commitments',
-  // 'headcountEstimate',
-  'tags',
-];
 
 class FiltersRepository {
-  FiltersRepository(this._api, this._userDao) : _cache = _InMemoryCache();
+  FiltersRepository(this._userDao);
 
-  final JobStashApi _api;
   final UserFiltersDao _userDao;
-
-  final _InMemoryCache _cache;
-
-  Future<Map<String, Filter>> getRelevantFilters() async {
-    final filters = _cache.filters;
-    if (filters != null) {
-      return filters;
-    }
-
-    final filtersFromApi = await _api.getAllFilters();
-    final relevantFiltersMap = Map<String, Filter>.fromEntries(
-      filtersFromApi.entries.where((e) => _relevantFiltersIds.contains(e.key)),
-    );
-    _cache.setFilters(relevantFiltersMap);
-    return relevantFiltersMap;
-  }
 
   Future<UserFiltersDto?> getFilters(int userId) async {
     return _userDao.getFilters(userId);
   }
 
   Future<List<dynamic>?> getUserFilterOptions(int userId, String filterKey) async {
-    return _userDao.getFilterOptions(userId, filterKey);
+    final options = await _userDao.getFilterOptions(userId, filterKey);
+    return options?.map((e) {
+      return e.toString();
+    }).toList();
   }
 
   Future<void> setUserFilterValue(int userId, String filterKey, dynamic value) {
@@ -77,15 +46,5 @@ class FiltersRepository {
 
   Future<int> getUsersCount() {
     return _userDao.getUsersCount();
-  }
-}
-
-class _InMemoryCache {
-  Map<String, Filter>? _filters;
-
-  Map<String, Filter>? get filters => _filters;
-
-  void setFilters(Map<String, Filter> filters) {
-    _filters = filters;
   }
 }

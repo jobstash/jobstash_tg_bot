@@ -1,4 +1,3 @@
-import 'package:ai_assistant/ai_assistant.dart';
 import 'package:chatterbox/chatterbox.dart';
 import 'package:database/database.dart';
 import 'package:jobstash_api/jobstash_api.dart';
@@ -30,13 +29,12 @@ class ChatBot {
       final firebaseStore = FirebaseDialogStore(dialogDao);
 
       final api = JobStashApi();
-      final repository = FiltersRepository(api, userDao);
-      final aiAssistant = AiAssistant(Config.openAiApiKey, firebaseStore);
+      final repository = FiltersRepository(userDao);
       final botApi = TelegramBotApi(Config.botToken);
 
       final flows = <Flow>[
-        StartFlow(repository),
-        FiltersFlow(botApi, repository, api),
+        StartFlow(),
+        FiltersFlow(botApi, api, repository),
         StopFlow(repository),
         DropUsersThreadFlow(firebaseStore),
 

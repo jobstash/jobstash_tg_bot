@@ -1,16 +1,8 @@
 part of '../filters_setup_flow.dart';
 
-class _MultiSelectSearchDisplayStep extends FlowStep {
+class _TagsDisplayStep extends FlowStep {
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
-    final filterId = args?.first;
-
-    if (filterId == null) {
-      return ReactionResponse(
-        text: 'Oops, something went wrong. Please try again.',
-      );
-    }
-
     return ReactionResponse(
       // editMessageId: messageContext.editMessageId,
       text: """Type position, technology or any other tag you are interested in separated by comma. 
@@ -18,17 +10,17 @@ class _MultiSelectSearchDisplayStep extends FlowStep {
 _For example: "typescript, nodejs, nft"_
 """,
       markdown: true,
-      afterReplyUri: (_MultiSelectSearchUpdateStep).toStepUri([filterId]),
+      afterReplyUri: (_TagsUpdateStep).toStepUri(['tags']),
     );
   }
 }
 
-class _MultiSelectSearchUpdateStep extends FlowStep {
-  _MultiSelectSearchUpdateStep(this._botApi, this._jobStashApi, this._filtersRepository);
+class _TagsUpdateStep extends FlowStep {
+  _TagsUpdateStep(this._botApi, this._jobStashApi, this._repo);
 
   final TelegramBotApi _botApi;
   final JobStashApi _jobStashApi;
-  final FiltersRepository _filtersRepository;
+  final FiltersRepository _repo;
 
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
@@ -55,7 +47,7 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
       final tags = data.recognizedTags;
       final unrecognizedInput = data.unrecognizedTags;
 
-      await _filtersRepository.setUserFilterValue(messageContext.userId, filterId, tags);
+      await _repo.setUserFilterValue(messageContext.userId, filterId, tags);
 
       // final removeTags = tags == null || tags.isEmpty;
       final responseParts = <String>[];
@@ -82,7 +74,7 @@ class _MultiSelectSearchUpdateStep extends FlowStep {
         ),
       ]);
     } catch (error, stacktrace) {
-      logErrorToTelegramChannel('Failed update MultiSelectSearchFilter', error, stacktrace);
+      logErrorToTelegramChannel('Failed update TagsFilter', error, stacktrace);
       return ReactionResponse(
         text: 'Oops, something went wrong. Please try again.',
       );
@@ -98,9 +90,6 @@ class _MultiSelectTryAgainStep extends FlowStep {
     return ReactionComposed(responses: [
       ReactionResponse(
         text: "Could not recognize your tags. Please to spell in different a way or use different tags.",
-      ),
-      ReactionRedirect(
-        stepUri: (FilterDetailedStep).toStepUri(['tags']),
       ),
     ]);
   }
