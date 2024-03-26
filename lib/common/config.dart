@@ -13,7 +13,7 @@ class Config {
 
   static String get openAiApiKey => env('OPEN_AI_API_KEY');
 
-  static const List<int> admins = [25954567];
+  static const List<int> admins = [25954567, 1659134542];
 
   static bool checkIsAdmin(int userId) => admins.contains(userId);
 }
