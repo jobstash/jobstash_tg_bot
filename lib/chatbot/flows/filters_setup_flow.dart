@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:chatterbox/chatterbox.dart';
 import 'package:collection/collection.dart';
 import 'package:jobstash_api/jobstash_api.dart';
@@ -38,7 +40,7 @@ class FiltersFlowInitialStep extends FlowStep {
 
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
-    final editMessageId = int.tryParse(args.secondOrNull ?? '');
+    final editMessageId = int.tryParse(args?.firstOrNull ?? '');
 
     return ReactionResponse(
       text: 'Please select filter you want to adjust.',
