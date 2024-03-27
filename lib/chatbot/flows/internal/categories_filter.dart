@@ -28,7 +28,7 @@ class _CategoriesSelectStep extends FlowStep {
         ...pageCategories.map((option) {
           final isSelected = selectedOptions.contains(option.toString());
           return InlineButton(
-            title: '${option.toString()} ${isSelected ? '✅' : ''}',
+            title: '${option.capitalize()} ${isSelected ? '✅' : ''}',
             nextStepUri: (_CategoriesUpdateStep).toStepUri([CategoryFilter.name, currentPage.toString(), option]),
           );
         }).toList(),

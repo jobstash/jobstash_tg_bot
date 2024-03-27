@@ -6,6 +6,7 @@ import 'package:jobstash_api/jobstash_api.dart';
 import 'package:jobstash_bot/chatbot/services/filters_repository.dart';
 import 'package:jobstash_bot/chatbot/services/providers/category_filter.dart';
 import 'package:jobstash_bot/chatbot/utils/args_utils.dart';
+import 'package:jobstash_bot/chatbot/utils/string_utils.dart';
 import 'package:jobstash_bot/common/utils/logger.dart';
 import 'package:telegram_api/shared_api.dart';
 
@@ -84,12 +85,5 @@ class _OnNewFiltersAppliedStep extends FlowStep {
       text: 'Filters applied!\n You will now start receiving job offers based on your preferences.',
       editMessageId: messageContext.editMessageId,
     );
-  }
-}
-
-extension _StringExt on String {
-  String capitalize() {
-    final withSpaces = replaceAll('_', ' ');
-    return withSpaces[0].toUpperCase() + withSpaces.substring(1).toLowerCase();
   }
 }
