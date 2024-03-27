@@ -19,20 +19,20 @@ class Mailer {
 
       //parse job
       final body = await parseRequestBody<List<dynamic>>(request);
-      // final posts = body.map((e) => Post.fromJson(e)).toList().sublist(0, 20);
-      final posts = body.map((e) => Post.fromJson(e)).toList();
+      final posts = body.map((e) => Post.fromJson(e)).toList().sublist(0, 20);
+      // final posts = body.map((e) => Post.fromJson(e)).toList();
 
       final reporter = Reporter();
 
       await Future.wait(posts.map((post) async {
         final userIds = await filtersDao.getUsersFor(
-          location: post.job.location,
-          minimumSalary: post.job.minimumSalary,
-          maximumSalary: post.job.maximumSalary,
-          seniority: post.job.seniority,
-          // commitment: post.job.commitment, //todo
-          minimumHeadCount: post.organization.properties.headcountEstimate?.low,
-          maximumHeadCount: post.organization.properties.headcountEstimate?.high,
+          // location: post.job.location,
+          // minimumSalary: post.job.minimumSalary,
+          // maximumSalary: post.job.maximumSalary,
+          // seniority: post.job.seniority,
+          // // commitment: post.job.commitment, //todo
+          // minimumHeadCount: post.organization.properties.headcountEstimate?.low,
+          // maximumHeadCount: post.organization.properties.headcountEstimate?.high,
           tags: post.job.tags?.map((e) => e.name).toList(),
         );
         await _sendMail(telegramApi, userIds, post);

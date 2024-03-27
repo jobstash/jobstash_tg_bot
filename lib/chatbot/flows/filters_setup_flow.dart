@@ -27,7 +27,7 @@ class FiltersFlow extends CommandFlow {
 
   @override
   List<StepFactory> get steps => [
-        () => FiltersFlowInitialStep(),
+        () => FiltersFlowInitialStep(_repo),
         () => _CategoriesSelectStep(_repo),
         () => _CategoriesUpdateStep(_repo),
         () => _TagsDisplayStep(),
@@ -36,14 +36,27 @@ class FiltersFlow extends CommandFlow {
 }
 
 class FiltersFlowInitialStep extends FlowStep {
-  FiltersFlowInitialStep();
+  FiltersFlowInitialStep(this._repo);
+
+  final FiltersRepository _repo;
 
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
     final editMessageId = int.tryParse(args?.firstOrNull ?? '');
 
+    final categories =
+        await _repo.getUserFilterOptions(messageContext.userId, CategoryFilter.name) as List<String>? ?? [];
+    final tags = await _repo.getUserFilterOptions(messageContext.userId, 'tags') as List<String>? ?? [];
+
     return ReactionResponse(
-      text: 'Please select filter you want to adjust.',
+      text: """
+*Current filters*      
+*Categories:* ${categories.map((e) => e.capitalize()).join(', ')}
+      
+*Tags:* ${tags.join(', ')}
+
+*Select filters to update*
+""",
       markdown: true,
       editMessageId: editMessageId,
       buttons: [
@@ -71,5 +84,12 @@ class _OnNewFiltersAppliedStep extends FlowStep {
       text: 'Filters applied!\n You will now start receiving job offers based on your preferences.',
       editMessageId: messageContext.editMessageId,
     );
+  }
+}
+
+extension _StringExt on String {
+  String capitalize() {
+    final withSpaces = replaceAll('_', ' ');
+    return withSpaces[0].toUpperCase() + withSpaces.substring(1).toLowerCase();
   }
 }

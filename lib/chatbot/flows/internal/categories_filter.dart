@@ -22,7 +22,7 @@ class _CategoriesSelectStep extends FlowStep {
     final pageCategories = categories.sublist(start, min(categories.length, end));
 
     return ReactionResponse(
-      text: 'Select categories:',
+      text: 'Select categories you are interested in',
       editMessageId: editMessageId,
       buttons: [
         ...pageCategories.map((option) {
@@ -43,7 +43,7 @@ class _CategoriesSelectStep extends FlowStep {
             nextStepUri: (_CategoriesSelectStep).toStepUri([(currentPage + 1).toString()]),
           ),
         InlineButton(
-          title: '🚀 Done 🚀',
+          title: '🔙 Back',
           nextStepUri: (FiltersFlowInitialStep).toStepUri([editMessageId.toString()]),
         ),
       ],
