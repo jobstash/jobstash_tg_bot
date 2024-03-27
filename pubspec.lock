@@ -139,9 +139,10 @@ packages:
   chatterbox:
     dependency: "direct main"
     description:
-      path: "../../chatterbox"
-      relative: true
-    source: path
+      name: chatterbox
+      sha256: "334deae966a95a1439b5328414db8474ff04c87f2490668b53f0f30cad36d713"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.6.0"
   checked_yaml:
     dependency: transitive

@@ -54,12 +54,9 @@ class FiltersFlowInitialStep extends FlowStep {
 
     return ReactionResponse(
       text: """
-*Current filters*      
-*Categories:* ${categories.isEmpty ? 'none' : categories.map((e) => e.capitalize()).join(', ')}
-      
-*Current tags*: ${tags.isEmpty ? 'none' : tags.join(', ')}
-
 *Select filters to update*
+
+${_currentFiltersText(categories, tags)}
 """,
       markdown: true,
       editMessageId: editMessageId,
@@ -78,6 +75,17 @@ class FiltersFlowInitialStep extends FlowStep {
         ),
       ],
     );
+  }
+
+  String _currentFiltersText(List<String> categories, List<String> tags) {
+    if (categories.isEmpty && tags.isEmpty) {
+      return '';
+    } else {
+      return """      
+${categories.isNotEmpty ? '*Selected Categories* : ${categories.join(', ')}' : ''}
+      
+${tags.isNotEmpty ? '*Selected  tags* : ${tags.join(', ')}' : ''}""";
+    }
   }
 }
 

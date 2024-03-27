@@ -2,7 +2,6 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:jobstash_api/src/model/range.dart';
 
 part 'organization.freezed.dart';
-
 part 'organization.g.dart';
 
 @freezed
@@ -20,15 +19,15 @@ class Organization with _$Organization {
 @freezed
 class Properties with _$Properties {
   const factory Properties({
-    required String? summary,
-    required Range? createdTimestamp,
-    required String? name,
-    required String? description,
-    required String? location,
-    required String id,
-    required Range? updatedTimestamp,
-    required String orgId,
-    required Range? headcountEstimate,
+    String? summary,
+    Range? createdTimestamp,
+    String? name,
+    String? description,
+    String? location,
+    String? id,
+    Range? updatedTimestamp,
+    String? orgId,
+    Range? headcountEstimate,
   }) = _Properties;
 
   factory Properties.fromJson(Map<String, dynamic> json) => _$PropertiesFromJson(json);

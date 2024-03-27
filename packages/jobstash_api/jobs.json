@@ -3,143 +3,143 @@
     "classification": {
       "properties": {
         "name": "MARKETING"
-      },
-      "structuredJobpost": {
-        "tags": [
-          {
-            "id": "f7e547f9-ff5a-46b2-8ee2-a7f9b1d60ee0",
-            "name": "Atlassian Jira",
-            "normalizedName": "atlassian jira"
-          },
-          {
-            "id": "e582992a-42a4-486b-a9c5-091ca0af9275",
-            "name": "Scrum",
-            "normalizedName": "scrum"
-          },
-          {
-            "id": "e0f5baa7-8370-4dd9-ab2e-dd012fc61e0f",
-            "name": "iOS",
-            "normalizedName": "ios"
-          },
-          {
-            "id": "e0f5baa7-8370-4dd9-ab2e-dd012fc61e0f",
-            "name": "G-Suite",
-            "normalizedName": "g_hyphen_suite"
-          },
-          {
-            "id": "1dd99a72-7962-48d2-bdb3-63f7a985e5a9",
-            "name": "Confluence",
-            "normalizedName": "confluence"
-          },
-          {
-            "id": "aa5071b6-76a7-42b5-8f04-0329b1831be2",
-            "name": "Scaled Agile Framework",
-            "normalizedName": "scaled agile framework"
-          },
-          {
-            "id": "21c78fd9-09b6-416b-a357-096857823e84",
-            "name": "Agile",
-            "normalizedName": "agile"
-          },
-          {
-            "id": "4265c2b8-b8ef-4305-a370-95681c3deaff",
-            "name": "Blockchain",
-            "normalizedName": "blockchain"
-          },
-          {
-            "id": "6fcf1f2a-ec55-4213-b8b8-6f9d2608587f",
-            "name": "Stakeholder Management",
-            "normalizedName": "stakeholder management"
-          },
-          {
-            "id": "3a9cf5eb-df9b-4d98-94ad-e4948a8b357f",
-            "name": "Kanban",
-            "normalizedName": "kanban"
-          }
-        ],
-        "summary": "The Cardano Foundation is looking for a Scrum Master to facilitate and coordinate the agile delivery across the organization",
-        "payRate": "YEARLY",
-        "location": "Ireland/ UK",
-        "shortUUID": "rF3uwS",
-        "requirements": [
-          "3-5 years of experience running scrum teams",
-          "Provide training, mentoring and coaching in Agile capability",
-          "Work with agile leaders on scaled agile transformation",
-          "Significant understanding of Agile principles and the Scrum framework",
-          "Certified Scrum Master (CSM) or other relevant agile certifications",
-          "Expertise in Agile delivery methods including Scrum, Kanban and Scaled Agile Framework",
-          "Proficient with collaboration tools including Atlassian Jira and Confluence, and G-suite",
-          "Good communication and stakeholder management skills",
-          "Ability to manage, motivate and maintain focus and team towards delivery",
-          "Bachelor’s degree in technology or another relevant field",
-          "Blockchain passion"
-        ],
-        "url": "https://cardano-foundation.jobs.personio.com/job/1340985",
-        "firstSeenTimestamp": {
-          "low": -1477783476,
-          "high": 397
-        },
-        "id": "caf51823-3abb-4b01-85ea-4d3da76aa4a2",
-        "title": "SCRUM Master",
-        "lastSeenTimestamp": {
-          "low": -1477783476,
-          "high": 397
-        },
-        "description": "You will be leading Scrum ceremonies, identifying and eliminating obstacles, serving as a coach and mentor, working closely with the Product Owner, implementing performance metrics, and encouraging a culture of continuous improvement.",
-        "locationType": {
-          "id": "7844f61c-49cb-4874-9b66-cbc822c23b30",
-          "name": "HYBRID"
-        },
-        "responsibilities": [
-          "Lead Scrum ceremonies including planning, retrospectives, daily stand-up meetings, continuous improvements, product backlog refinement and management",
-          "Identify and eliminate obstacles that hinder the team's progress",
-          "Serve as a coach and mentor to the team on Agile practices and Scrum principles",
-          "Work closely with the Product Owner to prioritize the product backlog",
-          "Implement, gather and analyze performance metrics and reporting data",
-          "Establish and implement metrics to optimize delivery and measure business agility",
-          "Conduct assessments of team agile maturity and implement improvements",
-          "Support the team in implementing best practices for optimal results",
-          "Encourage a culture of continuous improvement within the team"
-        ],
-        "benefits": [
-          "Work from home with flexible working hours",
-          "Personal annual learning budget for professional and personal development",
-          "Departmental team activity fun day out",
-          "Volunteering day to help the community or within the blockchain community",
-          "Additional day off for birthday",
-          "Rewards days off for work anniversaries milestones"
-        ],
-        "seniority": "3"
-      },
-      "organization": {
-        "identity": {
-          "low": 104,
-          "high": 0
-        },
-        "labels": [
-          "Organization"
-        ],
-        "properties": {
-          "summary": "The Cardano Foundation is tasked with advancing Cardano",
-          "createdTimestamp": {
-            "low": 1204553415,
-            "high": 395
-          },
-          "name": "Cardano Foundation",
-          "description": "The Cardano Foundation is an independent, Swiss-based not-for-profit organization. We are tasked with advancing the public digital infrastructure Cardano and work to anchor it as a utility for financial and social systems, thus empowering the digital architects of the future. The Foundation facilitates the worldwide advancement of Cardano in enterprise applications. We develop infrastructure tooling—including where there may not be an immediate commercial use case—plus strengthen operational resilience, and drive diversity of on-infrastructure use cases as well as the development of sound and representative governance. Another significant part of our mission is to engage with and support the Cardano community. The Foundation assists the development of tools the community can use to leverage Cardano to solve problems in new ways.",
-          "location": "Distributed",
-          "id": "e981feff-e58f-4919-97fa-780f5f760c74",
-          "updatedTimestamp": {
-            "low": 1727689026,
-            "high": 397
-          },
-          "orgId": "111"
-        },
-        "elementId": "4:bf5f343c-e75b-4844-8b30-f46b3f0071ff:104"
       }
+    },
+    "structuredJobpost": {
+      "tags": [
+        {
+          "id": "f7e547f9-ff5a-46b2-8ee2-a7f9b1d60ee0",
+          "name": "Atlassian Jira",
+          "normalizedName": "atlassian jira"
+        },
+        {
+          "id": "e582992a-42a4-486b-a9c5-091ca0af9275",
+          "name": "Scrum",
+          "normalizedName": "scrum"
+        },
+        {
+          "id": "e0f5baa7-8370-4dd9-ab2e-dd012fc61e0f",
+          "name": "G-Suite",
+          "normalizedName": "g_hyphen_suite"
+        },
+        {
+          "id": "1dd99a72-7962-48d2-bdb3-63f7a985e5a9",
+          "name": "Confluence",
+          "normalizedName": "confluence"
+        },
+        {
+          "id": "aa5071b6-76a7-42b5-8f04-0329b1831be2",
+          "name": "Scaled Agile Framework",
+          "normalizedName": "scaled agile framework"
+        },
+        {
+          "id": "21c78fd9-09b6-416b-a357-096857823e84",
+          "name": "Agile",
+          "normalizedName": "agile"
+        },
+        {
+          "id": "4265c2b8-b8ef-4305-a370-95681c3deaff",
+          "name": "Blockchain",
+          "normalizedName": "blockchain"
+        },
+        {
+          "id": "6fcf1f2a-ec55-4213-b8b8-6f9d2608587f",
+          "name": "Stakeholder Management",
+          "normalizedName": "stakeholder management"
+        },
+        {
+          "id": "3a9cf5eb-df9b-4d98-94ad-e4948a8b357f",
+          "name": "Kanban",
+          "normalizedName": "kanban"
+        }
+      ],
+      "summary": "The Cardano Foundation is looking for a Scrum Master to facilitate and coordinate the agile delivery across the organization",
+      "payRate": "YEARLY",
+      "location": "Ireland/ UK",
+      "shortUUID": "rF3uwS",
+      "requirements": [
+        "3-5 years of experience running scrum teams",
+        "Provide training, mentoring and coaching in Agile capability",
+        "Work with agile leaders on scaled agile transformation",
+        "Significant understanding of Agile principles and the Scrum framework",
+        "Certified Scrum Master (CSM) or other relevant agile certifications",
+        "Expertise in Agile delivery methods including Scrum, Kanban and Scaled Agile Framework",
+        "Proficient with collaboration tools including Atlassian Jira and Confluence, and G-suite",
+        "Good communication and stakeholder management skills",
+        "Ability to manage, motivate and maintain focus and team towards delivery",
+        "Bachelor’s degree in technology or another relevant field",
+        "Blockchain passion"
+      ],
+      "url": "https://cardano-foundation.jobs.personio.com/job/1340985",
+      "firstSeenTimestamp": {
+        "low": -1477783476,
+        "high": 397
+      },
+      "id": "caf51823-3abb-4b01-85ea-4d3da76aa4a2",
+      "title": "SCRUM Master",
+      "lastSeenTimestamp": {
+        "low": -1477783476,
+        "high": 397
+      },
+      "description": "You will be leading Scrum ceremonies, identifying and eliminating obstacles, serving as a coach and mentor, working closely with the Product Owner, implementing performance metrics, and encouraging a culture of continuous improvement.",
+      "locationType": {
+        "id": "7844f61c-49cb-4874-9b66-cbc822c23b30",
+        "name": "HYBRID"
+      },
+      "responsibilities": [
+        "Lead Scrum ceremonies including planning, retrospectives, daily stand-up meetings, continuous improvements, product backlog refinement and management",
+        "Identify and eliminate obstacles that hinder the team's progress",
+        "Serve as a coach and mentor to the team on Agile practices and Scrum principles",
+        "Work closely with the Product Owner to prioritize the product backlog",
+        "Implement, gather and analyze performance metrics and reporting data",
+        "Establish and implement metrics to optimize delivery and measure business agility",
+        "Conduct assessments of team agile maturity and implement improvements",
+        "Support the team in implementing best practices for optimal results",
+        "Encourage a culture of continuous improvement within the team"
+      ],
+      "benefits": [
+        "Work from home with flexible working hours",
+        "Personal annual learning budget for professional and personal development",
+        "Departmental team activity fun day out",
+        "Volunteering day to help the community or within the blockchain community",
+        "Additional day off for birthday",
+        "Rewards days off for work anniversaries milestones"
+      ],
+      "seniority": "3"
+    },
+    "organization": {
+      "identity": {
+        "low": 104,
+        "high": 0
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "summary": "The Cardano Foundation is tasked with advancing Cardano",
+        "createdTimestamp": {
+          "low": 1204553415,
+          "high": 395
+        },
+        "name": "Cardano Foundation",
+        "description": "The Cardano Foundation is an independent, Swiss-based not-for-profit organization. We are tasked with advancing the public digital infrastructure Cardano and work to anchor it as a utility for financial and social systems, thus empowering the digital architects of the future. The Foundation facilitates the worldwide advancement of Cardano in enterprise applications. We develop infrastructure tooling—including where there may not be an immediate commercial use case—plus strengthen operational resilience, and drive diversity of on-infrastructure use cases as well as the development of sound and representative governance. Another significant part of our mission is to engage with and support the Cardano community. The Foundation assists the development of tools the community can use to leverage Cardano to solve problems in new ways.",
+        "location": "Distributed",
+        "id": "e981feff-e58f-4919-97fa-780f5f760c74",
+        "updatedTimestamp": {
+          "low": 1727689026,
+          "high": 397
+        },
+        "orgId": "111"
+      },
+      "elementId": "4:bf5f343c-e75b-4844-8b30-f46b3f0071ff:104"
     }
   },
   {
+    "classification": {
+      "properties": {
+        "name": "ENGINEERING"
+      }
+    },
     "structuredJobpost": {
       "tags": [
         {
@@ -321,6 +321,11 @@
   {
     "structuredJobpost": {
       "tags": [
+        {
+          "id": "e0f5baa7-8370-4dd9-ab2e-dd012fc61e0f",
+          "name": "iOS",
+          "normalizedName": "ios"
+        },
         {
           "id": "30fadf4e-1910-4bb4-8063-948a0be3d56b",
           "name": "Cross-functional Collaboration",

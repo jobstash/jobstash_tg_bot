@@ -4,6 +4,7 @@ import 'package:database/src/utils/document_extensions.dart';
 import 'package:firedart/firedart.dart';
 
 const _collectionName = "filters";
+const categoriesFilterKey = 'categories';
 // const _feedStoppedKey = 'feed_stopped';
 
 class UserFiltersDao {
@@ -59,6 +60,7 @@ class UserFiltersDao {
     int? minimumHeadCount,
     int? maximumHeadCount,
     List<String>? tags,
+    String? category,
   }) async {
     final page = await collection.get();
 
@@ -72,6 +74,7 @@ class UserFiltersDao {
       minimumHeadCount,
       maximumHeadCount,
       tags,
+      category,
     );
   }
 

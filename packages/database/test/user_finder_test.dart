@@ -11,7 +11,8 @@ void main() {
     final page = Page([userFilters], '');
 
     // Call the getInterestedUsers method with a list of tags that match the user filters
-    final result = UserFinder.getInterestedUsers(page, null, null, null, null, null, null, null, ['tag1', 'tag2']);
+    final result =
+        UserFinder.getInterestedUsers(page, null, null, null, null, null, null, null, ['tag1', 'tag2'], null);
 
     // Assert that the returned list of user IDs matches the expected result
     expect(result, equals([userFilters.id]));
@@ -25,7 +26,8 @@ void main() {
     final page = Page([userFilters], '');
 
     // Call the getInterestedUsers method with a list of tags that do not match the user filters
-    final result = UserFinder.getInterestedUsers(page, null, null, null, null, null, null, null, ['tag3', 'tag4']);
+    final result =
+        UserFinder.getInterestedUsers(page, null, null, null, null, null, null, null, ['tag3', 'tag4'], null);
 
     // Assert that the returned list of user IDs is empty
     expect(result, isEmpty);

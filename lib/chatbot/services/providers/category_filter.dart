@@ -1,5 +1,7 @@
+import 'package:database/database.dart';
+
 abstract class CategoryFilter {
-  static const name = 'category';
+  static const name = categoriesFilterKey;
 
   static final options = const [
     "ACCOUNTING",
