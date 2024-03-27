@@ -1,10 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:jobstash_api/jobstash_api.dart';
-import 'package:jobstash_api/src/model/location_type.dart';
 import 'package:jobstash_api/src/model/range.dart';
 
 part 'structured_job_post.freezed.dart';
-
 part 'structured_job_post.g.dart';
 
 @freezed

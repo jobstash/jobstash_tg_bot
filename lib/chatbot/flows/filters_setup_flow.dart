@@ -31,8 +31,11 @@ class FiltersFlow extends CommandFlow {
         () => FiltersFlowInitialStep(_repo),
         () => _CategoriesSelectStep(_repo),
         () => _CategoriesUpdateStep(_repo),
-        () => _TagsDisplayStep(),
-        () => _TagsUpdateStep(_botApi, _jobStashApi, _repo),
+        () => _TagsDisplayStep(_repo),
+        () => _TagsRemoveStep(_repo),
+        () => _TagsUpdateStep(_jobStashApi, _repo),
+        () => _TagsTryAgainStep(),
+        () => _OnNewFiltersAppliedStep(),
       ];
 }
 
@@ -52,9 +55,9 @@ class FiltersFlowInitialStep extends FlowStep {
     return ReactionResponse(
       text: """
 *Current filters*      
-*Categories:* ${categories.map((e) => e.capitalize()).join(', ')}
+*Categories:* ${categories.isEmpty ? 'none' : categories.map((e) => e.capitalize()).join(', ')}
       
-*Tags:* ${tags.join(', ')}
+*Current tags*: ${tags.isEmpty ? 'none' : tags.join(', ')}
 
 *Select filters to update*
 """,

@@ -139,11 +139,10 @@ packages:
   chatterbox:
     dependency: "direct main"
     description:
-      name: chatterbox
-      sha256: c4f917d3310e5e0188f71b70c8162aea658adc2715d4c009ee8f2fff5bac1a57
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.5.0"
+      path: "../../chatterbox"
+      relative: true
+    source: path
+    version: "1.6.0"
   checked_yaml:
     dependency: transitive
     description:
@@ -665,10 +664,10 @@ packages:
     dependency: transitive
     description:
       name: televerse
-      sha256: "1cf35170b12f1ada9d376ee03941e30c98769e1e79f6b259ffaa227e2573cecd"
+      sha256: "3d853308aab04938a2a3fee2def5663889d85aa64c9db36c802744db182117af"
       url: "https://pub.dev"
     source: hosted
-    version: "1.13.2"
+    version: "1.14.0"
   term_glyph:
     dependency: transitive
     description:

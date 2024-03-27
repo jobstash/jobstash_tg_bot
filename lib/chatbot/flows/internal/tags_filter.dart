@@ -1,36 +1,66 @@
 part of '../filters_setup_flow.dart';
 
+final _filterId = 'tags';
+
 class _TagsDisplayStep extends FlowStep {
+  _TagsDisplayStep(this._repo);
+
+  final FiltersRepository _repo;
+
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
+    final tags = await _repo.getUserFilterOptions(messageContext.userId, _filterId) as List<String>? ?? [];
+    final editMessageId = messageContext.editMessageId;
+
     return ReactionResponse(
-      // editMessageId: messageContext.editMessageId,
-      text: """Type position, technology or any other tag you are interested in separated by comma. 
+      editMessageId: editMessageId,
+      text: """
+${tags.isNotEmpty ? 'You *Current tags*: ${tags.join(', ')}' : ''}
       
-_For example: "typescript, nodejs, nft"_
+*To update your tags*, please enter a comma-separated list of tags you are interested in
+ 
+${tags.isEmpty ? '_For example: "typescript, nodejs, nft"_' : ''}
 """,
       markdown: true,
-      afterReplyUri: (_TagsUpdateStep).toStepUri(['tags']),
+      buttons: [
+        InlineButton(
+          title: 'Remove tags',
+          nextStepUri: (_TagsRemoveStep).toStepUri([editMessageId.toString()]),
+        ),
+        InlineButton(
+          title: '🔙 Back',
+          nextStepUri: (FiltersFlowInitialStep).toStepUri([editMessageId.toString()]),
+        ),
+      ],
+      afterReplyUri: (_TagsUpdateStep).toStepUri(),
     );
   }
 }
 
-class _TagsUpdateStep extends FlowStep {
-  _TagsUpdateStep(this._botApi, this._jobStashApi, this._repo);
+class _TagsRemoveStep extends FlowStep {
+  _TagsRemoveStep(this._repo);
 
-  final TelegramBotApi _botApi;
+  final FiltersRepository _repo;
+
+  @override
+  Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
+    await _repo.setUserFilterValue(messageContext.userId, _filterId, null);
+
+    return ReactionRedirect(stepUri: (FiltersFlowInitialStep).toStepUri([messageContext.editMessageId.toString()]));
+  }
+}
+
+class _TagsUpdateStep extends FlowStep {
+  _TagsUpdateStep(this._jobStashApi, this._repo);
+
   final JobStashApi _jobStashApi;
   final FiltersRepository _repo;
 
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
-    final filterId = args?.firstOrNull;
     final userInput = messageContext.text?.split(',');
 
-    //todo if user input clear, then remove tags
-    _botApi.sendMessage(messageContext.chatId, 'Processing your tags...');
-
-    if (userInput == null || filterId == null) {
+    if (userInput == null) {
       return ReactionResponse(
         text: 'Oops, something went wrong. Please try again.',
       );
@@ -47,9 +77,8 @@ class _TagsUpdateStep extends FlowStep {
       final tags = data.recognizedTags;
       final unrecognizedInput = data.unrecognizedTags;
 
-      await _repo.setUserFilterValue(messageContext.userId, filterId, tags);
+      await _repo.setUserFilterValue(messageContext.userId, _filterId, tags);
 
-      // final removeTags = tags == null || tags.isEmpty;
       final responseParts = <String>[];
       if (tags != null && tags.isNotEmpty) {
         responseParts.add('Your tags are set to: ${_taggify(tags)}');
@@ -59,19 +88,12 @@ class _TagsUpdateStep extends FlowStep {
       }
 
       if (responseParts.isEmpty) {
-        return ReactionRedirect(stepUri: (_MultiSelectTryAgainStep).toStepUri());
+        return ReactionRedirect(stepUri: (_TagsTryAgainStep).toStepUri());
       }
 
       return ReactionComposed(responses: [
-        // if (!removeTags)
-        ReactionResponse(
-          text: responseParts.join('\n'),
-          markdown: true,
-        ),
-        // if (removeTags) ReactionResponse(text: 'Tags removed'),
-        ReactionRedirect(
-          stepUri: (_OnNewFiltersAppliedStep).toStepUri([filterId]),
-        ),
+        ReactionResponse(text: responseParts.join('\n'), markdown: true),
+        ReactionRedirect(stepUri: (FiltersFlowInitialStep).toStepUri()),
       ]);
     } catch (error, stacktrace) {
       logErrorToTelegramChannel('Failed update TagsFilter', error, stacktrace);
@@ -84,7 +106,7 @@ class _TagsUpdateStep extends FlowStep {
   String _taggify(List<String> tags) => tags.map((e) => '`${e.trim()}`').join(', ');
 }
 
-class _MultiSelectTryAgainStep extends FlowStep {
+class _TagsTryAgainStep extends FlowStep {
   @override
   Future<Reaction> handle(MessageContext messageContext, [List<String>? args]) async {
     return ReactionComposed(responses: [
