@@ -49,7 +49,14 @@ class Mailer {
   Future<void> _sendMail(TelegramBotApi telegramApi, List<String> userIds, Post post) async {
     for (final userId in userIds) {
       try {
-        telegramApi.sendHtmlMessage(int.parse(userId), MessageFormatter.createMessage(post));
+        telegramApi.sendHtmlMessage(
+          int.parse(userId),
+          MessageFormatter.createMessage(post),
+          // KeyboardButton(
+          //   text: 'See job details',
+          //   url: post.url,
+          // ),
+        );
       } catch (error, st) {
         logger.e('Failed to send mail to user $userId', error: error, stackTrace: st);
         logErrorToTelegramChannel('Failed to send mail to user $userId', error, st);

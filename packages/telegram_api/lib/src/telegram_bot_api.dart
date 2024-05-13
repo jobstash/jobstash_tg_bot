@@ -23,8 +23,14 @@ class TelegramBotApi {
     return _api.sendMessage(ID.create(userId), text);
   }
 
-  Future<Message> sendHtmlMessage(int userId, String text) {
-    return _api.sendMessage(ID.create(userId), text, parseMode: ParseMode.html);
+  Future<Message> sendHtmlMessage(int userId, String text, [List<KeyboardButton>? buttons]) {
+    return _api.sendMessage(
+      ID.create(userId),
+      text,
+      parseMode: ParseMode.html,
+      linkPreviewOptions: LinkPreviewOptions(isDisabled: true),
+      replyMarkup: buttons != null ? ReplyKeyboardMarkup(keyboard: [buttons]) : null,
+    );
   }
 
   Future<StickerSet> getStickerSet(String stickerSetId) {
