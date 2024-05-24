@@ -1,6 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:jobstash_api/jobstash_api.dart';
 import 'package:jobstash_api/src/model/classification.dart';
+import 'package:jobstash_api/src/model/community.dart';
 
 part 'post.freezed.dart';
 part 'post.g.dart';
@@ -13,6 +14,7 @@ class Post with _$Post {
     required Organization organization,
     @JsonKey(name: 'structuredJobpost') required StructuredJobPost job,
     Classification? classification,
+    List<Community>? communities,
   }) = _Post;
 
   String? get category => classification?.properties.name;

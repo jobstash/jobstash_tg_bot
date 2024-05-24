@@ -9,7 +9,7 @@ class UserFiltersDao {
   static const _collectionName = "filters";
   static const categoriesFilterKey = 'categories';
   static const tagsFilterKey = 'tags';
-  static const classificationFilterKey = 'classification';
+  static const communityFilterKey = 'community';
 
   final Firestore _firestore;
 
@@ -53,7 +53,7 @@ class UserFiltersDao {
   }
 
   Future<List<String>> getUsersFor({
-    String? classification,
+    List<String>? communities,
     List<String>? tags,
     String? category,
   }) async {
@@ -61,7 +61,7 @@ class UserFiltersDao {
 
     return UserFinder.getMatchingUsers(
       page: page,
-      classification: classification,
+      communities: communities,
       tags: tags,
       category: category,
     );

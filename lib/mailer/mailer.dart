@@ -26,7 +26,7 @@ class Mailer {
 
       await Future.wait(posts.map((post) async {
         final userIds = await filtersDao.getUsersFor(
-          classification: post.classification?.properties.name,
+          communities: post.communities?.map((entry) => entry.normalizedName).toList(),
           category: post.category,
           tags: post.job.tags?.map((e) => e.name).toList(),
         );

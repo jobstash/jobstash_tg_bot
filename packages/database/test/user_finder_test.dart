@@ -1,30 +1,55 @@
-import 'package:database/database.dart';
 import 'package:database/src/dao/user_filters_dao.dart';
 import 'package:database/src/dao/user_finder.dart';
 import 'package:firedart/firedart.dart';
 import 'package:test/test.dart';
 
+import 'internal/document_stub.dart';
+
 void main() {
-  group('Classification Tests', () {
-    test('getMatchingUsers returns users with matching classification', () {
-      final userFilters = DocumentStab('id1', {UserFiltersDao.classificationFilterKey: 'classification1'});
+  group('Communities Tests', () {
+    test('getMatchingUsers returns users with matching community', () {
+      final userFilters = DocumentStab('id1', {UserFiltersDao.communityFilterKey: 'community1'});
       final page = Page([userFilters], '');
 
       final result = UserFinder.getMatchingUsers(
         page: page,
-        classification: 'classification1',
+        communities: ['community1'],
       );
 
       expect(result, equals([userFilters.id]));
     });
 
-    test('getMatchingUsers returns no users with non-matching classification', () {
-      final userFilters = DocumentStab('id1', {UserFiltersDao.classificationFilterKey: 'classification1'});
+    test('getMatchingUsers returns no users with non-matching community', () {
+      final userFilters = DocumentStab('id1', {UserFiltersDao.communityFilterKey: 'community1'});
       final page = Page([userFilters], '');
 
       final result = UserFinder.getMatchingUsers(
         page: page,
-        classification: 'classification2',
+        communities: ['community2'],
+      );
+
+      expect(result, isEmpty);
+    });
+
+    test('getMatchingUsers returns users with one matching community from multiple', () {
+      final userFilters = DocumentStab('id1', {UserFiltersDao.communityFilterKey: 'community1'});
+      final page = Page([userFilters], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        communities: ['community1', 'community2'],
+      );
+
+      expect(result, equals([userFilters.id]));
+    });
+
+    test('getMatchingUsers returns no users when communities is null', () {
+      final userFilters = DocumentStab('id1', {UserFiltersDao.communityFilterKey: 'community1'});
+      final page = Page([userFilters], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        communities: null,
       );
 
       expect(result, isEmpty);
@@ -78,7 +103,7 @@ void main() {
 
     test('getMatchingUsers returns no users with non-matching category', () {
       final userFilters = DocumentStab('id1', {
-        'categoriesFilterKey': ['category1']
+        UserFiltersDao.categoriesFilterKey: ['category1']
       });
       final page = Page([userFilters], '');
 
@@ -92,32 +117,32 @@ void main() {
   });
 
   group('Combination Tests', () {
-    test('getMatchingUsers returns users with matching classification and tags', () {
+    test('getMatchingUsers returns users with matching community and tags', () {
       final userFilters = DocumentStab('id1', {
-        UserFiltersDao.classificationFilterKey: 'classification1',
+        UserFiltersDao.communityFilterKey: 'community1',
         UserFiltersDao.tagsFilterKey: ['tag1', 'tag2']
       });
       final page = Page([userFilters], '');
 
       final result = UserFinder.getMatchingUsers(
         page: page,
-        classification: 'classification1',
+        communities: ['community1'],
         tags: ['tag1', 'tag2'],
       );
 
       expect(result, equals([userFilters.id]));
     });
 
-    test('getMatchingUsers returns no users with non-matching classification and tags', () {
+    test('getMatchingUsers returns no users with non-matching community and tags', () {
       final userFilters = DocumentStab('id1', {
-        UserFiltersDao.classificationFilterKey: 'classification1',
+        UserFiltersDao.communityFilterKey: 'community1',
         UserFiltersDao.tagsFilterKey: ['tag1', 'tag2']
       });
       final page = Page([userFilters], '');
 
       final result = UserFinder.getMatchingUsers(
         page: page,
-        classification: 'classification2',
+        communities: ['community2'],
         tags: ['tag3', 'tag4'],
       );
 
@@ -138,63 +163,28 @@ void main() {
 
     test('getMatchingUsers returns users when user filters are partially set', () {
       final userFilters = DocumentStab('id1', {
-        UserFiltersDao.classificationFilterKey: 'classification1',
+        UserFiltersDao.communityFilterKey: 'community1',
         UserFiltersDao.tagsFilterKey: ['tag1']
       });
       final page = Page([userFilters], '');
-
       final result = UserFinder.getMatchingUsers(
         page: page,
-        classification: 'classification1',
+        communities: ['community1'],
         tags: ['tag1', 'tag2'],
       );
-
       expect(result, equals([userFilters.id]));
     });
-
-    test('getMatchingUsers returns users when all parameters are null', () {
+    test('getMatchingUsers returns no users when all parameters are null', () {
       final userFilters = DocumentStab('id1', {
-        UserFiltersDao.classificationFilterKey: 'classification1',
+        UserFiltersDao.communityFilterKey: 'community1',
         UserFiltersDao.tagsFilterKey: ['tag1'],
         UserFiltersDao.categoriesFilterKey: ['category1']
       });
       final page = Page([userFilters], '');
-
       final result = UserFinder.getMatchingUsers(
         page: page,
       );
-
-      expect(result.isEmpty, true);
+      expect(result, isEmpty);
     });
   });
-}
-
-class DocumentStab implements Document {
-  final String _id;
-  final Map<String, dynamic> _map;
-
-  DocumentStab(this._id, this._map);
-
-  @override
-  operator [](String key) {
-    return _map[key];
-  }
-
-  @override
-  DateTime get createTime => DateTime.now();
-
-  @override
-  String get id => _id;
-
-  @override
-  Map<String, dynamic> get map => _map;
-
-  @override
-  String get path => '/path/to/document';
-
-  @override
-  DocumentReference get reference => throw UnimplementedError();
-
-  @override
-  DateTime get updateTime => DateTime.now();
 }

@@ -10,15 +10,15 @@ class UserFinder {
 
   static List<String> getMatchingUsers({
     required Page<Document> page,
-    String? classification,
+    List<String>? communities,
     List<String>? tags,
     String? category,
   }) {
     final users = page.whereNotNull().where((userFilters) {
-      final classificationMatch = _checkMatch(userFilters, UserFiltersDao.classificationFilterKey, classification);
+      final communitiesMatch = _checkMatch(userFilters, UserFiltersDao.communityFilterKey, communities);
       final tagsMatch = _checkArrayIntersection(userFilters, UserFiltersDao.tagsFilterKey, tags);
       final categoryMatch = _checkArrayContains(userFilters, UserFiltersDao.categoriesFilterKey, category);
-      return classificationMatch || tagsMatch || categoryMatch;
+      return communitiesMatch || tagsMatch || categoryMatch;
     });
 
     final usersList = users.toList();
@@ -85,8 +85,8 @@ class UserFinder {
         (maximumSalary == null || userMaxSalary! <= maximumSalary);
   }
 
-  static bool _checkMatch(Document userFilters, String fieldId, String? postValue) {
-    final userClassification = userFilters[fieldId];
-    return postValue != null && userClassification == postValue;
+  static bool _checkMatch(Document userFilters, String fieldId, List<String>? postValues) {
+    final userCommunity = userFilters[fieldId];
+    return postValues != null && postValues.contains(userCommunity);
   }
 }
