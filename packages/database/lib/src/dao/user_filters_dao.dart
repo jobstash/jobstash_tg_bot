@@ -3,12 +3,13 @@ import 'package:database/src/model/user_filters_dto.dart';
 import 'package:database/src/utils/document_extensions.dart';
 import 'package:firedart/firedart.dart';
 
-const _collectionName = "filters";
-const categoriesFilterKey = 'categories';
-// const _feedStoppedKey = 'feed_stopped';
-
 class UserFiltersDao {
   UserFiltersDao(this._firestore);
+
+  static const _collectionName = "filters";
+  static const categoriesFilterKey = 'categories';
+  static const tagsFilterKey = 'tags';
+  static const classificationFilterKey = 'classifications';
 
   final Firestore _firestore;
 
@@ -52,29 +53,17 @@ class UserFiltersDao {
   }
 
   Future<List<String>> getUsersFor({
-    String? location,
-    int? minimumSalary,
-    int? maximumSalary,
-    String? seniority,
-    String? commitment,
-    int? minimumHeadCount,
-    int? maximumHeadCount,
+    String? classification,
     List<String>? tags,
     String? category,
   }) async {
     final page = await collection.get();
 
-    return UserFinder.getInterestedUsers(
-      page,
-      location,
-      minimumSalary,
-      maximumSalary,
-      seniority,
-      commitment,
-      minimumHeadCount,
-      maximumHeadCount,
-      tags,
-      category,
+    return UserFinder.getMatchingUsers(
+      page: page,
+      classification: classification,
+      tags: tags,
+      category: category,
     );
   }
 

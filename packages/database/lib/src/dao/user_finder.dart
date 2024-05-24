@@ -8,27 +8,17 @@ class UserFinder {
   static const _greenWhenJobMissingParam = false;
   static const _greenWhenUserHaveNoFilter = false;
 
-  static List<String> getInterestedUsers(
-    Page<Document> page,
-    String? location,
-    int? minimumSalary,
-    int? maximumSalary,
-    String? seniority,
-    String? commitment,
-    int? minimumHeadCount,
-    int? maximumHeadCount,
+  static List<String> getMatchingUsers({
+    required Page<Document> page,
+    String? classification,
     List<String>? tags,
     String? category,
-  ) {
+  }) {
     final users = page.whereNotNull().where((userFilters) {
-      final tagsMatch = _checkArrayIntersection(userFilters, 'tags', tags);
-      final categoryMatch = _checkArrayContains(userFilters, categoriesFilterKey, category);
-      return tagsMatch || categoryMatch;
-      // _checkArrayContains(userFilters, 'locations', location) &&
-      //   _checkArrayContains(userFilters, 'seniority', seniority) &&
-      // (commitment == null || userCommitments.isEmpty || userCommitments.contains(commitment)) &&
-      // _checkRange(userFilters, 'headcountEstimate', minimumHeadCount, maximumHeadCount) &&
-      // _checkRange(userFilters, 'salary', minimumSalary, maximumSalary);
+      final classificationMatch = _checkMatch(userFilters, UserFiltersDao.classificationFilterKey, classification);
+      final tagsMatch = _checkArrayIntersection(userFilters, UserFiltersDao.tagsFilterKey, tags);
+      final categoryMatch = _checkArrayContains(userFilters, UserFiltersDao.categoriesFilterKey, category);
+      return classificationMatch || tagsMatch || categoryMatch;
     });
 
     final usersList = users.toList();
@@ -93,5 +83,10 @@ class UserFinder {
     // check if user range is within job range
     return (minimumSalary == null || userMinSalary! >= minimumSalary) &&
         (maximumSalary == null || userMaxSalary! <= maximumSalary);
+  }
+
+  static bool _checkMatch(Document userFilters, String fieldId, String? postValue) {
+    final userClassification = userFilters[fieldId];
+    return postValue != null && userClassification == postValue;
   }
 }

@@ -1,36 +1,171 @@
+import 'package:database/database.dart';
+import 'package:database/src/dao/user_filters_dao.dart';
 import 'package:database/src/dao/user_finder.dart';
 import 'package:firedart/firedart.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('getInterestedUsers returns users with matching tags', () {
-    // Prepare a Page<Document> object with a set of user filters that include specific tags
-    final userFilters = DocumentStab('id', {
-      'tags': ['tag1', 'tag2']
+  group('Classification Tests', () {
+    test('getMatchingUsers returns users with matching classification', () {
+      final userFilters = DocumentStab('id1', {UserFiltersDao.classificationFilterKey: 'classification1'});
+      final page = Page([userFilters], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        classification: 'classification1',
+      );
+
+      expect(result, equals([userFilters.id]));
     });
-    final page = Page([userFilters], '');
 
-    // Call the getInterestedUsers method with a list of tags that match the user filters
-    final result =
-        UserFinder.getInterestedUsers(page, null, null, null, null, null, null, null, ['tag1', 'tag2'], null);
+    test('getMatchingUsers returns no users with non-matching classification', () {
+      final userFilters = DocumentStab('id1', {UserFiltersDao.classificationFilterKey: 'classification1'});
+      final page = Page([userFilters], '');
 
-    // Assert that the returned list of user IDs matches the expected result
-    expect(result, equals([userFilters.id]));
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        classification: 'classification2',
+      );
+
+      expect(result, isEmpty);
+    });
   });
 
-  test('getInterestedUsers returns no users with non-matching tags', () {
-    // Prepare a Page<Document> object with a set of user filters that include specific tags
-    final userFilters = DocumentStab('id', {
-      'tags': ['tag1', 'tag2']
+  group('Tags Tests', () {
+    test('getMatchingUsers returns users with matching tags', () {
+      final userFilters = DocumentStab('id1', {
+        UserFiltersDao.tagsFilterKey: ['tag1', 'tag2']
+      });
+      final page = Page([userFilters], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        tags: ['tag1', 'tag2'],
+      );
+
+      expect(result, equals([userFilters.id]));
     });
-    final page = Page([userFilters], '');
 
-    // Call the getInterestedUsers method with a list of tags that do not match the user filters
-    final result =
-        UserFinder.getInterestedUsers(page, null, null, null, null, null, null, null, ['tag3', 'tag4'], null);
+    test('getMatchingUsers returns no users with non-matching tags', () {
+      final userFilters = DocumentStab('id1', {
+        UserFiltersDao.tagsFilterKey: ['tag1', 'tag2']
+      });
+      final page = Page([userFilters], '');
 
-    // Assert that the returned list of user IDs is empty
-    expect(result, isEmpty);
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        tags: ['tag3', 'tag4'],
+      );
+
+      expect(result, isEmpty);
+    });
+  });
+
+  group('Category Tests', () {
+    test('getMatchingUsers returns users with matching category', () {
+      final userFilters = DocumentStab('id1', {
+        UserFiltersDao.categoriesFilterKey: ['category1']
+      });
+      final page = Page([userFilters], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        category: 'category1',
+      );
+
+      expect(result, equals([userFilters.id]));
+    });
+
+    test('getMatchingUsers returns no users with non-matching category', () {
+      final userFilters = DocumentStab('id1', {
+        'categoriesFilterKey': ['category1']
+      });
+      final page = Page([userFilters], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        category: 'category2',
+      );
+
+      expect(result, isEmpty);
+    });
+  });
+
+  group('Combination Tests', () {
+    test('getMatchingUsers returns users with matching classification and tags', () {
+      final userFilters = DocumentStab('id1', {
+        UserFiltersDao.classificationFilterKey: 'classification1',
+        UserFiltersDao.tagsFilterKey: ['tag1', 'tag2']
+      });
+      final page = Page([userFilters], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        classification: 'classification1',
+        tags: ['tag1', 'tag2'],
+      );
+
+      expect(result, equals([userFilters.id]));
+    });
+
+    test('getMatchingUsers returns no users with non-matching classification and tags', () {
+      final userFilters = DocumentStab('id1', {
+        UserFiltersDao.classificationFilterKey: 'classification1',
+        UserFiltersDao.tagsFilterKey: ['tag1', 'tag2']
+      });
+      final page = Page([userFilters], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        classification: 'classification2',
+        tags: ['tag3', 'tag4'],
+      );
+
+      expect(result, isEmpty);
+    });
+  });
+
+  group('Edge Cases', () {
+    test('getMatchingUsers returns no users when page is empty', () {
+      final page = Page<Document>([], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+      );
+
+      expect(result, isEmpty);
+    });
+
+    test('getMatchingUsers returns users when user filters are partially set', () {
+      final userFilters = DocumentStab('id1', {
+        UserFiltersDao.classificationFilterKey: 'classification1',
+        UserFiltersDao.tagsFilterKey: ['tag1']
+      });
+      final page = Page([userFilters], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+        classification: 'classification1',
+        tags: ['tag1', 'tag2'],
+      );
+
+      expect(result, equals([userFilters.id]));
+    });
+
+    test('getMatchingUsers returns users when all parameters are null', () {
+      final userFilters = DocumentStab('id1', {
+        UserFiltersDao.classificationFilterKey: 'classification1',
+        UserFiltersDao.tagsFilterKey: ['tag1'],
+        UserFiltersDao.categoriesFilterKey: ['category1']
+      });
+      final page = Page([userFilters], '');
+
+      final result = UserFinder.getMatchingUsers(
+        page: page,
+      );
+
+      expect(result.isEmpty, true);
+    });
   });
 }
 
