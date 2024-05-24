@@ -9,7 +9,7 @@ class UserFiltersDao {
   static const _collectionName = "filters";
   static const categoriesFilterKey = 'categories';
   static const tagsFilterKey = 'tags';
-  static const classificationFilterKey = 'classifications';
+  static const classificationFilterKey = 'classification';
 
   final Firestore _firestore;
 
