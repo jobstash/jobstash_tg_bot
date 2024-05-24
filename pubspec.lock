@@ -117,10 +117,10 @@ packages:
     dependency: "direct main"
     description:
       name: chatterbox
-      sha256: f3117c8a958de47d4cd46fa2389fb0acfc604b9d2736b16343ba6e851694a30f
+      sha256: ec4e7733281ee50132eb0c66dd0de1f5ac2bb67a22c0d19fe312fe43012e710f
       url: "https://pub.dev"
     source: hosted
-    version: "1.7.0"
+    version: "1.7.1"
   checked_yaml:
     dependency: transitive
     description:

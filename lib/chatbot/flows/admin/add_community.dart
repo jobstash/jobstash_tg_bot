@@ -29,11 +29,11 @@ class _NewCommunityInitialStep extends AdminFlowStep {
   Future<Reaction> handleAdmin(MessageContext messageContext, [List<String>? args]) async {
     final firstArg = args?.firstOrNull;
     final communityId = firstArg != null ? int.tryParse(firstArg) : null;
-    final communityNormalizedName = args?.last;
+    final communityNormalizedName = args?.elementAtOrNull(1);
 
     if (communityId == null || communityNormalizedName == null) {
       return ReactionResponse(
-          text: 'Please provide community id and community name. Example:\n`/set_community 1 community_name`',
+          text: 'Please provide community id and community name. Example:\n`/set_community -12345 community_name`',
           markdown: true);
     }
 
