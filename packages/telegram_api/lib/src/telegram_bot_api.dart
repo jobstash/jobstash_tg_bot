@@ -36,4 +36,17 @@ class TelegramBotApi {
   Future<StickerSet> getStickerSet(String stickerSetId) {
     return _api.getStickerSet(stickerSetId);
   }
+
+  Future<String?> getChatName(int chatId) async {
+    try {
+      final chat = await _api.getChat(ID.create(chatId));
+      return chat.title;
+    } on TelegramException catch (error) {
+      if (error.code == 400) {
+        return null;
+      } else {
+        rethrow;
+      }
+    }
+  }
 }
