@@ -81,7 +81,7 @@ ${_currentFiltersText(categories, tags)}
     if (categories.isEmpty && tags.isEmpty) {
       return '';
     } else {
-      return """      
+      return """
 ${categories.isNotEmpty ? '*Selected Categories* : ${categories.join(', ')}' : ''}
       
 ${tags.isNotEmpty ? '*Selected  tags* : ${tags.join(', ')}' : ''}""";

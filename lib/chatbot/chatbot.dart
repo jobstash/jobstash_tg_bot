@@ -1,11 +1,10 @@
 import 'package:chatterbox/chatterbox.dart';
 import 'package:database/database.dart';
 import 'package:jobstash_api/jobstash_api.dart';
-import 'package:jobstash_bot/chatbot/flows/admin/drop_user_thread_flow.dart';
 import 'package:jobstash_bot/chatbot/flows/admin/stats_flow.dart';
-import 'package:jobstash_bot/chatbot/flows/filters_setup_flow.dart';
-import 'package:jobstash_bot/chatbot/flows/start_flow.dart';
-import 'package:jobstash_bot/chatbot/flows/stop_flow.dart';
+import 'package:jobstash_bot/chatbot/flows/user/filters_setup_flow.dart';
+import 'package:jobstash_bot/chatbot/flows/user/start_flow.dart';
+import 'package:jobstash_bot/chatbot/flows/user/stop_flow.dart';
 import 'package:jobstash_bot/chatbot/services/filters_repository.dart';
 import 'package:jobstash_bot/chatbot/store/firebase_dialog_store.dart';
 import 'package:jobstash_bot/common/config.dart';
@@ -36,7 +35,6 @@ class ChatBot {
         StartFlow(),
         FiltersFlow(botApi, api, repository),
         StopFlow(repository),
-        DropUsersThreadFlow(firebaseStore),
 
         // Admin
         StatsFlow(repository),

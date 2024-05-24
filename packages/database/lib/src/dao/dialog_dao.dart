@@ -10,19 +10,22 @@ class DialogDao {
 
   CollectionReference get collection => _firestore.collection(_collectionDialogs);
 
-  Future<String?> retrievePending(int userId) async {
-    final stepId = await collection.document('$userId').getFieldSafe('pending_step_url');
+  Future<String?> retrievePending(int userId, int chatId) async {
+    final stepId = await collection.document('$chatId-$userId').getFieldSafe('pending_step_url');
     if (stepId != null) {
-      await clearPendingDialogUri(userId);
+      await clearPendingDialogUri(userId, chatId);
     }
     return stepId;
   }
 
-  Future<void> setPending(int userId, String stepUrl) async => collection.document('$userId').update({
+  Future<void> setPending(int userId, int chatId, String stepUrl) async =>
+      collection.document('$chatId-$userId').update({
         'pending_step_url': stepUrl,
       });
 
-  Future<void> clearPendingDialogUri(int userId) => collection.document('$userId').delete();
+  Future<void> clearPendingDialogUri(int userId, int chatId) {
+    return collection.document('$chatId-$userId').delete();
+  }
 
   Future<String?> getAssistantThreadId(String userId) =>
       collection.document(userId).getFieldSafe('assistant_thread_id');

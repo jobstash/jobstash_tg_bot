@@ -1,5 +1,5 @@
 import 'package:chatterbox/chatterbox.dart';
-import 'package:jobstash_bot/chatbot/flows/filters_setup_flow.dart';
+import 'package:jobstash_bot/chatbot/flows/user/filters_setup_flow.dart';
 
 class StartFlow extends CommandFlow {
   StartFlow();

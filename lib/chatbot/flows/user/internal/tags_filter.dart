@@ -77,7 +77,7 @@ class _TagsUpdateStep extends FlowStep {
       final tags = data.recognizedTags;
       final unrecognizedInput = data.unrecognizedTags;
 
-      await _repo.setUserFilterValue(messageContext.userId, _filterId, tags);
+      await _repo.setUserFilterValue(messageContext.chatId, _filterId, tags);
 
       final responseParts = <String>[];
       if (tags != null && tags.isNotEmpty) {
