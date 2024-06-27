@@ -25,6 +25,7 @@ dependencies:
 
   # Telegram
   chatterbox: 1.7.1
+  televerse: ^1.13.1
 #  chatterbox:
 #    path: ../../chatterbox
 

@@ -7,6 +7,8 @@ import 'package:jobstash_bot/mailer/internal/message_formatter.dart';
 import 'package:jobstash_bot/mailer/internal/reporter.dart';
 import 'package:shelf/shelf.dart';
 import 'package:telegram_api/shared_api.dart';
+import 'package:televerse/telegram.dart';
+import 'package:televerse/televerse.dart';
 
 class Mailer {
   Future<Response> process(Request request) async {
@@ -50,13 +52,13 @@ class Mailer {
   Future<void> _sendMail(TelegramBotApi telegramApi, List<String> userIds, Post post) async {
     for (final userId in userIds) {
       try {
-        telegramApi.sendHtmlMessage(
+        final url = 'https://jobstash.xyz/jobs/${post.job.shortUUID}/details';
+        telegramApi.sendMessage(
           int.parse(userId),
           MessageFormatter.createMessage(post),
-          // KeyboardButton(
-          //   text: 'See job details',
-          //   url: post.url,
-          // ),
+          parseMode: ParseMode.html,
+          disableLinkPreview: true,
+          buttons: [InlineKeyboardButton(text: 'See Job Details', url: url)],
         );
       } catch (error, st) {
         logger.e('Failed to send mail to user $userId', error: error, stackTrace: st);

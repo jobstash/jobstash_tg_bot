@@ -607,7 +607,7 @@ packages:
     source: path
     version: "1.0.0"
   televerse:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: televerse
       sha256: "8424d38452aa877c2450838201c681ff491d66ae8efa8121d00ff9a599c203ec"

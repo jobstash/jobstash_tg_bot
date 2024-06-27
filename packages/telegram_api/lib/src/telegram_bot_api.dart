@@ -19,17 +19,19 @@ class TelegramBotApi {
     return message;
   }
 
-  Future<Message> sendMessage(int userId, String text) {
-    return _api.sendMessage(ID.create(userId), text);
-  }
-
-  Future<Message> sendHtmlMessage(int userId, String text, [List<KeyboardButton>? buttons]) {
+  Future<Message> sendMessage(
+    int userId,
+    String text, {
+    List<InlineKeyboardButton>? buttons,
+    ParseMode? parseMode,
+    bool disableLinkPreview = false,
+  }) {
     return _api.sendMessage(
       ID.create(userId),
       text,
-      parseMode: ParseMode.html,
-      linkPreviewOptions: LinkPreviewOptions(isDisabled: true),
-      replyMarkup: buttons != null ? ReplyKeyboardMarkup(keyboard: [buttons]) : null,
+      parseMode: parseMode,
+      linkPreviewOptions: LinkPreviewOptions(isDisabled: disableLinkPreview),
+      replyMarkup: buttons != null ? InlineKeyboardMarkup(inlineKeyboard: [buttons]) : null,
     );
   }
 
