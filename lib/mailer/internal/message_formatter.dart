@@ -26,7 +26,7 @@ class MessageFormatter {
     messageParts.add(summary);
 
     if (job.minimumSalary != null && job.maximumSalary != null) {
-      messageParts.add('Salary: ${job.minimumSalary} - ${job.maximumSalary}');
+      messageParts.add('💵 \$${job.minimumSalary} - \$${job.maximumSalary}');
     }
 
     if (tags != null) {
