@@ -15,7 +15,7 @@ class Mailer {
     try {
       final telegramApi = TelegramBotApi(Config.botToken);
 
-      await Database.initialize(Config.isDevEnv);
+      await Database.initialize(Config.googleProjectId);
 
       final filtersDao = Database.createFiltersDao();
 

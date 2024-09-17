@@ -22,7 +22,7 @@ class ChatBot {
       final body = await parseRequestBody(request);
       logger.d('Request body ${request.url}');
 
-      await Database.initialize(Config.isDevEnv);
+      await Database.initialize(Config.googleProjectId);
 
       final userDao = Database.createFiltersDao();
       final dialogDao = Database.createDialogDao();

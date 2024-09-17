@@ -3,6 +3,8 @@ import 'dart:io';
 class Config {
   Config._();
 
+  static String get googleProjectId => env('GCP_PROJECT');
+
   static final int errorChannelId = -1001956242482;
 
   static String get botName => env('BOT_NAME');
