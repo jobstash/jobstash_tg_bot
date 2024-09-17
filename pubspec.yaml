@@ -32,7 +32,6 @@ dependencies:
   # utils
   logger: ^2.0.2+1
   collection: ^1.18.0
-  dotenv: ^4.2.0
 
 dev_dependencies:
   # Code generation

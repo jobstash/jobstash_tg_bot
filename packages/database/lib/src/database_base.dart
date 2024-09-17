@@ -6,7 +6,7 @@ class Database {
 
   static Future<void> initialize(bool isDebug) async {
     if (!Firestore.initialized) {
-      Firestore.initialize(isDebug ? 'jobstash-bot' : 'jobstash', useApplicationDefaultAuth: true);
+      Firestore.initialize(isDebug ? 'jobstash-bot' : 'beaming-figure-430316-k1', useApplicationDefaultAuth: true);
     }
   }
 
