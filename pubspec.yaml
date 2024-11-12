@@ -35,7 +35,7 @@ dependencies:
 
 dev_dependencies:
   # Code generation
-  build_runner: ^2.0.0
+  build_runner: 2.4.13
   functions_framework_builder: ^0.4.0
 
   # Linting

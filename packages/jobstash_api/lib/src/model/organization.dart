@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:jobstash_api/src/converters/headcount_custom_converter.dart';
 import 'package:jobstash_api/src/model/range.dart';
 
 part 'organization.freezed.dart';
@@ -27,7 +28,7 @@ class Properties with _$Properties {
     String? id,
     Range? updatedTimestamp,
     String? orgId,
-    Range? headcountEstimate,
+    @HeadcountEstimateConverter() Range? headcountEstimate,
   }) = _Properties;
 
   factory Properties.fromJson(Map<String, dynamic> json) => _$PropertiesFromJson(json);

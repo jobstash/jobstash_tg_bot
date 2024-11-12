@@ -1,0 +1,1276 @@
+[
+  {
+    "structuredJobpost": {
+      "tags": [
+        {
+          "id": "2cea2c76-e53a-45a3-9eee-12b420c11a64",
+          "name": "DevOps",
+          "normalizedName": "devops"
+        },
+        {
+          "id": "722c89c1-bcd7-47b4-ac57-af54bfd254c2",
+          "name": "SQL",
+          "normalizedName": "sql"
+        },
+        {
+          "id": "3a825090-717a-4a2a-a543-ccfc4f0f58c7",
+          "name": "Python",
+          "normalizedName": "python"
+        },
+        {
+          "id": "7900ddec-ef4d-4334-89e1-60c1441f7347",
+          "name": "Airflow",
+          "normalizedName": "airflow"
+        },
+        {
+          "id": "501f849f-9acd-4206-a711-ea27ae0c14fd",
+          "name": "Analytics",
+          "normalizedName": "analytics"
+        },
+        {
+          "id": "8783e781-0c9e-49d6-8ce1-53ab3e26d5f4",
+          "name": "AWS",
+          "normalizedName": "aws"
+        },
+        {
+          "id": "9ae604b9-7300-4b56-88c9-4a45bc6a184f",
+          "name": "GCP",
+          "normalizedName": "gcp"
+        },
+        {
+          "id": "f503e062-0070-4dba-a1d7-465b72eaff87",
+          "name": "Dune",
+          "normalizedName": "dune"
+        },
+        {
+          "id": "6d1d2e00-580f-4a46-b90f-933e5cccf68d",
+          "name": "data",
+          "normalizedName": "data"
+        },
+        {
+          "id": "f6891020-6b33-4739-82bb-0e5a27235b8f",
+          "name": "DBT",
+          "normalizedName": "dbt"
+        }
+      ],
+      "summary": "Safe is looking for a Senior Data Engineer to drive the enhancement of data pipelines and data warehouse. They improve automation and unlock insights.",
+      "communities": [],
+      "location": "Any",
+      "shortUUID": "rRkvcd",
+      "access": "public",
+      "requirements": [
+        "Proficient with Data Orchestration Tools",
+        "Familiarity with Cloud Platforms",
+        "Skilled in Data Modeling",
+        "Experience with DevOps Practices",
+        "Experience with Onchain Analytics Tools",
+        "Proficiency in Scripting Languages"
+      ],
+      "url": "https://jobs.ashbyhq.com/safe.global/a06fd529-e77e-44e9-bea8-81b57cf10edd",
+      "firstSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "id": "d41f8ef4-a5e1-42d2-9ffa-e0639e3ff6c3",
+      "title": "Senior Data Engineer",
+      "lastSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "description": "As a Senior Data Engineer, you will contribute to a pioneering project at the heart of web3 innovation. You will drive the enhancement of our data pipelines and data warehouse, build data orchestrations to improve the automation of our key pipelines, and unlock deeper insights and more impactful analyses across multiple teams. Continuously improve and maintain data integrations, develop new data pipelines, partner with Dune for scalable spells, use advanced SQL techniques, expand our data warehouse, write scripts for analytics data, set up data orchestrations, integrate marketing data, and play an active role in defining and executing our data strategy.",
+      "locationType": {
+        "id": "d9b14fa2-d831-464d-9805-931a312143cd",
+        "name": "REMOTE"
+      },
+      "responsibilities": [
+        "Continuously improve and maintain data integrations",
+        "Develop new data pipelines",
+        "Partner with Dune for scalable spells",
+        "Use advanced SQL techniques",
+        "Expand data warehouse",
+        "Write scripts for analytics data",
+        "Set up data orchestrations",
+        "Integrate marketing data",
+        "Define and execute data strategy"
+      ],
+      "benefits": [
+        "30 vacation days as standard",
+        "Home Working Budget",
+        "State-of-the-Art Hardware",
+        "Continuous Learning",
+        "Innovative Fridays",
+        "Flexible Work Schedules"
+      ],
+      "seniority": "3"
+    },
+    "organization": {
+      "identity": {
+        "low": 2658,
+        "high": 0
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "summary": "Safe provides secure and modular smart accounts for managing digital assets.",
+        "createdTimestamp": {
+          "low": -1438187017,
+          "high": 395
+        },
+        "name": "Safe",
+        "description": "Safe offers smart accounts that are secure, modular, and widely used for managing digital assets. The platform supports multi-sig wallets and provides a comprehensive account abstraction stack for developers.",
+        "location": "Distributed",
+        "id": "834c68f6-6493-4f89-aec9-87010529474d",
+        "normalizedName": "safe",
+        "updatedTimestamp": {
+          "low": 2106517003,
+          "high": 400
+        },
+        "orgId": "330",
+        "headcountEstimate": 50
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:2658"
+    },
+    "classification": {
+      "identity": {
+        "low": 263380,
+        "high": 0
+      },
+      "labels": [
+        "JobpostClassification"
+      ],
+      "properties": {
+        "name": "DATA_SCIENCE",
+        "id": "a0a257a6-cc76-4270-9a8f-4ebedfcaf05b",
+        "normalizedName": "data_science"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:263380"
+    },
+    "communities": []
+  },
+  {
+    "structuredJobpost": {
+      "tags": [
+        {
+          "id": "8ae32e10-a305-489c-b24b-97b03ac8d3c1",
+          "name": "Communication",
+          "normalizedName": "communication"
+        },
+        {
+          "id": "7f3dd6f9-b3ed-457c-b724-bcabc2eed696",
+          "name": "presentation",
+          "normalizedName": "presentation"
+        },
+        {
+          "id": "eca5b448-c36e-45e6-a149-7baa99f0aaf3",
+          "name": "analysis",
+          "normalizedName": "analysis"
+        },
+        {
+          "id": "55d89274-33be-4e52-ba0f-692066e235ec",
+          "name": "Excel",
+          "normalizedName": "excel"
+        },
+        {
+          "id": "de6980d7-08e3-4959-a6ee-c4bdbf544f99",
+          "name": "Financial Modelling",
+          "normalizedName": "financial-modelling"
+        },
+        {
+          "id": "bcb38d19-f9fe-4e49-8dab-2b2ce75f586e",
+          "name": "Financial Accounting",
+          "normalizedName": "financial-accounting"
+        },
+        {
+          "id": "36b9876e-0930-4d81-9645-4c46de6132da",
+          "name": "Commercial Finance",
+          "normalizedName": "commercial-finance"
+        },
+        {
+          "id": "50f7ef53-ca76-4272-8ca0-8316e00cc6d8",
+          "name": "Management Accounting",
+          "normalizedName": "management-accounting"
+        }
+      ],
+      "summary": "Yellow Card is looking for a Commercial Finance Analyst to implement reports and dashboards, produce financial metrics, and support financial control. They drive financial success through sound analysis.",
+      "communities": [],
+      "location": "Remote",
+      "shortUUID": "cCF83S",
+      "access": "public",
+      "requirements": [
+        "3+ years combined experience in Financial Accounting, Management Accounting, or Commercial Finance",
+        "Fully professionally qualified CA/ACA/ACCA/ACMA/CFA",
+        "Previous experience in Group or Regional level Commercial Finance teams",
+        "Excellent Excel and financial modelling skills",
+        "Analytical mindset",
+        "Excellent English communication and presentation skills",
+        "Ability to summarize complex concepts clearly",
+        "Strong attention to detail",
+        "Self-starter",
+        "Ability to grasp, navigate and solve complex business problems",
+        "High ownership and ability to work independently",
+        "Performance driven",
+        "Agile and able to work in a rapidly evolving environment",
+        "Proactive and fast learner"
+      ],
+      "url": "https://yellowcard.bamboohr.com/careers/274",
+      "firstSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "id": "ea9f9883-5b44-4b38-9cf0-43a8852e38da",
+      "title": "Commercial Finance Analyst",
+      "lastSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "description": "You will implement and produce reports and dashboards, including weekly and monthly finance reporting dashboards, monthly management packs, and segmented P&Ls. You will produce financial metrics and reports for quarterly board decks, manage budgeting and reforecasting, and support the VP Finance in scrutinizing the cost base. You will ensure financial control for AP spend, assess new business cases for financial viability, and finalize the setup of a central repository for vendor contracts. You will also gather information using research tools, produce accurate deliverables, and maintain templates and procedures.",
+      "locationType": {
+        "id": "d9b14fa2-d831-464d-9805-931a312143cd",
+        "name": "REMOTE"
+      },
+      "responsibilities": [
+        "Implement and produce reports and dashboards",
+        "Produce financial metrics and reports for quarterly board decks",
+        "Manage budgeting and reforecasting",
+        "Support VP Finance in scrutinizing cost base",
+        "Ensure financial control for AP spend",
+        "Assess new business cases for financial viability",
+        "Finalize setup of central repository for vendor contracts",
+        "Gather information using research tools",
+        "Produce accurate deliverables",
+        "Maintain templates and procedures"
+      ],
+      "benefits": [],
+      "seniority": "3"
+    },
+    "organization": {
+      "identity": {
+        "low": 23517,
+        "high": 0
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "summary": "Yellow Card is the largest and only licensed Stablecoin on/off ramp on the African continent.",
+        "createdTimestamp": {
+          "low": 1972731998,
+          "high": 397
+        },
+        "name": "Yellow Card Financial",
+        "description": "Operating across 20 countries, we provide individuals and businesses of all sizes across Africa with secure, liquid, and cost-effective access to USDT, USDC, and PYUSD via their local currency directly and through our Payments API.",
+        "location": "Distributed",
+        "id": "c182fc50-ffee-4328-af58-8404d26aab74",
+        "normalizedName": "yellow-card-financial",
+        "orgId": "1295"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:23517"
+    },
+    "classification": {
+      "identity": {
+        "low": 3068,
+        "high": 0
+      },
+      "labels": [
+        "JobpostClassification"
+      ],
+      "properties": {
+        "name": "FINANCE",
+        "id": "2ebe15b9-9087-4450-8517-35df1d18094f",
+        "normalizedName": "finance"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:3068"
+    },
+    "communities": []
+  },
+  {
+    "structuredJobpost": {
+      "tags": [
+        {
+          "id": "3ebcddb9-8946-41e9-af65-8ebd0177eedf",
+          "name": "Product Management",
+          "normalizedName": "product-management"
+        },
+        {
+          "id": "80e806b5-fe02-46ce-8eac-9724af2263d6",
+          "name": "Crypto",
+          "normalizedName": "crypto"
+        },
+        {
+          "id": "722c89c1-bcd7-47b4-ac57-af54bfd254c2",
+          "name": "SQL",
+          "normalizedName": "sql"
+        },
+        {
+          "id": "3090cfbd-05f8-4b99-81dd-702275d41800",
+          "name": "Data Analytics",
+          "normalizedName": "data-analytics"
+        },
+        {
+          "id": "d499dd7c-501c-4c6c-9c3e-295a312c0a38",
+          "name": "Metrics",
+          "normalizedName": "metrics"
+        },
+        {
+          "id": "fa3ec85b-418d-44c4-8901-2ef196344ada",
+          "name": "B2B",
+          "normalizedName": "b2b"
+        },
+        {
+          "id": "7d8d934c-8aa8-4340-a778-491f61b552fe",
+          "name": "data analytics",
+          "normalizedName": "data-analytics"
+        },
+        {
+          "id": "f8fd2276-2348-45a2-b042-f57479bdfefb",
+          "name": "UML",
+          "normalizedName": "uml"
+        },
+        {
+          "id": "67bbb942-d940-4c1f-9327-c888b9f18946",
+          "name": "product management",
+          "normalizedName": "product-management"
+        },
+        {
+          "id": "2f7c3a9e-2baf-4bcd-9e50-c6d6f501c33f",
+          "name": "BPMN",
+          "normalizedName": "bpmn"
+        }
+      ],
+      "summary": "Cryptopay is looking for a Business Analyst to dive into the B2B crypto market and collaborate with product managers. Responsibilities include articulating requirements and validating features.",
+      "communities": [],
+      "shortUUID": "ccmV4Y",
+      "access": "public",
+      "requirements": [
+        "3-5 years of experience as a Systems/Business analyst",
+        "Experience in the fintech industry",
+        "Experience with UML/BPMN diagrams",
+        "Basic knowledge of SQL",
+        "Proactive approach",
+        "Basic understanding of the tech landscape",
+        "Technical knowledge and business acumen",
+        "Ability to create terms of reference",
+        "Independence and autonomy",
+        "Conversational English skills"
+      ],
+      "url": "https://cryptopay.global.huntflow.io/vacancy/business-analyst",
+      "firstSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "id": "94312d4c-88cc-491e-91e7-a453958c38d6",
+      "title": "Business Analyst",
+      "lastSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "description": "You will dive into the B2B crypto market, collaborate with product managers to gather and document requirements, and articulate these to the development team. You'll create technical assignments, validate implemented features, and propose improvements based on feedback.",
+      "locationType": {
+        "id": "d9b14fa2-d831-464d-9805-931a312143cd",
+        "name": "REMOTE"
+      },
+      "responsibilities": [
+        "Dive into the B2B crypto market",
+        "Collaborate with product managers",
+        "Articulate and describe requirements",
+        "Create technical assignments",
+        "Validate implemented features",
+        "Analyze outcomes and propose improvements"
+      ],
+      "benefits": [],
+      "seniority": "3"
+    },
+    "organization": {
+      "identity": {
+        "low": 28090,
+        "high": 0
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "summary": "Cryptopay is a simple and secure way to buy, sell, and spend cryptocurrency.",
+        "createdTimestamp": {
+          "low": 1996840085,
+          "high": 397
+        },
+        "name": "Cryptopay Limited",
+        "description": "Cryptopay is a cryptocurrency exchange and wallet that allows users to buy, sell, and spend cryptocurrency. The company was founded in 2013 and is headquartered in Estonia. Cryptopay offers a variety of features, including a mobile app, a debit card, and a merchant payment processing service. The company also has a strong focus on security, and it uses a variety of measures to protect its users' funds.",
+        "location": "Tallinn, Estonia",
+        "id": "cda6cad7-587a-4940-a2ba-7190fc29dee2",
+        "normalizedName": "cryptopay-limited",
+        "orgId": "1640"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:28090"
+    },
+    "classification": {
+      "identity": {
+        "low": 2956,
+        "high": 0
+      },
+      "labels": [
+        "JobpostClassification"
+      ],
+      "properties": {
+        "name": "BIZDEV",
+        "id": "9d1e91dd-b0ca-4c53-b53b-365d9b870fc1",
+        "normalizedName": "bizdev"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:2956"
+    },
+    "communities": []
+  },
+  {
+    "structuredJobpost": {
+      "tags": [
+        {
+          "id": "56f893dd-c2a8-4f21-bca0-6c83b12ee8f3",
+          "name": "Slack",
+          "normalizedName": "slack"
+        },
+        {
+          "id": "eef5b42f-b898-4c1b-95fe-7cbf77384e51",
+          "name": "CI/CD",
+          "normalizedName": "ci/cd"
+        },
+        {
+          "id": "3a825090-717a-4a2a-a543-ccfc4f0f58c7",
+          "name": "Python",
+          "normalizedName": "python"
+        },
+        {
+          "id": "62b5ff21-170e-4f87-bea3-3d36be515557",
+          "name": "Github",
+          "normalizedName": "github"
+        },
+        {
+          "id": "26ba99c9-ea55-487f-9ba4-3eb6d4449bfc",
+          "name": "Jira",
+          "normalizedName": "jira"
+        },
+        {
+          "id": "1dd99a72-7962-48d2-bdb3-63f7a985e5a9",
+          "name": "Confluence",
+          "normalizedName": "confluence"
+        },
+        {
+          "id": "0149c96b-e6be-4e78-8bfe-588bd15f77f5",
+          "name": "Docker",
+          "normalizedName": "docker"
+        },
+        {
+          "id": "76f0c6d3-f320-45ad-b119-3491075d5798",
+          "name": "Windows",
+          "normalizedName": "windows"
+        },
+        {
+          "id": "1ba5b7ec-6cd4-4109-9292-dcd0354a4473",
+          "name": "Linux",
+          "normalizedName": "linux"
+        },
+        {
+          "id": "7297bf84-c550-4c51-b911-323b036706b5",
+          "name": "TypeScript",
+          "normalizedName": "typescript"
+        },
+        {
+          "id": "2908b21d-eca0-47b1-a467-8f2ea664087b",
+          "name": "serverless architecture",
+          "normalizedName": "serverless-architecture"
+        },
+        {
+          "id": "63113081-27e8-4a0a-902e-fc613958a2cf",
+          "name": "cloud service",
+          "normalizedName": "cloud-service"
+        },
+        {
+          "id": "a6642938-fb49-4df0-95ff-448bb762bd6d",
+          "name": "design document",
+          "normalizedName": "design-document"
+        }
+      ],
+      "summary": "Couger is looking for a Senior Backend Engineer to develop and operate backend systems for their human AI platform. They collaborate with engineering managers to enhance team productivity.",
+      "communities": [],
+      "location": "Shibuya, Tokyo, Japan",
+      "shortUUID": "ZAXnQi",
+      "access": "public",
+      "requirements": [
+        "5+ years of experience with Python and TypeScript",
+        "Experience with serverless architecture",
+        "Experience creating and using design documents",
+        "Experience sharing and reviewing design documents"
+      ],
+      "url": "https://open.talentio.com/r/1/c/couger/pages/99581",
+      "firstSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "id": "3f2c6b09-166e-4529-8f4f-f42eb5abba57",
+      "title": "Senior Backend Engineer",
+      "lastSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "description": "You will develop and operate backend systems for the human AI platform LUDENS, including web APIs and data processing pipelines. Collaborate with engineering managers and stakeholders to lead technical projects. Provide technical leadership and mentorship to improve team skills and productivity.",
+      "locationType": {
+        "id": "7844f61c-49cb-4874-9b66-cbc822c23b30",
+        "name": "HYBRID"
+      },
+      "responsibilities": [
+        "Develop and operate backend systems for LUDENS",
+        "Provide technical leadership and mentorship",
+        "Collaborate with engineering managers and stakeholders",
+        "Solve complex technical challenges"
+      ],
+      "benefits": [
+        "Complete social insurance",
+        "Commuting allowance",
+        "Communication allowance"
+      ],
+      "seniority": "3"
+    },
+    "organization": {
+      "identity": {
+        "low": 28354,
+        "high": 0
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "summary": "Couger Inc. is a company that develops autonomous technology products, including virtual human agents.",
+        "createdTimestamp": {
+          "low": 1997197213,
+          "high": 397
+        },
+        "name": "Couger, Inc.",
+        "description": "Couger Inc. is a company that develops autonomous technology products, including virtual human agents. The company's products are designed to help people interact with technology in a more natural and intuitive way.",
+        "location": "Distributed",
+        "id": "304aadd7-1377-4f1d-88d5-559a4cd1d607",
+        "normalizedName": "couger_comma_-inc.",
+        "orgId": "1687"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:28354"
+    },
+    "classification": {
+      "identity": {
+        "low": 35506,
+        "high": 0
+      },
+      "labels": [
+        "JobpostClassification"
+      ],
+      "properties": {
+        "name": "ENGINEERING",
+        "id": "21a80c4d-d384-4500-a2b1-ab1a2b9e0ffe",
+        "normalizedName": "engineering"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:35506"
+    },
+    "communities": []
+  },
+  {
+    "structuredJobpost": {
+      "tags": [
+        {
+          "id": "4265c2b8-b8ef-4305-a370-95681c3deaff",
+          "name": "Blockchain",
+          "normalizedName": "blockchain"
+        },
+        {
+          "id": "61935d44-061d-4ed8-b4f6-a788c0e63d99",
+          "name": "Project Management",
+          "normalizedName": "project-management"
+        },
+        {
+          "id": "5c6bef98-2589-41f6-b77f-7e461848ec27",
+          "name": "Web3",
+          "normalizedName": "web3"
+        },
+        {
+          "id": "80e806b5-fe02-46ce-8eac-9724af2263d6",
+          "name": "Crypto",
+          "normalizedName": "crypto"
+        },
+        {
+          "id": "1b9ddc25-b3f7-4277-83b1-7d56485afd22",
+          "name": "Marketing",
+          "normalizedName": "marketing"
+        },
+        {
+          "id": "308bc6e8-bf4a-4483-aa17-fc434679af4d",
+          "name": "strategy",
+          "normalizedName": "strategy"
+        },
+        {
+          "id": "398bb354-0466-47e6-9652-c5c085be63f4",
+          "name": "Gaming",
+          "normalizedName": "gaming"
+        },
+        {
+          "id": "d6bbb70b-05b3-4ab6-b4fd-e0bb192f77c8",
+          "name": "Partnership",
+          "normalizedName": "partnership"
+        },
+        {
+          "id": "6d1d2e00-580f-4a46-b90f-933e5cccf68d",
+          "name": "data",
+          "normalizedName": "data"
+        },
+        {
+          "id": "f97f75f8-74c9-4eb7-9334-ca3d32c599d2",
+          "name": "project management",
+          "normalizedName": "project-management"
+        }
+      ],
+      "summary": "GAMEE is looking for a Web3 Marketing Lead to oversee marketing efforts and innovate in Web3 ecosystems. They lead a team and create a growth-focused environment.",
+      "communities": [],
+      "location": "Prague",
+      "shortUUID": "tI8m1B",
+      "access": "public",
+      "requirements": [
+        "Deep understanding of web3/crypto/blockchain space",
+        "Previous experience with marketing digital products",
+        "Previous experience with leading teams",
+        "Data-driven approach",
+        "Proactivity and creativity",
+        "Reliability, honesty, and independence",
+        "English proficiency",
+        "Central European location"
+      ],
+      "url": "https://www.cocuma.cz/job/web3-marketing-lead/8580/",
+      "firstSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "id": "20006659-0a20-4cdc-8b12-46f56307f405",
+      "title": "Web3 Marketing Lead",
+      "lastSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "description": "You will lead a team of 7 professionals, focusing on team delivery, product marketing, high-level strategy, and creating a growth-focused environment. Lead and innovate the marketing strategy for digital products and all marketing channels. Manage and lead the Marketing Team. Evaluate, adapt, and iterate marketing campaigns based on data impact. Collaborate with other team leads and C-level on a daily basis. Work on high-level partnerships with global brands from web2 and web3.",
+      "locationType": {
+        "id": "7844f61c-49cb-4874-9b66-cbc822c23b30",
+        "name": "HYBRID"
+      },
+      "responsibilities": [
+        "Lead and innovate the marketing strategy for digital products and all marketing channels",
+        "Manage and lead the Marketing Team",
+        "Evaluate, adapt, and iterate marketing campaigns based on data impact",
+        "Collaborate with other team leads and C-level on a daily basis",
+        "Work on high-level partnerships with global brands from web2 and web3"
+      ],
+      "benefits": [
+        "Flexibility (partial or full home office possible)",
+        "Possibility to travel to events all around the world",
+        "Office in a villa at Náplavka with a garden",
+        "Ability to work from anywhere in Europe within +/-1h from CET timezone",
+        "Frequent fun team-building events"
+      ],
+      "seniority": "4"
+    },
+    "organization": {
+      "identity": {
+        "low": 92747,
+        "high": 0
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "summary": "GAMEE is a platform connecting gamers, brands, and Web3 projects through play.",
+        "createdTimestamp": {
+          "low": 1930355786,
+          "high": 398
+        },
+        "name": "GAMEE",
+        "description": "GAMEE is a platform that aims to onboard gamers to Web3 through mobile gaming, offering access to exclusive leagues and gated experiences. It harnesses interoperability with Web3 partners and allows users to earn and customize their first NFT, turning gaming skills into crypto rewards.",
+        "location": "Distributed",
+        "id": "cb103600-d0d5-448e-aab5-35076aec947f",
+        "normalizedName": "gamee",
+        "updatedTimestamp": {
+          "low": -1932397161,
+          "high": 398
+        },
+        "orgId": "4314"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:92747"
+    },
+    "classification": {
+      "identity": {
+        "low": 3161,
+        "high": 0
+      },
+      "labels": [
+        "JobpostClassification"
+      ],
+      "properties": {
+        "name": "MARKETING",
+        "id": "b55d7ede-e2d9-4399-bb8d-95ab321b4fa5",
+        "normalizedName": "marketing"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:3161"
+    },
+    "communities": []
+  },
+  {
+    "structuredJobpost": {
+      "tags": [
+        {
+          "id": "4265c2b8-b8ef-4305-a370-95681c3deaff",
+          "name": "Blockchain",
+          "normalizedName": "blockchain"
+        },
+        {
+          "id": "55b89d16-55b4-4123-ba54-85f2fe189a2b",
+          "name": "English",
+          "normalizedName": "english"
+        },
+        {
+          "id": "80e806b5-fe02-46ce-8eac-9724af2263d6",
+          "name": "Crypto",
+          "normalizedName": "crypto"
+        },
+        {
+          "id": "0e8edf74-c908-4d84-8970-a058dc6c6b5a",
+          "name": "Figma",
+          "normalizedName": "figma"
+        },
+        {
+          "id": "1b9ddc25-b3f7-4277-83b1-7d56485afd22",
+          "name": "Marketing",
+          "normalizedName": "marketing"
+        },
+        {
+          "id": "a2a5e177-e918-4415-9c0a-b15e58219e96",
+          "name": "Design",
+          "normalizedName": "design"
+        },
+        {
+          "id": "7e12959c-2960-4696-9af4-7365a305ae09",
+          "name": "Creativity",
+          "normalizedName": "creativity"
+        },
+        {
+          "id": "ceb4694c-f11f-4b3a-a781-44abc3f23ff1",
+          "name": "NFT",
+          "normalizedName": "nft"
+        }
+      ],
+      "summary": "GAMEE is looking for a Marketing Designer to shape brand identity and elevate marketing efforts. Focus on mobile entertainment platforms and Web3 partnerships.",
+      "communities": [],
+      "location": "Prague",
+      "shortUUID": "J2pxXc",
+      "access": "public",
+      "requirements": [
+        "Experience in creating ad visuals",
+        "Experience with Figma",
+        "Understanding of blockchain, crypto, and NFT communities",
+        "Proactivity and creativity",
+        "Reliability, honesty, and independence",
+        "English proficiency",
+        "Central European location"
+      ],
+      "url": "https://www.cocuma.cz/job/marketing-designer/8581/",
+      "firstSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "id": "74f9d5f6-54fe-44bd-ab1a-6431443de8f0",
+      "title": "Marketing Designer",
+      "lastSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "description": "You will create marketing materials, improve brand visual identity, and collaborate with teams to optimize store assets. Embrace creativity and innovation in a fast-paced environment.",
+      "locationType": {
+        "id": "7844f61c-49cb-4874-9b66-cbc822c23b30",
+        "name": "HYBRID"
+      },
+      "responsibilities": [
+        "Create marketing materials",
+        "Improve visual identity",
+        "Generate ideas for marketing visuals",
+        "Collaborate with performance marketing team",
+        "Work closely with Marketing, Product, and Games teams"
+      ],
+      "benefits": [
+        "Flexibility with home office",
+        "Global exposure",
+        "Travel opportunities",
+        "International team culture",
+        "Office in Prague with garden",
+        "Team-building events"
+      ],
+      "seniority": "2"
+    },
+    "organization": {
+      "identity": {
+        "low": 92747,
+        "high": 0
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "summary": "GAMEE is a platform connecting gamers, brands, and Web3 projects through play.",
+        "createdTimestamp": {
+          "low": 1930355786,
+          "high": 398
+        },
+        "name": "GAMEE",
+        "description": "GAMEE is a platform that aims to onboard gamers to Web3 through mobile gaming, offering access to exclusive leagues and gated experiences. It harnesses interoperability with Web3 partners and allows users to earn and customize their first NFT, turning gaming skills into crypto rewards.",
+        "location": "Distributed",
+        "id": "cb103600-d0d5-448e-aab5-35076aec947f",
+        "normalizedName": "gamee",
+        "updatedTimestamp": {
+          "low": -1932397161,
+          "high": 398
+        },
+        "orgId": "4314"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:92747"
+    },
+    "classification": {
+      "identity": {
+        "low": 3138,
+        "high": 0
+      },
+      "labels": [
+        "JobpostClassification"
+      ],
+      "properties": {
+        "name": "DESIGN",
+        "id": "9087c5f3-08ac-422c-b73d-89193e244433",
+        "normalizedName": "design"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:3138"
+    },
+    "communities": []
+  },
+  {
+    "structuredJobpost": {
+      "tags": [
+        {
+          "id": "4265c2b8-b8ef-4305-a370-95681c3deaff",
+          "name": "Blockchain",
+          "normalizedName": "blockchain"
+        },
+        {
+          "id": "176050ff-5938-413c-8dee-96d84ddf0aa6",
+          "name": "Business Development",
+          "normalizedName": "business-development"
+        },
+        {
+          "id": "8ae32e10-a305-489c-b24b-97b03ac8d3c1",
+          "name": "Communication",
+          "normalizedName": "communication"
+        },
+        {
+          "id": "d6076cc6-e617-4666-9271-bbbfed52ffcf",
+          "name": "negotiation",
+          "normalizedName": "negotiation"
+        },
+        {
+          "id": "5a5d1463-2078-420f-8256-004cbcd98453",
+          "name": "Leadership",
+          "normalizedName": "leadership"
+        },
+        {
+          "id": "55180584-f6b5-4cdc-9c0a-cb5fd0549f90",
+          "name": "Blockchain technology",
+          "normalizedName": "blockchain-technology"
+        },
+        {
+          "id": "92da01cd-d6f4-4b93-913a-762d04a26993",
+          "name": "Cryptocurrency",
+          "normalizedName": "cryptocurrency"
+        },
+        {
+          "id": "8242aba7-80b7-4e4c-b3f6-2b5bb42d85d6",
+          "name": "fintech",
+          "normalizedName": "fintech"
+        },
+        {
+          "id": "d6bbb70b-05b3-4ab6-b4fd-e0bb192f77c8",
+          "name": "Partnership",
+          "normalizedName": "partnership"
+        },
+        {
+          "id": "fa3ec85b-418d-44c4-8901-2ef196344ada",
+          "name": "B2B",
+          "normalizedName": "b2b"
+        },
+        {
+          "id": "64dac9bc-9246-4c85-965c-479d0364017f",
+          "name": "business development",
+          "normalizedName": "business-development"
+        },
+        {
+          "id": "146bcaa2-0c91-4b93-ae7a-c7ca7fa0a100",
+          "name": "financial market",
+          "normalizedName": "financial-market"
+        }
+      ],
+      "summary": "Paxos is looking for a Head of Growth to define and execute the company’s growth strategy on a global scale. They oversee revenue expansion, market penetration, and strategic partnerships.",
+      "communities": [],
+      "location": "Remote - United States",
+      "shortUUID": "LJxsOj",
+      "access": "public",
+      "requirements": [
+        "Bachelor’s degree in Business Administration, Finance, Computer Science, or related field",
+        "Proven track record of success in driving partnerships and business development initiatives",
+        "Strong network of contacts and relationships with key stakeholders in the financial services industry",
+        "Strategic thinker with the ability to identify growth opportunities",
+        "Excellent negotiation and communication skills",
+        "Demonstrated leadership experience",
+        "Deep understanding of blockchain technology, cryptocurrencies, and financial markets",
+        "Willingness to travel globally as needed"
+      ],
+      "url": "https://paxos.com/job-posts/head-of-growth/",
+      "firstSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "id": "2129bc1e-9c0f-4654-95e0-f5d78ebdf546",
+      "title": "Head of Growth",
+      "lastSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "description": "As the Head of Growth, you will define and execute Paxos’ growth strategy globally. You will oversee a large organization, expand market presence, develop new revenue streams, and drive strategic partnerships. You will lead cross-functional initiatives and navigate complex environments.",
+      "locationType": {
+        "id": "d9b14fa2-d831-464d-9805-931a312143cd",
+        "name": "REMOTE"
+      },
+      "responsibilities": [
+        "Own and drive Paxos’ comprehensive growth strategy",
+        "Lead a large, multi-tiered organization",
+        "Collaborate closely with the executive leadership team",
+        "Spearhead the identification and prioritization of large-scale strategic opportunities",
+        "Establish and maintain relationships with C-level executives",
+        "Foster a culture of innovation, accountability, and operational excellence",
+        "Direct cross-functional collaboration with product, engineering, marketing, and legal teams",
+        "Lead the negotiation and execution of complex, high-value partnership agreements",
+        "Oversee and optimize a robust pipeline of growth initiatives",
+        "Represent Paxos as a thought leader in the industry",
+        "Stay ahead of market trends, competitive pressures, and regulatory changes",
+        "Build and mentor a world-class partnerships and business development team"
+      ],
+      "benefits": [],
+      "seniority": "5"
+    },
+    "organization": {
+      "identity": {
+        "low": 95856,
+        "high": 0
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "summary": "Paxos provides blockchain infrastructure for enterprises, offering regulated financial solutions and digital asset services.",
+        "createdTimestamp": {
+          "low": 1941981443,
+          "high": 398
+        },
+        "name": "Paxos",
+        "description": "Paxos is a regulated blockchain infrastructure provider that offers a suite of products and services for enterprises in the financial sector. Their offerings include crypto brokerage, stablecoin and payment solutions, securities settlement, and commodities settlement. Paxos aims to harness blockchain technology to build infrastructure that enables enterprises to launch innovative products for the financial markets of tomorrow.",
+        "location": "Distributed",
+        "id": "f7c74664-414a-4d86-b6d8-b423e61a3af4",
+        "normalizedName": "paxos",
+        "updatedTimestamp": {
+          "low": -1916529275,
+          "high": 398
+        },
+        "orgId": "5032"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:95856"
+    },
+    "classification": {
+      "identity": {
+        "low": 3260,
+        "high": 0
+      },
+      "labels": [
+        "JobpostClassification"
+      ],
+      "properties": {
+        "name": "GROWTH",
+        "id": "b8e5c33a-6432-47b0-aee1-5fa527803cc9",
+        "normalizedName": "growth"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:3260"
+    },
+    "communities": []
+  },
+  {
+    "structuredJobpost": {
+      "tags": [
+        {
+          "id": "4265c2b8-b8ef-4305-a370-95681c3deaff",
+          "name": "Blockchain",
+          "normalizedName": "blockchain"
+        },
+        {
+          "id": "8ae32e10-a305-489c-b24b-97b03ac8d3c1",
+          "name": "Communication",
+          "normalizedName": "communication"
+        },
+        {
+          "id": "902966e6-83ca-4d54-a07f-ae72212e35b4",
+          "name": "problem-solving",
+          "normalizedName": "problem_hyphen_solving"
+        },
+        {
+          "id": "55b89d16-55b4-4123-ba54-85f2fe189a2b",
+          "name": "English",
+          "normalizedName": "english"
+        },
+        {
+          "id": "5c6bef98-2589-41f6-b77f-7e461848ec27",
+          "name": "Web3",
+          "normalizedName": "web3"
+        },
+        {
+          "id": "55d89274-33be-4e52-ba0f-692066e235ec",
+          "name": "Excel",
+          "normalizedName": "excel"
+        },
+        {
+          "id": "55af9780-d5ea-4421-b5a3-6c3caa6c0167",
+          "name": "Customer Support",
+          "normalizedName": "customer-support"
+        },
+        {
+          "id": "bb64599f-6ebe-4941-95fd-f7e0244194eb",
+          "name": "customer support",
+          "normalizedName": "customer-support"
+        }
+      ],
+      "summary": "EtherMail is looking for a Customer Support Agent to assist users with account-related issues in the Web3 space. Provide clear responses, verify account details, and escalate technical problems.",
+      "payRate": "HOURLY",
+      "extractedMinimumSalary": 5,
+      "minimumSalary": 10400,
+      "communities": [],
+      "location": "Nigeria",
+      "extractedMaximumSalary": 5,
+      "shortUUID": "XVQX4S",
+      "maximumSalary": 10400,
+      "salaryCurrency": "EUR",
+      "access": "public",
+      "requirements": [
+        "Fluent in English (spoken and written)",
+        "Experience in customer support",
+        "Strong written communication skills",
+        "Problem-solving mindset",
+        "Patience and a friendly attitude",
+        "Ability to work efficiently and manage time"
+      ],
+      "url": "https://ethermail.breezy.hr/p/fda86cac8e3001-customer-support-agent-for-web3",
+      "firstSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "id": "840bf6c1-ac27-474e-b1ad-ccaa9c7ca1da",
+      "title": "Customer Support Agent",
+      "lastSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "description": "You will provide clear, helpful responses to user inquiries via email in English. Review and verify users' account details to resolve issues. Use pre-written templates for common questions to streamline support. Escalate technical problems to the IT team when necessary. Update records, such as user details or issue logs, in Excel as required.",
+      "locationType": null,
+      "responsibilities": [
+        "Provide clear, helpful responses to user inquiries via email",
+        "Review and verify users' account details",
+        "Use pre-written templates for common questions",
+        "Escalate technical problems to the IT team",
+        "Update records in Excel"
+      ],
+      "benefits": [],
+      "salary": 10400,
+      "seniority": "2"
+    },
+    "organization": {
+      "identity": {
+        "low": 106830,
+        "high": 0
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "summary": "EtherMail is reimagining email for Web3 with anonymous and encrypted wallet-to-wallet communication.",
+        "createdTimestamp": {
+          "low": -1947393494,
+          "high": 398
+        },
+        "name": "EtherMail",
+        "description": "EtherMail is the first email solution setting the standard for anonymous and encrypted wallet-to-wallet communication. It allows fully anonymous and encrypted P2P communication and rewards its users for reading relevant content in their inbox. EtherMail addresses the inadequacies of traditional email for Web3 customers, offering solutions to phishing attacks, spamming, privacy concerns, and the lack of decentralized email standards.",
+        "location": "Distributed",
+        "id": "f8405fa5-9ab2-4dd8-8edf-edc648b97437",
+        "normalizedName": "ethermail",
+        "orgId": "6433"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:106830"
+    },
+    "classification": {
+      "identity": {
+        "low": 3412,
+        "high": 0
+      },
+      "labels": [
+        "JobpostClassification"
+      ],
+      "properties": {
+        "name": "CUSTOMER_SUPPORT",
+        "id": "f18d98b3-2570-42d0-8697-6dc9a25b293a",
+        "normalizedName": "customer_support"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:3412"
+    },
+    "communities": []
+  },
+  {
+    "structuredJobpost": {
+      "tags": [
+        {
+          "id": "df218a82-5459-401c-a10f-f1207e4c356c",
+          "name": "journalism",
+          "normalizedName": "journalism"
+        },
+        {
+          "id": "4265c2b8-b8ef-4305-a370-95681c3deaff",
+          "name": "Blockchain",
+          "normalizedName": "blockchain"
+        },
+        {
+          "id": "8ae32e10-a305-489c-b24b-97b03ac8d3c1",
+          "name": "Communication",
+          "normalizedName": "communication"
+        },
+        {
+          "id": "92da01cd-d6f4-4b93-913a-762d04a26993",
+          "name": "Cryptocurrency",
+          "normalizedName": "cryptocurrency"
+        },
+        {
+          "id": "308bc6e8-bf4a-4483-aa17-fc434679af4d",
+          "name": "strategy",
+          "normalizedName": "strategy"
+        },
+        {
+          "id": "e154a456-b082-4841-90c3-e92cd9addf05",
+          "name": "PR",
+          "normalizedName": "pr"
+        },
+        {
+          "id": "fbe97de0-4dfe-4109-94d2-eae24e83a84a",
+          "name": "Media",
+          "normalizedName": "media"
+        },
+        {
+          "id": "0935089d-6ab5-4365-bccb-01d0d4d4d3ae",
+          "name": "narrative",
+          "normalizedName": "narrative"
+        }
+      ],
+      "summary": "Chaos Labs is looking for a PR Manager to develop PR strategies and manage media relations. They increase brand visibility and maintain strong media relations.",
+      "communities": [],
+      "location": "New York",
+      "shortUUID": "ovYR8K",
+      "access": "public",
+      "requirements": [
+        "3-5 years of experience in public relations",
+        "Strong network of media contacts",
+        "Proven experience in executing successful PR campaigns",
+        "Excellent written and verbal communication skills",
+        "Ability to manage multiple projects simultaneously",
+        "Familiarity with cryptocurrency and blockchain technology",
+        "Self-starter with a proactive approach"
+      ],
+      "url": "https://www.comeet.com/jobs/chaoslabs/E8.007/pr-manager---contractor/B0.C4C",
+      "firstSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "id": "96737c41-0c8e-45df-973c-a9511d78c26b",
+      "title": "PR Manager",
+      "lastSeenTimestamp": {
+        "low": -1874601913,
+        "high": 402
+      },
+      "description": "You will develop and implement PR strategies, build relationships with journalists, manage media outreach, create PR materials, coordinate interviews, monitor media coverage, and manage crisis communication.",
+      "locationType": {
+        "id": "d9b14fa2-d831-464d-9805-931a312143cd",
+        "name": "REMOTE"
+      },
+      "responsibilities": [
+        "Develop and implement PR strategies",
+        "Build and maintain relationships with journalists",
+        "Manage and execute media outreach efforts",
+        "Create and distribute press releases",
+        "Coordinate media interviews and public appearances",
+        "Monitor media coverage and report on PR performance",
+        "Work closely with internal teams to align PR efforts",
+        "Manage crisis communication"
+      ],
+      "benefits": [
+        "Competitive contractor compensation",
+        "Flexible, remote working environment",
+        "Opportunity to work in a rapidly evolving industry",
+        "Chance to make a significant impact"
+      ],
+      "seniority": "3"
+    },
+    "organization": {
+      "identity": {
+        "low": 163230,
+        "high": 0
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "summary": "Our platform transforms on-chain risk management, security, and incentive strategies. We automate real-time protocol parameter recommendations through advanced Risk Oracles, sophisticated data analytics, modeling, and simulations.",
+        "createdTimestamp": {
+          "low": -1149655676,
+          "high": 400
+        },
+        "name": "Chaos Labs",
+        "description": "At Chaos Labs, we're reimagining the future of DeFi with automated, on-chain economic security systems. Our mission is simple: optimize risk management and capital efficiency for DeFi protocols while safeguarding user funds.",
+        "location": "NYC and Tel Aviv",
+        "id": "d7568c6e-9c19-4cd6-b303-f31bf78f3a4f",
+        "normalizedName": "chaos-labs",
+        "updatedTimestamp": {
+          "low": -1623811484,
+          "high": 401
+        },
+        "orgId": "41",
+        "headcountEstimate": {
+          "low": 30,
+          "high": 0
+        }
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:163230"
+    },
+    "classification": {
+      "identity": {
+        "low": 3161,
+        "high": 0
+      },
+      "labels": [
+        "JobpostClassification"
+      ],
+      "properties": {
+        "name": "MARKETING",
+        "id": "b55d7ede-e2d9-4399-bb8d-95ab321b4fa5",
+        "normalizedName": "marketing"
+      },
+      "elementId": "4:ca19adf1-239b-4efa-be72-f39523a20ae7:3161"
+    },
+    "communities": []
+  }
+]

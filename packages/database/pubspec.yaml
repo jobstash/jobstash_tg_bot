@@ -12,8 +12,8 @@ dependencies:
   firedart: ^0.9.7
 
   # Code generation
-  json_annotation: ^4.8.1
-  freezed_annotation: ^2.1.0
+  json_annotation: 4.9.0
+  freezed_annotation: 2.4.4
 
   # Utils
   collection: ^1.18.0
@@ -23,7 +23,7 @@ dev_dependencies:
   test: ^1.21.0
 
   # Code generation
-  json_serializable: ^6.7.1
-  freezed: ^2.4.2
-  build_runner: ^2.0.0
+  json_serializable: 6.8.0
+  freezed: 2.5.7
+  build_runner: 2.4.13
 

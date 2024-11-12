@@ -13,7 +13,7 @@ dependencies:
     functions_framework: ^0.4.0
     shelf: ^1.0.0
 dev_dependencies:
-  build_runner: ^2.0.0
+  build_runner: 2.4.13
   functions_framework_builder: ^0.4.0
 ```
 3. create lib/functions.dart

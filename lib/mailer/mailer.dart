@@ -21,12 +21,11 @@ class Mailer {
 
       //parse job
       final body = await parseRequestBody<List<dynamic>>(request);
-      // final posts = body.map((e) => Post.fromJson(e)).toList().sublist(0, 5);
       final posts = body.map((e) => Post.fromJson(e)).toList();
 
       final reporter = Reporter();
 
-      await Future.wait(posts.map((post) async {
+      for (final post in posts) {
         final userIds = await filtersDao.getUsersFor(
           communities: post.communities?.map((entry) => entry.normalizedName).toList(),
           category: post.category,
@@ -34,7 +33,7 @@ class Mailer {
         );
         await _sendMail(telegramApi, userIds, post);
         reporter.aggregate(post, userIds);
-      }));
+      }
 
       await reporter.report(posts.length);
 
